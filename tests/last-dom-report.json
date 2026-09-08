@@ -1,0 +1,105 @@
+{
+  "environment": "Headless Chromium set_content on Linux; isolated DOM tests (network navigation restricted), simulated 390/820/1180px viewports; NOT physical iPhone/iPad.",
+  "results": [
+    {
+      "test": "Initial homepage: 46 usable words, six themes, four modes",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "test": "Child selection and natural Korean name ending",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "test": "Card navigation, embedded photo, picture switch",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "test": "Pause freezes session timer",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "test": "Find mode: distinct choices, gentle retry, no automatic advance",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "test": "Two-word phrase mode",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "test": "Same-picture matching mode",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "test": "Long-press parental gate and in-session difficulty settings",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "test": "Photo picker/resize with mocked media store activates a character template",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "test": "Deleting a character image removes unavailable card from play",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "test": "Audio recorder UI exposed; hardware microphone test not run",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "test": "Backup input validation rejects SVG/unknown keys and invalid settings",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "test": "iPhone-size layout has no horizontal overflow",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "test": "iPad-size layout has no horizontal overflow",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "test": "Embedded photo renders without an image-network request",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "test": "Session timer leads to an off-screen play suggestion",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "test": "Remote Korean voices are not used",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "test": "No uncaught JavaScript errors",
+      "status": "passed",
+      "detail": 0
+    }
+  ],
+  "pageErrors": [],
+  "notTested": [
+    "Physical iPhone/iPad",
+    "Apple Korean TTS voice quality/offline availability",
+    "Hardware audio latency",
+    "Photo-pack network download",
+    "Actual iOS microphone recording format",
+    "Real browser Service Worker installation/offline navigation",
+    "Real browser IndexedDB persistence"
+  ]
+}
