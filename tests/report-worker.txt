@@ -1,0 +1,6 @@
+PASS 65 core files cached: app, icons, manifest and 60 SVGs
+PASS worker replaces only its own old caches
+PASS simulated offline navigation and illustration from cache
+PASS API, separate documents and other origins are not cached
+PASS failed preparation discards partial new cache, retains old version
+NOTE: worker/CacheStorage simulation; not a browser-installed PWA test.
