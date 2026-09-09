@@ -26,7 +26,7 @@
  };
  const api={open(){const req={};setTimeout(()=>{req.result=database;req.onsuccess?.()},0);return req}};
  Object.defineProperty(window,"indexedDB",{value:api,configurable:true});
- const saved=new Map();
+ const saved=new Map(Object.entries(window.__SEED_SETTINGS__||{}));
  Object.defineProperty(window,"localStorage",{value:{getItem:k=>saved.get(k)||null,setItem:(k,v)=>saved.set(k,String(v)),removeItem:k=>saved.delete(k)}});
  window.__spoken=[];
  window.SpeechSynthesisUtterance=class{constructor(text){this.text=text}};

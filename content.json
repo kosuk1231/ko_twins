@@ -1,5 +1,5 @@
 {
-  "version": "1.2.0",
+  "version": "1.3.0",
   "categories": [
     {
       "id": "animals",
@@ -631,8 +631,10 @@
       "phrase": "뽀로로 안녕",
       "prompt": "뽀로로에게 인사해볼까?",
       "real": "좋아하는 인형과 인사해보세요.",
-      "template": false,
-      "art": "assets/cards/pororo.svg"
+      "template": true,
+      "art": "assets/cards/character-needed.svg",
+      "series": "pororo",
+      "original": true
     },
     {
       "id": "crong",
@@ -642,8 +644,10 @@
       "phrase": "크롱 안녕",
       "prompt": "크롱은 어떤 소리를 낼까?",
       "real": "좋아하는 인형과 이야기해보세요.",
-      "template": false,
-      "art": "assets/cards/crong.svg"
+      "template": true,
+      "art": "assets/cards/character-needed.svg",
+      "series": "pororo",
+      "original": true
     },
     {
       "id": "loopy",
@@ -653,8 +657,10 @@
       "phrase": "루피 안녕",
       "prompt": "루피와 무엇을 하고 싶어?",
       "real": "소꿉놀이를 함께 해보세요.",
-      "template": false,
-      "art": "assets/cards/loopy.svg"
+      "template": true,
+      "art": "assets/cards/character-needed.svg",
+      "series": "pororo",
+      "original": true
     },
     {
       "id": "eddy",
@@ -664,8 +670,10 @@
       "phrase": "에디 안녕",
       "prompt": "에디에게 손을 흔들어볼까?",
       "real": "블록으로 새로운 모양을 만들어보세요.",
-      "template": false,
-      "art": "assets/cards/eddy.svg"
+      "template": true,
+      "art": "assets/cards/character-needed.svg",
+      "series": "pororo",
+      "original": true
     },
     {
       "id": "poby",
@@ -675,8 +683,10 @@
       "phrase": "포비 안녕",
       "prompt": "포비와 무엇을 하고 싶어?",
       "real": "인형을 꼭 안아주세요.",
-      "template": false,
-      "art": "assets/cards/poby.svg"
+      "template": true,
+      "art": "assets/cards/character-needed.svg",
+      "series": "pororo",
+      "original": true
     },
     {
       "id": "petty",
@@ -686,8 +696,10 @@
       "phrase": "패티 안녕",
       "prompt": "패티에게 인사해볼까?",
       "real": "서로 손을 흔들어주세요.",
-      "template": false,
-      "art": "assets/cards/petty.svg"
+      "template": true,
+      "art": "assets/cards/character-needed.svg",
+      "series": "pororo",
+      "original": true
     },
     {
       "id": "harry",
@@ -697,8 +709,10 @@
       "phrase": "해리 안녕",
       "prompt": "해리에게 노래를 불러줄까?",
       "real": "좋아하는 노래 한 소절을 함께 불러보세요.",
-      "template": false,
-      "art": "assets/cards/harry.svg"
+      "template": true,
+      "art": "assets/cards/character-needed.svg",
+      "series": "pororo",
+      "original": true
     },
     {
       "id": "rody",
@@ -708,8 +722,154 @@
       "phrase": "로디 안녕",
       "prompt": "로디처럼 움직여볼까?",
       "real": "천천히 로봇처럼 움직여보세요.",
-      "template": false,
-      "art": "assets/cards/rody.svg"
+      "template": true,
+      "art": "assets/cards/character-needed.svg",
+      "series": "pororo",
+      "original": true
+    },
+    {
+      "id": "tongtong",
+      "label": "통통이",
+      "category": "characters",
+      "phrase": "통통이 안녕",
+      "prompt": "통통이에게 손을 흔들며 인사해볼까?",
+      "real": "서로 마주 보고 손을 흔들어 인사해요.",
+      "art": "assets/cards/character-needed.svg",
+      "series": "pororo",
+      "template": true,
+      "original": true
+    },
+    {
+      "id": "babyshark",
+      "label": "아기상어 올리",
+      "category": "characters",
+      "phrase": "아기상어 올리 안녕",
+      "prompt": "아기상어 올리에게 인사해볼까?",
+      "real": "양손을 모아 물고기처럼 천천히 움직여보세요.",
+      "art": "assets/cards/character-needed.svg",
+      "series": "babyshark",
+      "template": true,
+      "original": true
+    },
+    {
+      "id": "daddyshark",
+      "label": "아빠 상어",
+      "category": "characters",
+      "phrase": "아빠 상어 안녕",
+      "prompt": "아빠 상어에게 인사해볼까?",
+      "real": "양손을 모아 물고기처럼 천천히 움직여보세요.",
+      "art": "assets/cards/character-needed.svg",
+      "series": "babyshark",
+      "template": true,
+      "original": true
+    },
+    {
+      "id": "mommyshark",
+      "label": "엄마 상어",
+      "category": "characters",
+      "phrase": "엄마 상어 안녕",
+      "prompt": "엄마 상어에게 인사해볼까?",
+      "real": "양손을 모아 물고기처럼 천천히 움직여보세요.",
+      "art": "assets/cards/character-needed.svg",
+      "series": "babyshark",
+      "template": true,
+      "original": true
+    },
+    {
+      "id": "grandpashark",
+      "label": "할아버지 상어",
+      "category": "characters",
+      "phrase": "할아버지 상어 안녕",
+      "prompt": "할아버지 상어에게 인사해볼까?",
+      "real": "양손을 모아 물고기처럼 천천히 움직여보세요.",
+      "art": "assets/cards/character-needed.svg",
+      "series": "babyshark",
+      "template": true,
+      "original": true
+    },
+    {
+      "id": "grandmashark",
+      "label": "할머니 상어",
+      "category": "characters",
+      "phrase": "할머니 상어 안녕",
+      "prompt": "할머니 상어에게 인사해볼까?",
+      "real": "양손을 모아 물고기처럼 천천히 움직여보세요.",
+      "art": "assets/cards/character-needed.svg",
+      "series": "babyshark",
+      "template": true,
+      "original": true
+    },
+    {
+      "id": "william",
+      "label": "윌리엄",
+      "category": "characters",
+      "phrase": "윌리엄 안녕",
+      "prompt": "윌리엄에게 인사해볼까?",
+      "real": "양손을 모아 물고기처럼 천천히 움직여보세요.",
+      "art": "assets/cards/character-needed.svg",
+      "series": "babyshark",
+      "template": true,
+      "original": true
+    },
+    {
+      "id": "chichi",
+      "label": "치치",
+      "category": "characters",
+      "phrase": "치치 안녕",
+      "prompt": "치치에게 인사해볼까?",
+      "real": "양손을 모아 물고기처럼 천천히 움직여보세요.",
+      "art": "assets/cards/character-needed.svg",
+      "series": "babyshark",
+      "template": true,
+      "original": true
+    },
+    {
+      "id": "ray",
+      "label": "레이",
+      "category": "characters",
+      "phrase": "레이 안녕",
+      "prompt": "레이에게 인사해볼까?",
+      "real": "양손을 모아 물고기처럼 천천히 움직여보세요.",
+      "art": "assets/cards/character-needed.svg",
+      "series": "babyshark",
+      "template": true,
+      "original": true
+    },
+    {
+      "id": "saengsaeng",
+      "label": "쌩쌩이",
+      "category": "characters",
+      "phrase": "쌩쌩이 안녕",
+      "prompt": "쌩쌩이에게 인사해볼까?",
+      "real": "양손을 모아 물고기처럼 천천히 움직여보세요.",
+      "art": "assets/cards/character-needed.svg",
+      "series": "babyshark",
+      "template": true,
+      "original": true
+    },
+    {
+      "id": "mollamolla",
+      "label": "몰라몰라",
+      "category": "characters",
+      "phrase": "몰라몰라 안녕",
+      "prompt": "몰라몰라에게 인사해볼까?",
+      "real": "양손을 모아 물고기처럼 천천히 움직여보세요.",
+      "art": "assets/cards/character-needed.svg",
+      "series": "babyshark",
+      "template": true,
+      "original": true
+    },
+    {
+      "id": "leo",
+      "label": "레오",
+      "category": "characters",
+      "phrase": "레오 안녕",
+      "prompt": "레오에게 인사해볼까?",
+      "real": "양손을 모아 물고기처럼 천천히 움직여보세요.",
+      "art": "assets/cards/character-needed.svg",
+      "series": "babyshark",
+      "template": true,
+      "original": true
     }
   ],
   "embeddedPhotos": {},
@@ -749,5 +909,326 @@
       "id": "sage",
       "label": "Sage"
     }
-  ]
+  ],
+  "characterSources": [
+    {
+      "id": "pororo",
+      "label": "뽀로로",
+      "series": "pororo",
+      "provider": "iconix",
+      "url": "https://www.iconix.co.kr/uploaded/product/1/char_91791d4b23972541897f8cb9a651a835.png",
+      "sourcePage": "https://www.iconix.co.kr/bbs/pop-character.php?idx=1&p_idx=1",
+      "credit": "ICONIX / OCON / EBS / SK broadband",
+      "crop": null
+    },
+    {
+      "id": "crong",
+      "label": "크롱",
+      "series": "pororo",
+      "provider": "iconix",
+      "url": "https://www.iconix.co.kr/uploaded/product/1/char_b94559e12caa90a2a45845d4d2b3575c.png",
+      "sourcePage": "https://www.iconix.co.kr/bbs/pop-character.php?idx=2&p_idx=1",
+      "credit": "ICONIX / OCON / EBS / SK broadband",
+      "crop": null
+    },
+    {
+      "id": "loopy",
+      "label": "루피",
+      "series": "pororo",
+      "provider": "iconix",
+      "url": "https://www.iconix.co.kr/uploaded/product/1/char_a1ca7d5661983f6a6f5dd0e452dba7df.png",
+      "sourcePage": "https://www.iconix.co.kr/bbs/pop-character.php?idx=4&p_idx=1",
+      "credit": "ICONIX / OCON / EBS / SK broadband",
+      "crop": null
+    },
+    {
+      "id": "eddy",
+      "label": "에디",
+      "series": "pororo",
+      "provider": "iconix",
+      "url": "https://www.iconix.co.kr/uploaded/product/1/char_70f6504fe604cf7d41e062386b73d6a0.png",
+      "sourcePage": "https://www.iconix.co.kr/bbs/pop-character.php?idx=3&p_idx=1",
+      "credit": "ICONIX / OCON / EBS / SK broadband",
+      "crop": null
+    },
+    {
+      "id": "poby",
+      "label": "포비",
+      "series": "pororo",
+      "provider": "iconix",
+      "url": "https://www.iconix.co.kr/uploaded/product/1/char_9239798a658fa3c76a48ed0af224641f.png",
+      "sourcePage": "https://www.iconix.co.kr/bbs/pop-character.php?idx=5&p_idx=1",
+      "credit": "ICONIX / OCON / EBS / SK broadband",
+      "crop": null
+    },
+    {
+      "id": "petty",
+      "label": "패티",
+      "series": "pororo",
+      "provider": "iconix",
+      "url": "https://www.iconix.co.kr/uploaded/product/1/char_2bb6230317f862ca4e1e6c3cdbc47368.png",
+      "sourcePage": "https://www.iconix.co.kr/bbs/pop-character.php?idx=6&p_idx=1",
+      "credit": "ICONIX / OCON / EBS / SK broadband",
+      "crop": null
+    },
+    {
+      "id": "harry",
+      "label": "해리",
+      "series": "pororo",
+      "provider": "iconix",
+      "url": "https://www.iconix.co.kr/uploaded/product/1/char_0f8ed7214d923ce9135a289fd8991327.png",
+      "sourcePage": "https://www.iconix.co.kr/bbs/pop-character.php?idx=13&p_idx=1",
+      "credit": "ICONIX / OCON / EBS / SK broadband",
+      "crop": null
+    },
+    {
+      "id": "rody",
+      "label": "로디",
+      "series": "pororo",
+      "provider": "iconix",
+      "url": "https://www.iconix.co.kr/uploaded/product/1/char_7ae506f89aab383d2a31781b1a799fda.png",
+      "sourcePage": "https://www.iconix.co.kr/bbs/pop-character.php?idx=12&p_idx=1",
+      "credit": "ICONIX / OCON / EBS / SK broadband",
+      "crop": null
+    },
+    {
+      "id": "tongtong",
+      "label": "통통이",
+      "series": "pororo",
+      "provider": "iconix",
+      "url": "https://www.iconix.co.kr/uploaded/product/1/char_aec1fca4a220bceb3cb89f6fc0bc7907.png",
+      "sourcePage": "https://www.iconix.co.kr/bbs/pop-character.php?idx=14&p_idx=1",
+      "credit": "ICONIX / OCON / EBS / SK broadband",
+      "crop": null
+    },
+    {
+      "id": "babyshark",
+      "label": "아기상어 올리",
+      "series": "babyshark",
+      "provider": "tistory",
+      "url": "https://blog.kakaocdn.net/dna/chYiAR/btsFRaBhzfD/AAAAAAAAAAAAAAAAAAAAAI_Dtn9X44w1dTsQ36ddNL2BAArNZ7mwM8H5aSgVUQ0W/img.png?allow_ip=&allow_referer=&credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1790780399&signature=njSDm7B7BRbBJHvIyNwm%2BVNeRoo%3D",
+      "imageKey": "btsFRaBhzfD",
+      "sourcePage": "https://with-hs.tistory.com/184",
+      "refreshPage": "https://with-hs.tistory.com/m/184",
+      "credit": "With HS article (image credit in article: KBS)",
+      "crop": [
+        42,
+        42,
+        304,
+        355,
+        931,
+        495
+      ]
+    },
+    {
+      "id": "daddyshark",
+      "label": "아빠 상어",
+      "series": "babyshark",
+      "provider": "tistory",
+      "url": "https://blog.kakaocdn.net/dna/qSmTt/btsFQX3lTgH/AAAAAAAAAAAAAAAAAAAAAHJuDKeiiaqfYNBHhpGFUfzqrKhVRLi_UFIe5eTb0S8b/img.png?allow_ip=&allow_referer=&credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1790780399&signature=ceiQAXQC6kcYMHO9XJ9hyPWhgNU%3D",
+      "imageKey": "btsFQX3lTgH",
+      "sourcePage": "https://with-hs.tistory.com/184",
+      "refreshPage": "https://with-hs.tistory.com/m/184",
+      "credit": "With HS article (image credit in article: KBS)",
+      "crop": [
+        42,
+        38,
+        315,
+        370,
+        855,
+        448
+      ]
+    },
+    {
+      "id": "mommyshark",
+      "label": "엄마 상어",
+      "series": "babyshark",
+      "provider": "tistory",
+      "url": "https://blog.kakaocdn.net/dna/nLM7I/btsFRAfs6fJ/AAAAAAAAAAAAAAAAAAAAAKe54LLGl1UBr1RjlY6Sy6leBrjfxihy9ZAhgbZlE0We/img.png?allow_ip=&allow_referer=&credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1790780399&signature=atdMF8k2BAzJslq7KNIenwiqCGc%3D",
+      "imageKey": "btsFRAfs6fJ",
+      "sourcePage": "https://with-hs.tistory.com/184",
+      "refreshPage": "https://with-hs.tistory.com/m/184",
+      "credit": "With HS article (image credit in article: KBS)",
+      "crop": [
+        18,
+        30,
+        310,
+        370,
+        878,
+        453
+      ]
+    },
+    {
+      "id": "grandpashark",
+      "label": "할아버지 상어",
+      "series": "babyshark",
+      "provider": "tistory",
+      "url": "https://blog.kakaocdn.net/dna/b00IHh/btsFQsJb5Hm/AAAAAAAAAAAAAAAAAAAAAIxlnAsrP4N-I4X1fEOJK3jXKzr82IJ0jyf9e79KydN8/img.png?allow_ip=&allow_referer=&credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1790780399&signature=aMjc1U1M%2Bw1qWzBQzUsIUNA%2FFCs%3D",
+      "imageKey": "btsFQsJb5Hm",
+      "sourcePage": "https://with-hs.tistory.com/184",
+      "refreshPage": "https://with-hs.tistory.com/m/184",
+      "credit": "With HS article (image credit in article: KBS)",
+      "crop": [
+        35,
+        34,
+        305,
+        370,
+        834,
+        461
+      ]
+    },
+    {
+      "id": "grandmashark",
+      "label": "할머니 상어",
+      "series": "babyshark",
+      "provider": "tistory",
+      "url": "https://blog.kakaocdn.net/dna/dFIxlx/btsFR9IE7h4/AAAAAAAAAAAAAAAAAAAAACgtLlMzsTAv6f1sHbHDpqJPaxSf167E4MB8dULQNy7m/img.png?allow_ip=&allow_referer=&credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1790780399&signature=qfQHLT8d8vP4%2FEVZfNmLyiWaRt0%3D",
+      "imageKey": "btsFR9IE7h4",
+      "sourcePage": "https://with-hs.tistory.com/184",
+      "refreshPage": "https://with-hs.tistory.com/m/184",
+      "credit": "With HS article (image credit in article: KBS)",
+      "crop": [
+        0,
+        42,
+        302,
+        376,
+        795,
+        439
+      ]
+    },
+    {
+      "id": "william",
+      "label": "윌리엄",
+      "series": "babyshark",
+      "provider": "tistory",
+      "url": "https://blog.kakaocdn.net/dna/blPrDn/btsFRDJ3LIg/AAAAAAAAAAAAAAAAAAAAAFwP_gVu0dQVQrV7EkC-a9VRhJsCJ_OY89mfrxWo7KE1/img.png?allow_ip=&allow_referer=&credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1790780399&signature=pT%2FuQeqSIWwU3hemAS7OoGTTbaw%3D",
+      "imageKey": "btsFRDJ3LIg",
+      "sourcePage": "https://with-hs.tistory.com/184",
+      "refreshPage": "https://with-hs.tistory.com/m/184",
+      "credit": "With HS article (image credit in article: KBS)",
+      "crop": [
+        25,
+        56,
+        285,
+        306,
+        849,
+        444
+      ]
+    },
+    {
+      "id": "chichi",
+      "label": "치치",
+      "series": "babyshark",
+      "provider": "tistory",
+      "url": "https://blog.kakaocdn.net/dna/TKBgC/btsFS1DGgMm/AAAAAAAAAAAAAAAAAAAAALIrWe0-8xDPF0h85GPmbscEFfgeBm9Qr-rIto7p6lF5/img.png?allow_ip=&allow_referer=&credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1790780399&signature=%2BI5XJTX7qEDgrRqzXVgd4qFBazk%3D",
+      "imageKey": "btsFS1DGgMm",
+      "sourcePage": "https://with-hs.tistory.com/184",
+      "refreshPage": "https://with-hs.tistory.com/m/184",
+      "credit": "With HS article (image credit in article: KBS)",
+      "crop": [
+        18,
+        43,
+        306,
+        348,
+        804,
+        465
+      ]
+    },
+    {
+      "id": "ray",
+      "label": "레이",
+      "series": "babyshark",
+      "provider": "tistory",
+      "url": "https://blog.kakaocdn.net/dna/q94gu/btsFQNzRZly/AAAAAAAAAAAAAAAAAAAAAL8sL1PBzqCtvhEOuAsq9cf-pzyA6RRIDPloYx3UuA0R/img.png?allow_ip=&allow_referer=&credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1790780399&signature=%2FMaTtntl2O86zTM4UlRchAQjOt8%3D",
+      "imageKey": "btsFQNzRZly",
+      "sourcePage": "https://with-hs.tistory.com/184",
+      "refreshPage": "https://with-hs.tistory.com/m/184",
+      "credit": "With HS article (image credit in article: KBS)",
+      "crop": [
+        16,
+        133,
+        375,
+        132,
+        834,
+        422
+      ]
+    },
+    {
+      "id": "saengsaeng",
+      "label": "쌩쌩이",
+      "series": "babyshark",
+      "provider": "tistory",
+      "url": "https://blog.kakaocdn.net/dna/qtMTX/btsFPI69nWO/AAAAAAAAAAAAAAAAAAAAAOeHZBn_C6ITgBiWJ7uq6vGdMP5vlJIVLf-T6KLopO3_/img.png?allow_ip=&allow_referer=&credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1790780399&signature=EgjqHYQ0S0nj%2Fi1s07ZIRkVQlFQ%3D",
+      "imageKey": "btsFPI69nWO",
+      "sourcePage": "https://with-hs.tistory.com/184",
+      "refreshPage": "https://with-hs.tistory.com/m/184",
+      "credit": "With HS article (image credit in article: KBS)",
+      "crop": [
+        17,
+        80,
+        375,
+        244,
+        833,
+        437
+      ]
+    },
+    {
+      "id": "mollamolla",
+      "label": "몰라몰라",
+      "series": "babyshark",
+      "provider": "tistory",
+      "url": "https://blog.kakaocdn.net/dna/QfGQF/btsFS2o2XMJ/AAAAAAAAAAAAAAAAAAAAACQGgyPPa1ceauCKAEeyR-a4wYUt2vwgnXGeM21Mm4Q1/img.png?allow_ip=&allow_referer=&credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1790780399&signature=ndmJ64gX%2Fch3%2Fq0vC6ST67SrzSQ%3D",
+      "imageKey": "btsFS2o2XMJ",
+      "sourcePage": "https://with-hs.tistory.com/184",
+      "refreshPage": "https://with-hs.tistory.com/m/184",
+      "credit": "With HS article (image credit in article: KBS)",
+      "crop": [
+        36,
+        45,
+        253,
+        358,
+        849,
+        446
+      ]
+    },
+    {
+      "id": "leo",
+      "label": "레오",
+      "series": "babyshark",
+      "provider": "tistory",
+      "url": "https://blog.kakaocdn.net/dna/V8I8F/btsFS0dG1H3/AAAAAAAAAAAAAAAAAAAAAGJ5Ey1CTTpFTR7lH0uJmanB-HZhu38TCi06adYIh8T1/img.png?allow_ip=&allow_referer=&credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1790780399&signature=PEkf8VKaVyGFknCkaOLX5AeLnAw%3D",
+      "imageKey": "btsFS0dG1H3",
+      "sourcePage": "https://with-hs.tistory.com/184",
+      "refreshPage": "https://with-hs.tistory.com/m/184",
+      "credit": "With HS article (image credit in article: KBS)",
+      "crop": [
+        9,
+        43,
+        300,
+        352,
+        790,
+        417
+      ]
+    }
+  ],
+  "characterSeries": [
+    {
+      "id": "all",
+      "label": "모두"
+    },
+    {
+      "id": "pororo",
+      "label": "뽀로로"
+    },
+    {
+      "id": "babyshark",
+      "label": "아기상어"
+    }
+  ],
+  "sourceStatus": {
+    "naver": "unreadable",
+    "naverUrl": "https://blog.naver.com/alongmong/223738269214",
+    "requestedPororoUrl": "http://www.pororopark.com/about/character.php",
+    "pororoFallback": "https://www.iconix.co.kr/works/iconix-detail.php?idx=1"
+  }
 }

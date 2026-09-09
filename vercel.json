@@ -7,6 +7,10 @@
     "api/speech.js": {
       "maxDuration": 30,
       "includeFiles": "speech-content.json"
+    },
+    "api/character.js": {
+      "maxDuration": 30,
+      "includeFiles": "character-sources.json"
     }
   },
   "headers": [

@@ -6,7 +6,7 @@ p=Path(__file__).resolve().parent
 data=json.loads((p/"content.json").read_text(encoding="utf-8"))
 css=(p/"styles.css").read_text(encoding="utf-8")
 js=(p/"app.js").read_text(encoding="utf-8")
-modules="\n\n".join((p/f).read_text(encoding="utf-8") for f in ["audio.js","storage.js","recording.js","voices.js"])
+modules="\n\n".join((p/f).read_text(encoding="utf-8") for f in ["audio.js","storage.js","recording.js","voices.js","characters.js"])
 js=js.replace("/* AUDIO_MODULE */",modules)
 template=(p/"template.html").read_text(encoding="utf-8")
 html=template.replace("/* APP_STYLES */",css).replace("/* APP_SCRIPT */",js).replace('{"APP_DATA":true}',json.dumps(data,ensure_ascii=False).replace("</","<\\/"))
@@ -20,6 +20,7 @@ for w in data["words"]:
     for k,n in names.items():speech["ask:"+w["id"]+":"+k]=n+", "+w["label"]+" \uc5b4\ub514 \uc788\uc744\uae4c?"
 (p/"speech-content.json").write_text(json.dumps(speech,ensure_ascii=False,indent=2),encoding="utf-8")
 core=["./index.html","./manifest.webmanifest","./icon-192.png","./icon-512.png","./apple-touch-icon.png"]+["./"+w["art"] for w in data["words"]]
+core=list(dict.fromkeys(core))
 sw="""/* Atomic app cache. Never touches IndexedDB or parent recordings. */
 const CACHE=%s;
 const CORE=%s;

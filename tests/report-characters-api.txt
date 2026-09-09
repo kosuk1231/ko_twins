@@ -1,0 +1,7 @@
+PASS 20 unique source-to-character mappings
+PASS fresh signed link extraction and strict host/image identity validation
+PASS official image response and cache headers (mock network)
+PASS unknown IDs, arbitrary URLs, and non-GET requests rejected
+PASS non-image responses, invalid magic bytes, and unsafe redirects rejected
+PASS Tistory page refresh followed by validated original image request (mock network)
+LIMIT: External source downloads through deployed Vercel not exercised.

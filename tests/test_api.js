@@ -32,6 +32,6 @@ async function call(body={key:"word:dog",voice:"coral"},headers={},method="POST"
  process.env.WORD_GARDEN_PARENT_TOKEN=secret;providerStatus=401;
  r=await call();assert.equal(r.statusCode,502);assert(!r.body.includes("secret provider"));
  console.log("PASS missing configuration disables AI; provider secrets are not exposed");
- assert.equal(Object.keys(phrases).length,306);
- console.log("PASS 306 allowed Korean phrases; no arbitrary speech proxy");
+ assert.equal(Object.keys(phrases).length,366);
+ console.log("PASS 366 allowed Korean phrases; no arbitrary speech proxy");
 })().catch(e=>{console.error(e);process.exit(1)});

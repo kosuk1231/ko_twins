@@ -92,3 +92,16 @@ h1,h2,h3{word-break:keep-all;overflow-wrap:break-word}@media(max-width:740px){.h
 .category small{word-break:keep-all;line-height:1.5}
 
 .record-row{padding:16px 14px}
+/* Original character artwork library. No generative styling is applied. */
+.original-picture{width:100%;height:100%;object-fit:contain;background:#fff;border-radius:20px}
+.character-panel>h3{margin-top:8px}.character-eyebrow{font-size:12px;font-weight:700;color:#75608b;letter-spacing:.02em}
+.character-summary{display:flex;align-items:baseline;gap:12px;margin:22px 0 18px}.character-summary strong{font-size:34px;line-height:1.15;letter-spacing:-1px}.character-summary span{color:#73756b;font-size:14px}
+.character-progress{white-space:pre-wrap;overflow-wrap:anywhere;font-size:14px;line-height:1.7;padding:12px 0;color:#59634e}
+.series-filters{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 18px}.series-filters .secondary.selected{background:#e9e2f1;border-color:#9482a5;color:#58466c}
+.character-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.character-tile{min-width:0;border:1px solid #e8e4dc;border-radius:18px;padding:12px;text-align:center;background:#fff}
+.character-thumb{height:150px;margin-bottom:8px}.character-thumb .picture{height:100%;width:100%;display:block}.character-thumb img{height:100%;width:100%;object-fit:contain}
+.character-tile h4{font-size:17px;margin:8px 0 5px;word-break:keep-all;line-height:1.4}.character-tile small{display:block;min-height:35px;font-size:12px;line-height:1.5;color:#77776d}.character-tile .secondary{width:100%;font-size:13px;min-height:42px;padding:8px}.character-tile .text-btn{font-size:12px;margin-top:7px;white-space:normal;line-height:1.45}
+.source-notes a{color:#655077;text-underline-offset:3px}.source-notes p,.source-notes small{line-height:1.8}
+.character-home-box{margin:20px 0;padding:18px 22px;background:#f2edf7;border-radius:20px}.character-home-box p{font-size:14px;line-height:1.6;margin:0}
+@media(max-width:600px){.character-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.character-thumb{height:124px}.character-tile{padding:10px}.character-tile h4{font-size:16px}.character-summary strong{font-size:29px}.character-summary{gap:9px}.character-home-box{padding:15px}.character-panel .btn-row{align-items:stretch}.character-panel .btn-row button{width:100%}}

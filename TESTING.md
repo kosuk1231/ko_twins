@@ -1,41 +1,28 @@
-# v1.2.0 검증 기록
+# Verification - v1.3.0
 
-## 실행 완료
-- `python3 tests/test_v12.py`: 14개 브라우저 시나리오 통과.
-- `node tests/test_sw.js`: 5개 서비스워커/캐시 시나리오 통과.
-- `node tests/test_api.js`: 4개 서버 생성/보안 시나리오 통과.
-- JavaScript 소스와 실제 빌드 결과 스크립트 구문 검사 통과.
-- 60개 SVG 모두 디코딩 확인. 아이폰 390×844, 아이패드 820×1180 레이아웃 검사 및 화면 검토.
+## Executed tests
 
-## 브라우저 테스트의 정확한 조건
-Chromium + Playwright의 격리 HTML 렌더링을 사용했습니다.
-이 실행 환경에서는 localhost, file, HTTPS 주소 탐색이 브라우저 정책에 의해 제한되어 실제 출처의 IndexedDB 및 PWA 설치를 실행할 수 없었습니다.
-테스트에서 그림은 data URI로 주입했습니다. 배포 파일은 같은 출처의 실제 SVG 파일을 사용합니다.
-IndexedDB 객체 및 장치 음성 목록은 명시적인 모의 구현입니다. 앱의 저장/커밋/독립 읽기 비교 함수는 변경하지 않고 실행했습니다.
-비어 있는 마이크를 가장한 것이 아니라 Web Audio로 만든 시험 신호를 실제 MediaRecorder가 인코딩하고 실제 오디오 경로로 재생했습니다. 이것은 물리 마이크나 한국어 발음 시험이 아닙니다.
-AI 서버는 가짜 오디오 응답으로 검증했고 OpenAI API에 실제 요청하거나 과금하지 않았습니다.
+- `test_characters_browser.py`: 12 checks. Catalogue/readiness, legacy image-setting migration, commit/read-back application, source failure, storage failure, selective retry, 20-item batch flow, series filtering, custom-image precedence, parent recording/backup regression, reopening seeded state without network, responsive layout and uncaught JS errors.
+- `test_general.py`: 14 checks. Four game modes, voice option UI, actual MediaRecorder encoding of synthetic signal, simulated storage failure recovery, previous take restore, parent-audio priority, explicit AI preparation/cache flow, legacy media compatibility, backup validation and 390/820px layout.
+- `test_characters_api.js`: 6 checks. Source inventory, fresh signed-link parsing, exact image identity/host validation, mocked image response/cache headers, invalid method/id/URL rejection, unsafe redirect/wrong content rejection, mocked page-refresh path.
+- `test_api.js`: existing speech security regression; fixed 366-phrase allowlist and mocked provider.
+- `test_sw.js`: file-backed CacheStorage simulation; 58 unique cached core assets, offline response logic, current-version replacement and API exclusion.
 
-## 주요 회귀 검사
-6개 주제/60장 / 네 가지 놀이 / 기존 cars 설정 이동 / 이전 사람 카드 백업 수용 /
-부모 녹음 우선 재생 / 저장 진행과 성공 표시 분리 / 저장 공간 부족 오류 시 기존 파일 유지 /
-임시 녹음 재저장 및 이전 파일 복구 / AI 준비 중복 요청 방지 / 아이 놀이 중 API 미호출 /
-부모 녹음과 AI 키 분리 / 백업에 부모 생성 암호 미포함 /
-SVG 전체 및 반응형 화면 / 앱 실행 오류 없음.
+Outputs are copied into `tests/report-*.json` and `tests/report-*.txt`. Reports identify mocks. Screenshot fixtures and exported test backups are intentionally excluded from the deployment ZIP.
 
-캐시: 앱·아이콘·그림 등 65개 자산, 캐시에서 오프라인 응답하는 로직, 실패한 신규 캐시 폐기,
-이전 캐시 유지, 다른 앱 캐시·API·별도 문서·다른 출처 불간섭을 모의 시험했습니다.
+## Exactly what is simulated
 
-서버: 고정된 306개 문장, 올바른 비밀 토큰, Origin, method, 크기 및 목소리 허용 목록,
-미설정 시 생성 차단, 서버 API 키/제공자 오류 비공개를 검사했습니다.
+Browser IndexedDB transactions, browser device voice list, remote image byte responses and remote speech provider responses are simulated. Test images are arbitrary shapes, not originals. Actual Chromium decodes and normalizes those fixtures. MediaRecorder encodes a generated oscillator stream, not a human microphone. A new document seeded with stored rows tests rehydration logic; it is not a true browser persistence/relaunch test.
 
-## 사용자 기기에서 반드시 확인할 항목
-1. 업데이트 전에 기존 사진·목소리 백업.
-2. 같은 운영 주소의 v1.2.0 확인.
-3. 마이크 허용 → 1~3초 녹음 → 멈추고 저장 → 저장·재확인 완료.
-4. 저장한 소리로 실제 부모 목소리 확인.
-5. 앱 종료·재실행 후 같은 항목 확인.
-6. 비행기 모드에서 그림과 해당 목소리 재확인.
-7. 아이폰의 백업을 아이패드로 옮겨 복원.
-8. AI 사용 시 본인 Vercel 환경변수 설정 후 샘플 한 개를 직접 생성해 한국어 발음 확인.
+An attempted local-server browser navigation returned `ERR_BLOCKED_BY_ADMINISTRATOR`. No attempt was made to bypass that restriction. Consequently no installed-service-worker end-to-end test succeeded here; only the separate worker simulation was run.
 
-실제 iPhone/iPad 물리 마이크·Safari IndexedDB 보존·설치형 PWA·라이브 AI 발음과 지연은 테스트하지 않았습니다.
+## Still needs real-device / deployed verification
+
+- Deploy all files to Vercel and check `/api/character` can retrieve source images.
+- Verify crop framing and each real original after download; web source images were visually inspected, but their original bytes could not be downloaded into this build container.
+- Verify 20/20 saved state, relaunch, airplane-mode artwork display and audio on both iPhone and iPad.
+- Verify real microphone permission, parent recording save/read-back, playback latency and storage durability.
+- Verify paid AI speech only after explicit provider credentials and authorization.
+- Test future Tistory signed-link refresh and upstream site changes. Failures should be shown, not hidden.
+
+No claim is made that these tests guarantee hardware behavior, unlimited persistence, zero delay, live Vercel availability, or image licensing.

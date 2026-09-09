@@ -21,20 +21,21 @@ vm.runInNewContext(fs.readFileSync(path.join(root,"sw.js"),"utf8"),{self,caches:
 async function lifecycle(t){let p;handlers[t]({waitUntil:v=>p=v});await p}
 async function request(url,mode="same-origin",method="GET"){let p;handlers.fetch({request:new Req(url,{mode,method}),respondWith:v=>p=v});return p?await p:undefined}
 (async()=>{
- await lifecycle("install");assert.equal(stores.get("word-garden-v1.2.0").size,65);assert.equal(skip,1);
- console.log("PASS 65 core files cached: app, icons, manifest and 60 SVGs");
+ await lifecycle("install");assert.equal(stores.get("word-garden-v1.3.0").size,58);assert.equal(skip,1);
+ console.log("PASS 58 core files cached: shell, 52 regular illustrations and one neutral placeholder");
  stores.set("word-garden-v1.1.0",new Map());stores.set("unrelated",new Map());
  await lifecycle("activate");assert(!stores.has("word-garden-v1.1.0"));assert(stores.has("unrelated"));assert.equal(claim,1);
  console.log("PASS worker replaces only its own old caches");
- const page=await request(base,"navigate");assert(page.body.toString().includes("v1.2.0"));
- const art=await request(base+"assets/cards/pororo.svg");assert(art.body.toString().includes("<svg"));assert.equal(fetched.length,0);
+ const page=await request(base,"navigate");assert(page.body.toString().includes("v1.3.0"));
+ const art=await request(base+"assets/cards/cat.svg");assert(art.body.toString().includes("<svg"));assert.equal(fetched.length,0);
  console.log("PASS simulated offline navigation and illustration from cache");
  assert.equal(await request(base+"api/speech","same-origin","POST"),undefined);
+ assert.equal(await request(base+"api/character?id=pororo"),undefined);
  assert.equal(await request(base+"INSTALL.html","navigate"),undefined);
  assert.equal(await request("https://other.example/a.png"),undefined);
  console.log("PASS API, separate documents and other origins are not cached");
  stores.set("word-garden-v1.1.0",new Map([["preserved",true]]));failAsset=true;
- await assert.rejects(lifecycle("install"));assert(!stores.has("word-garden-v1.2.0"));assert(stores.has("word-garden-v1.1.0"));
+ await assert.rejects(lifecycle("install"));assert(!stores.has("word-garden-v1.3.0"));assert(stores.has("word-garden-v1.1.0"));
  console.log("PASS failed preparation discards partial new cache, retains old version");
  console.log("NOTE: worker/CacheStorage simulation; not a browser-installed PWA test.");
 })().catch(e=>{console.error(e);process.exit(1)});

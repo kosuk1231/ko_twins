@@ -1,5 +1,5 @@
 
-/* Word Garden 1.2.0. Local-first; optional parent-triggered AI speech preparation.
+/* Word Garden 1.3.0. Local-first; optional parent-triggered AI speech preparation.
    Source content is embedded in index.html. Media stays in this browser's IndexedDB. */
 "use strict";
 const $=(s,r=document)=>r.querySelector(s);
@@ -10,7 +10,7 @@ const WORDS=DATA.words;
 const WORD_MAP=new Map(WORDS.map(w=>[w.id,w]));
 const CATS=DATA.categories;
 const PROFILES={seol:{name:"고은설",short:"은설",call:"은설아"},chae:{name:"고은채",short:"은채",call:"은채야"},both:{name:"은설 · 은채",short:"함께",call:"은설아, 은채야"}};
-const DEFAULTS={profile:"seol",mode:"cards",category:"animals",count:6,minutes:3,choices:2,rate:.88,picture:"diorama",autoRead:true,cues:true,showLabels:false,voiceURI:"",voiceSource:"device",aiVoice:"coral",voiceStyle:"gentle",pitch:1.02};
+const DEFAULTS={profile:"seol",mode:"cards",category:"animals",count:6,minutes:3,choices:2,rate:.88,picture:"diorama",autoRead:true,cues:true,showLabels:false,voiceURI:"",voiceSource:"device",aiVoice:"coral",voiceStyle:"gentle",pitch:1.02,picturePolicy:2,characterSeries:"all"};
 let settings=loadSettings();
 let media=new Map(),mediaMeta=new Map(),db=null,storageOK=true;
 let recordState="idle",pendingRecording=null,lastRecordingKey=null,recordError="",storageWrite=Promise.resolve();
@@ -20,7 +20,7 @@ let session=null,screen="home",parentTab="settings",editId=null,libCat="animals"
 let coreReady=false,cacheState="checking",holdTimer=null,holdPassed=false;
 let lastToast="",toastTimer=0,recording=null,recordTimer=null,pendingFileAction=null,recordPending=false;
 const audioBuffers=new Map();
-const SW_VERSION="word-garden-v1.2.0";
+const SW_VERSION="word-garden-v1.3.0";
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 function icon(name,size=22){
  const paths={
@@ -48,11 +48,12 @@ function loadSettings(){try{return validateSettings(JSON.parse(localStorage.getI
 function validateSettings(s){
  const v={...DEFAULTS}; if(!s||typeof s!=="object")return v;
  s={...s};if(s.category==="cars")s.category="vehicles";
- for(const [k,allowed] of Object.entries({profile:Object.keys(PROFILES),mode:["cards","find","phrase","pair"],category:CATS.map(c=>c.id),count:[4,6,8],minutes:[1,3,5],choices:[2,3],picture:["diorama","custom"],voiceSource:["device","ai"],aiVoice:DATA.aiVoices.map(v=>v.id),voiceStyle:["gentle","bright","calm","clear","story"]})){if(allowed.includes(s[k]))v[k]=s[k]}
+ for(const [k,allowed] of Object.entries({profile:Object.keys(PROFILES),mode:["cards","find","phrase","pair"],category:CATS.map(c=>c.id),count:[4,6,8],minutes:[1,3,5],choices:[2,3],characterSeries:["all","pororo","babyshark"],picture:["diorama","custom"],voiceSource:["device","ai"],aiVoice:DATA.aiVoices.map(v=>v.id),voiceStyle:["gentle","bright","calm","clear","story"]})){if(allowed.includes(s[k]))v[k]=s[k]}
  for(const k of ["autoRead","cues","showLabels"])if(typeof s[k]==="boolean")v[k]=s[k];
  if(typeof s.rate==="number"&&s.rate>=.65&&s.rate<=1.1)v.rate=s.rate;
  if(typeof s.pitch==="number"&&s.pitch>=.75&&s.pitch<=1.25)v.pitch=s.pitch;
  if(typeof s.voiceURI==="string"&&s.voiceURI.length<300)v.voiceURI=s.voiceURI;
+ if(s.picturePolicy!==2)v.picture="diorama";v.picturePolicy=2;
  return v;
 }
 function saveSettings(){try{localStorage.setItem("word-garden-settings",JSON.stringify(settings))}catch{toast("이 브라우저에서는 설정이 영구 저장되지 않아요.")}}
@@ -60,13 +61,14 @@ function toast(message){lastToast=message;const t=$("#toast");t.textContent=mess
 function shuffled(a){const b=[...a];for(let i=b.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[b[i],b[j]]=[b[j],b[i]]}return b}
 function profile(){return PROFILES[settings.profile]}
 
-function readyWords(category){return WORDS.filter(w=>!category||w.category===category)}
+function readyWords(category){return WORDS.filter(w=>(!category||w.category===category)&&(w.category!=="characters"||!!characterURI(w)))}
+function playWords(category){return readyWords(category).filter(w=>w.category!=="characters"||settings.characterSeries==="all"||w.series===settings.characterSeries)}
 function photoFor(w){return media.get("photo:"+w.id)||null}
-function artFor(w){return w.art}
-function shouldPhoto(w,force=null){return !!photoFor(w)&&(force!==null?force:settings.picture==="custom")}
+function artFor(w){return w.category==="characters"?(characterURI(w)||w.art):w.art}
+function shouldPhoto(w,force=null){if(w.category==="characters")return !!photoFor(w);return !!photoFor(w)&&(force!==null?force:settings.picture==="custom")}
 function picture(w,force=null){
  const custom=shouldPhoto(w,force);
- return `<span class="picture"><img class="${custom?"custom-picture":"diorama-picture"}" src="${custom?photoFor(w):artFor(w)}" alt="${esc(w.label)}" draggable="false" decoding="sync"></span>`;
+ return `<span class="picture"><img class="${custom?"custom-picture":w.category==="characters"?"original-picture":"diorama-picture"}" src="${esc(custom?photoFor(w):artFor(w))}" alt="${esc(w.label)}" draggable="false" decoding="sync"></span>`;
 }
 
 function parentButton(){return `<button class="icon-btn parent-btn" id="parents" aria-label="부모 설정. 1.2초 길게 누르세요." title="1.2초 길게 누르기">${icon("gear",19)}<span class="parent-label">부모</span></button>`}
@@ -78,7 +80,7 @@ function renderHome(){
  <div class="header-actions"><span class="status-chip ${coreReady?"":"pending"}" id="cache-chip">${cacheLabel()}</span>${parentButton()}</div></header>
  <section class="intro-row"><div><div class="eyebrow">작은 낱말 하나, 다정한 대화 하나</div><h1>${profile().call}, 오늘은 뭐 하고 놀까?</h1><p>함께 보고, 듣고, 말해요. 정답보다 즐거운 대화가 먼저예요.</p></div>
  <div class="profile-switch" role="group" aria-label="함께 놀 아이">${Object.entries(PROFILES).map(([id,p])=>`<button data-profile="${id}" class="${settings.profile===id?"selected":""}" aria-pressed="${settings.profile===id}"><i class="profile-dot ${id}"></i>${p.short}</button>`).join("")}</div></section>
- <section class="hero"><div class="hero-copy"><span class="pill">${settings.minutes}분 정도 · 카드 ${Math.min(settings.count,readyWords(settings.category).length)||settings.count}장</span>
+ <section class="hero"><div class="hero-copy"><span class="pill">${settings.minutes}분 정도 · 카드 ${Math.min(settings.count,playWords(settings.category).length)}장</span>
  <h2>오늘도 말이<br>한 뼘 자라요</h2><p id="start-summary">${CATS.find(c=>c.id===settings.category).label} 친구들과 ${modeName(settings.mode)}</p>
  <button class="primary" id="start">함께 놀이 시작 ${icon("arrow",21)}</button></div>
  <div class="hero-art" aria-hidden="true"><span class="art-flower">✳</span><div class="preview-card first"><img src="${artFor(WORD_MAP.get("rabbit"))}" alt=""><b>토끼</b></div><div class="preview-card second"><img src="${artFor(WORD_MAP.get("apple"))}" alt=""><b>사과</b></div><span class="art-dots">· · ·</span></div></section>
@@ -87,14 +89,17 @@ function renderHome(){
  ${[["cards","cards","낱말 보기","큰 그림을 톡!"],["find","find","듣고 찾기","두 장 중 골라요"],["phrase","phrase","두 낱말 말하기","밥 + 먹어요"],["pair","pair","같은 그림 찾기","똑같은 친구 찾기"]].map(([id,ic,label,hint])=>`<button class="mode ${settings.mode===id?"selected":""}" data-mode="${id}" aria-pressed="${settings.mode===id}"><span class="mode-icon">${icon(ic,25)}</span><span><strong>${label}</strong><small>${hint}</small></span></button>`).join("")}</div></section>
  <section><div class="section-head"><h2>좋아하는 낱말을 골라요</h2><small>${readyWords().length}장의 놀이 카드</small></div>
  <div class="categories" role="group" aria-label="주제 선택">${CATS.map(c=>`<button class="category ${settings.category===c.id?"selected":""}" data-category="${c.id}" aria-pressed="${settings.category===c.id}" style="--tile:${c.color}"><img class="category-art" src="${artFor(WORD_MAP.get(c.cover))}" alt=""><strong>${c.label}</strong><small>${readyWords(c.id).length}장 · ${c.hint}</small></button>`).join("")}</div></section>
+ ${settings.category==="characters"?`<div class="character-home-box"><div class="series-filters" role="group" aria-label="캐릭터 작품">${DATA.characterSeries.map(g=>`<button class="secondary ${settings.characterSeries===g.id?"selected":""}" data-play-series="${g.id}">${g.label}</button>`).join("")}</div><p>이미지가 저장된 ${playWords("characters").length}명으로 놀아요. <button class="text-btn" id="prepare-characters-home">부모: 원본 캐릭터 준비</button></p></div>`:""}
  ${!AudioEngine.voice&&!media.size?`<div class="home-notice"><p>소리가 안 들리면 부모 설정에서 한국어 음성을 확인해 주세요.</p><button id="test-voice">소리 확인</button></div>`:""}
  <footer class="home-footer"><span>광고 없이 · 경쟁 없이 · 부모와 함께</span><button class="text-btn" id="installation">설치 · 오프라인 안내</button></footer>
  </div>`;
  bindParentButton();
  $$("[data-profile]").forEach(b=>b.onclick=()=>{settings.profile=b.dataset.profile;saveSettings();AudioEngine.unlock();AudioEngine.say(`${profile().call}, 같이 놀자.`,"name:"+settings.profile);renderHome()});
  $$("[data-mode]").forEach(b=>b.onclick=()=>{settings.mode=b.dataset.mode;saveSettings();renderHome()});
- $$("[data-category]").forEach(b=>b.onclick=()=>{settings.category=b.dataset.category;saveSettings();renderHome();if(b.dataset.category==="characters"&&!readyWords("characters").length)toast("캐릭터 사진은 부모 설정 → 카드 꾸미기에서 넣어주세요.")});
+ $$("[data-category]").forEach(b=>b.onclick=()=>{settings.category=b.dataset.category;saveSettings();renderHome();if(b.dataset.category==="characters"&&!readyWords("characters").length)toast("부모 → 캐릭터에서 원본을 받아주세요.")});
  $("#start").onclick=startSession;
+ if($("#prepare-characters-home"))$("#prepare-characters-home").onclick=showCharacterParents;
+ $$("[data-play-series]").forEach(b=>b.onclick=()=>{settings.characterSeries=b.dataset.playSeries;saveSettings();renderHome()});
  $("#installation").onclick=()=>showHelp();
  if($("#test-voice"))$("#test-voice").onclick=()=>{AudioEngine.unlock();AudioEngine.say("안녕. 사과. 바나나.","system:test")};
 }
@@ -119,7 +124,8 @@ function sessionAudio(){
  return AudioEngine.say(w.label,"word:"+w.id);
 }
 function startSession(){
- const pool=readyWords(settings.category);
+ const pool=playWords(settings.category);
+ if(settings.category==="characters"&&!pool.length){toast("부모 → 캐릭터에서 원본을 먼저 받아주세요.");return}
  if(!pool.length){toast("이 주제에는 아직 사진이 없어요. 부모 설정에서 캐릭터 사진을 넣어주세요.");return}
  if(["find","pair"].includes(settings.mode)&&pool.length<2){toast("찾기 놀이는 사진 카드가 두 장 이상 있어야 해요. 먼저 낱말 보기로 놀아주세요.");return}
  AudioEngine.unlock();AudioEngine.stop();
@@ -142,10 +148,10 @@ function renderPlay(){
  <div class="progress-dots" role="img" aria-label="${session.deck.length}장 중 ${session.index+1}번째 카드">${session.deck.map((_,i)=>`<span class="${i<session.index?"done":i===session.index?"current":""}"></span>`).join("")}</div>
  <section class="play-body"><h1 class="play-heading">${title}</h1>
  ${find?`${session.mode==="pair"?`<div class="match-target" aria-label="이 그림과 같은 것을 찾아요">${picture(w,session.pictureOverride)}</div>`:""}<div class="choice-grid ${session.choices.length===3?"three":""}">${session.choices.map(c=>`<button class="choice ${session.answer&&c.id===w.id?"correct":""}" data-answer="${c.id}" aria-label="${esc(c.label)} 선택">${picture(c,session.pictureOverride)}${settings.showLabels?`<span class="word-label">${c.label}</span>`:""}</button>`).join("")}</div><div class="feedback" id="feedback" role="status">${session.feedback||"&nbsp;"}</div>`:
- `<button class="word-card" id="big-card" aria-label="${esc(session.mode==="phrase"?w.phrase:w.label)} 다시 듣기"><span class="picture-tag">${shouldPhoto(w,session.pictureOverride)?"내 사진":"디오라마"}</span><span class="sound-circle">${icon("speaker",20)}</span>${picture(w,session.pictureOverride)}${session.mode==="phrase"?`<span class="phrase-label">${w.phrase.split(" ").map(p=>`<span>${p}</span>`).join("")}</span>`:`<span class="word-label">${w.label}</span>`}</button><p class="card-hint">아이의 말을 기다려 주세요. 따라 말하지 않아도 괜찮아요.</p>`}
+ `<button class="word-card" id="big-card" aria-label="${esc(session.mode==="phrase"?w.phrase:w.label)} 다시 듣기"><span class="picture-tag">${w.category==="characters"?characterImageLabel(w):shouldPhoto(w,session.pictureOverride)?"내 사진":"디오라마"}</span><span class="sound-circle">${icon("speaker",20)}</span>${picture(w,session.pictureOverride)}${session.mode==="phrase"?`<span class="phrase-label">${w.phrase.split(" ").map(p=>`<span>${p}</span>`).join("")}</span>`:`<span class="word-label">${w.label}</span>`}</button><p class="card-hint">아이의 말을 기다려 주세요. 따라 말하지 않아도 괜찮아요.</p>`}
  ${settings.cues?`<aside class="parent-cue"><span class="cue-icon" aria-hidden="true">💬</span><div><small>부모님, 이렇게 말해 보세요</small><p>${find?"먼저 충분히 살펴보게 해주세요. 어려우면 손으로 함께 짚어주세요.":w.prompt}</p></div></aside>`:""}
  <div class="play-controls"><button class="icon-btn" id="previous" aria-label="이전 카드" ${session.index===0?"disabled":""}>${icon("back",23)}</button><button class="primary" id="next">${session.index===session.deck.length-1?"놀이 마무리":"다음 카드"} ${icon("arrow",22)}</button><button class="icon-btn" id="repeat" aria-label="다시 듣기">${icon("speaker",23)}</button></div>
- <div class="audio-source" id="audio-source" role="status"></div><div class="play-subcontrols">${photoFor(w)&&!find?`<button class="text-btn" id="picture-swap">${icon("swap",15)} ${shouldPhoto(w,session.pictureOverride)?"그림으로 보기":"사진으로 보기"}</button>`:""}<button class="text-btn" id="pause">${icon("pause",14)} 잠깐 쉬기</button></div>
+ <div class="audio-source" id="audio-source" role="status"></div><div class="play-subcontrols">${w.category!=="characters"&&photoFor(w)&&!find?`<button class="text-btn" id="picture-swap">${icon("swap",15)} ${shouldPhoto(w,session.pictureOverride)?"그림으로 보기":"사진으로 보기"}</button>`:""}<button class="text-btn" id="pause">${icon("pause",14)} 잠깐 쉬기</button></div>
  </section></div>`;
  bindParentButton();$("#repeat").onclick=sessionAudio;
  if($("#big-card"))$("#big-card").onclick=sessionAudio;
@@ -209,6 +215,7 @@ function showParents(tab="settings"){
 function closeParents(){
  if(recordBusy())return toast("녹음을 멈추고 저장이 끝난 뒤 닫아주세요.");
  if(pendingRecording)return toast("아직 저장되지 않은 녹음이 있어요. 다시 저장하거나 파일로 보관해 주세요.");
+ if(characterJob)return toast("캐릭터 받기를 멈추거나 마친 뒤 닫아주세요.");
  if(aiJob)return toast("음성 준비를 멈추거나 완료한 뒤 닫아주세요.");
  aiToken="";AudioEngine.stop();$("#parents-dialog").close();
  if(session&&!session.finished){session.paused=false;session.lastTick=performance.now()}
@@ -216,10 +223,11 @@ function closeParents(){
 }
 function renderParents(){
  const d=$("#parents-dialog");
- d.innerHTML=`<header class="dialog-head"><div><h2>부모님 공간</h2><p>설정은 단순하게, 놀이는 다정하게</p></div><button class="icon-btn" id="close-parents" aria-label="부모 설정 닫기">${icon("close",20)}</button></header><div class="dialog-body"><nav class="tabs">${[["settings","놀이 설정"],["voices","음성 선택"],["studio","부모 녹음"],["library","카드 관리"],["offline","저장·백업"],["guide","사용 안내"]].map(([id,label])=>`<button class="${parentTab===id?"active":""}" data-tab="${id}">${label}</button>`).join("")}</nav><div id="parent-content"></div></div>`;
+ d.innerHTML=`<header class="dialog-head"><div><h2>부모님 공간</h2><p>설정은 단순하게, 놀이는 다정하게</p></div><button class="icon-btn" id="close-parents" aria-label="부모 설정 닫기">${icon("close",20)}</button></header><div class="dialog-body"><nav class="tabs">${[["settings","놀이 설정"],["characters","캐릭터"],["voices","음성 선택"],["studio","부모 녹음"],["library","카드 관리"],["offline","저장·백업"],["guide","사용 안내"]].map(([id,label])=>`<button class="${parentTab===id?"active":""}" data-tab="${id}">${label}</button>`).join("")}</nav><div id="parent-content"></div></div>`;
  $("#close-parents").onclick=closeParents;
- $$("[data-tab]",d).forEach(b=>b.onclick=()=>{if(recordBusy()||pendingRecording||aiJob){toast("진행 중인 녹음·저장을 먼저 마쳐주세요.");return}parentTab=b.dataset.tab;editId=null;renderParents()});
+ $$("[data-tab]",d).forEach(b=>b.onclick=()=>{if(recordBusy()||pendingRecording||aiJob||characterJob){toast("진행 중인 녹음·저장을 먼저 마쳐주세요.");return}parentTab=b.dataset.tab;editId=null;renderParents()});
  if(parentTab==="settings")renderSettings();
+ else if(parentTab==="characters")renderCharacters();
  else if(parentTab==="voices")renderVoices();
  else if(parentTab==="studio")renderStudio();
  else if(parentTab==="library")editId?renderEditor():renderLibrary();
@@ -242,8 +250,8 @@ function renderSettings(){
  ${selectField("카드 수","count",[[4,"4장"],[6,"6장 · 추천"],[8,"8장"]])}
  ${selectField("마무리 안내","minutes",[[1,"1분"],[3,"3분 · 추천"],[5,"5분"]])}
  ${selectField("찾기 선택지","choices",[[2,"2장 · 추천"],[3,"3장"]])}
- ${selectField("카드 그림","picture",[["diorama","디오라마 그림으로 통일 · 기본"],["custom","내가 등록한 사진 우선"]])}
- <p>60장의 기본 그림은 모두 같은 미니어처 일러스트입니다. 기존 사진은 삭제하지 않고 보관합니다.</p>
+ ${selectField("일반 카드 그림","picture",[["diorama","디오라마 그림으로 통일 · 기본"],["custom","내가 등록한 사진 우선"]])}
+ <p>동물·과일·야채·탈것·음식 52장에만 적용됩니다. <b>캐릭터는 별도로 원본/등록 이미지를 보여요.</b> 기존 사진는 지우지 않습니다.</p>
  ${toggleField("다음 카드에서 자동으로 읽기","autoRead")}
  ${toggleField("부모 대화 문구 표시","cues")}
  ${toggleField("찾기 놀이에 낱말 글자 표시","showLabels")}</section>
@@ -292,9 +300,9 @@ function bindRecordRows(){
 
 function renderLibrary(){
  const list=WORDS.filter(w=>w.category===libCat&&w.label.includes(search));
- $("#parent-content").innerHTML=`<section class="setting-block"><h3>60장의 작은 디오라마</h3><p>모든 기본 카드는 같은 배경·조명·입체감으로 통일했습니다. 카드에서 사진을 바꾸거나 목소리를 녹음할 수 있습니다.</p><div class="library-top"><select id="lib-category" aria-label="꾸밀 주제">${CATS.map(c=>`<option value="${c.id}" ${libCat===c.id?"selected":""}>${c.label}</option>`).join("")}</select><input id="lib-search" value="${esc(search)}" placeholder="낱말 찾기" aria-label="낱말 검색"></div>
- ${libCat==="characters"?`<p class="soft-note">캐릭터를 단순화해 새로 그린 미니어처풍 그림입니다. 공식 원화나 실제 3D 모델은 아닙니다.</p>`:""}
- <div class="library-list">${list.map(w=>`<button class="lib-item" data-edit="${w.id}"><span class="lib-thumb"><img src="${artFor(w)}" alt=""></span><span><strong>${w.label}</strong><small>디오라마${photoFor(w)?" · 내 사진 보관":""}${media.has("word:"+w.id)?" · 부모 녹음":""}</small></span></button>`).join("")||"<p>해당하는 낱말이 없어요.</p>"}</div></section>`;
+ $("#parent-content").innerHTML=`<section class="setting-block"><h3>카드 관리</h3><p>일반 낱말 52장 + 원본 캐릭터 20명. 그림을 바꾸거나 목소리를 녹음해요.</p><div class="library-top"><select id="lib-category" aria-label="꾸밀 주제">${CATS.map(c=>`<option value="${c.id}" ${libCat===c.id?"selected":""}>${c.label}</option>`).join("")}</select><input id="lib-search" value="${esc(search)}" placeholder="낱말 찾기" aria-label="낱말 검색"></div>
+ ${libCat==="characters"?`<p class="soft-note">캐릭터 탭에서 원본을 받거나 카드를 눌러 내 이미지를 넣어요. 이미지가 준비된 카드만 놀이에 나와요.</p>`:""}
+ <div class="library-list">${list.map(w=>`<button class="lib-item" data-edit="${w.id}"><span class="lib-thumb"><img src="${artFor(w)}" alt=""></span><span><strong>${w.label}</strong><small>${w.category==="characters"?characterImageLabel(w):"디오라마"}${photoFor(w)?" · 내 사진 보관":""}${media.has("word:"+w.id)?" · 부모 녹음":""}</small></span></button>`).join("")||"<p>해당하는 낱말이 없어요.</p>"}</div></section>`;
  $("#lib-category").onchange=e=>{libCat=e.target.value;search="";renderLibrary()};
  $("#lib-search").oninput=e=>{search=e.target.value;const pos=e.target.selectionStart;renderLibrary();const i=$("#lib-search");i.focus();i.setSelectionRange(pos,pos)};
  $$("[data-edit]").forEach(b=>b.onclick=()=>{editId=b.dataset.edit;renderEditor()});
@@ -306,7 +314,7 @@ function renderEditor(){
  $("#parent-content").innerHTML=`<button class="back-editor" id="back-library">${icon("back",16)} 카드 목록</button><section class="setting-block"><h3>${w.label} 카드</h3>
  <div class="editor-picture">${picture(w)}</div>
  <div class="editor-actions"><button class="secondary" id="add-photo">${icon("photo",16)} 내 사진 등록</button>${media.has("photo:"+w.id)?`<button class="secondary" id="delete-photo">내 사진 지우기</button>`:""}</div>
- <p class="soft-note">기본은 디오라마 그림입니다. 등록한 사진은 ‘놀이 설정 → 내가 등록한 사진 우선’에서 표시합니다.</p></section>
+ <p class="soft-note">${w.category==="characters"?"캐릭터에 등록한 이미지는 일반 카드 설정과 관계없이 바로 적용돼요. 내 이미지를 지우면 저장된 원본으로 돌아갑니다.":"일반 카드는 기본 디오라마로 표시됩니다. 등록 사진을 보려면 놀이 설정에서 내가 등록한 사진 우선을 고르세요."}</p></section>
  <section class="setting-block"><h3>이 카드의 부모 목소리</h3><p>낱말·두 낱말·찾기 질문은 서로 다른 녹음입니다. 각 항목의 ‘저장한 소리’로 확인하세요.</p>
  ${recordRow("word:"+w.id,w.label)}${recordRow("phrase:"+w.id,w.phrase)}
  <details><summary class="text-btn">아이별 찾기 질문 녹음</summary>${Object.entries(PROFILES).map(([id,p])=>recordRow("ask:"+w.id+":"+id,`${p.call}, ${w.label} 어디 있을까?`)).join("")}</details>
@@ -320,6 +328,7 @@ function renderEditor(){
 
 function refreshParentContent(){
  if(parentTab==="settings")renderSettings();
+ else if(parentTab==="characters")renderCharacters();
  else if(parentTab==="voices")renderVoices();
  else if(parentTab==="studio")renderStudio();
  else if(parentTab==="library"){if(editId)renderEditor();else renderLibrary()}
@@ -344,9 +353,10 @@ $("#image-input").onchange=async e=>{
 
 
 function renderOffline(){
- const n=[...media.keys()].filter(k=>!k.startsWith("photo:")&&!k.startsWith("ai:")).length;
+ const n=[...media.keys()].filter(k=>!k.startsWith("photo:")&&!k.startsWith("ai:")&&!k.startsWith("character:")).length;
  $("#parent-content").innerHTML=`<section class="setting-block"><h3>저장·오프라인 상태 <small>v${DATA.version}</small></h3>
- <div class="health-row"><span>앱·60장 그림</span><strong class="${coreReady?"":"warn"}">${coreReady?"이 기기에 준비됨":"온라인에서 저장 확인 필요"}</strong></div>
+ <div class="health-row"><span>앱·일반 그림 52장</span><strong class="${coreReady?"":"warn"}">${coreReady?"이 기기에 준비됨":"온라인에서 저장 확인 필요"}</strong></div>
+ <div class="health-row"><span>원본/등록 캐릭터</span><strong>${characterCount()}/20명 준비</strong></div>
  <div class="health-row"><span>기기 저장소</span><strong>${storageOK?"연결됨":"연결 확인 필요"}</strong></div>
  <div class="health-row"><span>부모·기존 녹음</span><strong>${n}개</strong></div>
  <div class="health-row"><span>AI 음성팩</span><strong>${[...media.keys()].filter(k=>k.startsWith("ai:")).length}개 저장됨</strong></div>
@@ -360,7 +370,7 @@ function renderOffline(){
  <section class="setting-block"><h3>업데이트와 실제 확인</h3><p>같은 운영 주소를 계속 사용하세요. 업데이트를 위해 Safari 데이터를 지우거나 앱을 삭제하지 마세요. 먼저 백업을 받으세요.</p>
  <div class="btn-row"><button class="secondary" id="check-update">새 버전 확인</button><button class="secondary" id="offline-voice">이름 소리 확인</button></div>
  <p>비행기 모드로 전환한 뒤 앱을 닫았다 다시 열어 그림과 소리를 확인하세요. 0ms 지연은 보장하지 않습니다.</p></section>`;
- $("#check-offline").onclick=async()=>{await checkCache();renderOffline();toast(coreReady?"앱과 그림 60장의 캐시를 확인했어요.":"온라인 상태로 다시 열어 저장을 기다려주세요.")};
+ $("#check-offline").onclick=async()=>{await checkCache();renderOffline();toast(coreReady?"앱과 일반 그림 52장의 캐시를 확인했어요. 캐릭터는 별도 저장 수를 확인해주세요.":"온라인 상태로 다시 열어 저장을 기다려주세요.")};
  $("#reconnect-storage").onclick=async()=>{try{if(db)db.close();db=null;await openDB();renderOffline();toast("저장소를 다시 연결했습니다.")}catch{toast("저장소를 열지 못했어요. 일반 Safari 또는 홈 화면 앱에서 다시 확인해 주세요.")}};
  $("#persist-storage").onclick=async()=>{
   let ok=false;try{ok=await navigator.storage?.persist?.()}catch{}
@@ -379,7 +389,7 @@ function renderGuide(){
  $("#parent-content").innerHTML=`<section class="setting-block"><h3>함께 보고, 듣고, 말하기</h3><p>아이를 고르고 주제와 놀이를 선택하세요. 큰 그림을 누르면 낱말을 읽습니다. 정답·속도보다 함께 나누는 말이 먼저입니다.</p><p>아이의 발음을 자동 평가하거나 녹음·전송하지 않습니다. 부모님이 녹음 시작을 누른 동안만 마이크를 사용합니다.</p></section>
  <section class="setting-block"><h3>녹음은 항목별로 적용됩니다</h3><p>‘사과’ 녹음은 낱말 보기에, ‘빨간 사과’ 녹음은 두 낱말에, ‘은설아, 사과 어디 있을까?’ 녹음은 은설의 듣고 찾기에 적용됩니다. 이름 인사는 별도 녹음입니다.</p><p>저장 완료 후 직접 재생하고, 앱을 다시 열어 한 번 더 확인하세요.</p></section>
  <section class="setting-block"><h3>음성 선택</h3><p>부모 녹음 → 준비된 AI 음성팩 → 기기의 한국어 합성음성 순서입니다. AI 준비는 부모님이 명시적으로 실행한 경우에만 인터넷을 사용합니다. 아이의 놀이 중에 API를 호출하지 않습니다.</p></section>
- <section class="setting-block"><h3>기억해 주세요</h3><p>이 앱은 지능 향상·언어 발달 효과를 보장하거나 발달을 평가하지 않습니다. 3분은 앱의 기본 설정입니다. 화면에서 본 물건을 실제 생활에서 함께 찾아보세요.</p><p>캐릭터 그림은 원화를 제공받은 것이 아니라 특징을 단순화한 비공식 일러스트입니다.</p></section>`;
+ <section class="setting-block"><h3>기억해 주세요</h3><p>이 앱은 지능 향상·언어 발달 효과를 보장하거나 발달을 평가하지 않습니다. 3분은 앱의 기본 설정입니다. 화면에서 본 물건을 실제 생활에서 함께 찾아보세요.</p><p>캐릭터는 확인한 원본 또는 부모가 등록한 이미지를 사용합니다. 캐릭터 탭에서 출처와 저장 상태를 확인해주세요.</p></section>`;
 }
 
 function showHelp(){
@@ -413,7 +423,7 @@ async function installWorker(){
 $("#parents-dialog").addEventListener("cancel",e=>{e.preventDefault();closeParents()});
 $("#pause-dialog").addEventListener("cancel",e=>{e.preventDefault();if(session){$("#pause-dialog").close();session.paused=false;session.lastTick=performance.now()}});
 window.addEventListener("pagehide",()=>{AudioEngine.stop();if(recording)stopRecording()});
-window.addEventListener("beforeunload",e=>{if(recordBusy()||pendingRecording){e.preventDefault();e.returnValue=""}});
+window.addEventListener("beforeunload",e=>{if(recordBusy()||pendingRecording||characterJob){e.preventDefault();e.returnValue=""}});
 window.addEventListener("online",()=>checkCache());
 window.addEventListener("offline",()=>checkCache());
 if("speechSynthesis"in window){speechSynthesis.addEventListener("voiceschanged",()=>{AudioEngine.initVoices();if(parentTab==="voices"&&$("#parents-dialog").open&&!aiJob&&!recordBusy())renderVoices()})}
@@ -430,4 +440,4 @@ window.addEventListener("keydown",e=>{
  renderHome();installWorker();
 })();
 // Exposed read-only diagnostics for testing and troubleshooting; no private data is sent.
-window.wordGardenDiagnostics=()=>({screen,readyCards:readyWords().length,localVoices:AudioEngine.voices.length,coreReady,storageOK,version:DATA.version,mediaCount:media.size,recordState,unsavedRecording:!!pendingRecording,lastAudioSource:AudioEngine.lastSource});
+window.wordGardenDiagnostics=()=>({screen,readyCards:readyWords().length,localVoices:AudioEngine.voices.length,coreReady,storageOK,version:DATA.version,characterImages:characterCount(),mediaCount:media.size,recordState,unsavedRecording:!!pendingRecording,lastAudioSource:AudioEngine.lastSource});

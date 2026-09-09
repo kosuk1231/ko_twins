@@ -1,143 +1,95 @@
-# 말랑말랑 낱말정원 1.2.0
+# 말랑말랑 낱말정원 v1.3.0
 
-고은설·고은채와 부모가 함께 사용하는 한국어 낱말 카드놀이 웹앱입니다.
-이 ZIP은 GitHub → Vercel 배포용 소스입니다. 이 파일을 전달하는 것으로 저장소나 사이트가 자동 업데이트되지는 않습니다.
+## 무엇이 달라졌나요?
 
-## 이번 변경
+캐릭터를 AI로 다시 그리지 않고, 확인한 원본 이미지를 받아 저장하도록 변경했습니다. 일반 카드 52장과 캐릭터 20명, 최대 72장으로 놀 수 있습니다.
 
-- 동물 12 / 과일 8 / 야채 10 / 탈것 12 / 음식 10 / 캐릭터 8 = 60장.
-- 60장 모두 같은 미니어처 디오라마풍 SVG 일러스트입니다. 이모지·사진 혼합이 기본이 아닙니다.
-- 기본 캐릭터 8장도 새로 그린 비공식 일러스트입니다. 공식 원화·실제 3D 모델이 아닙니다.
-- 기존 부모 사진은 삭제하지 않습니다. 놀이 설정에서 ‘내가 등록한 사진 우선’으로 선택할 수 있습니다.
-- 실제 기기에서 제공되는 한국어 로컬 음성 목록, 5가지 속도·높낮이 스타일.
-- 선택형 OpenAI AI 음성팩 6종: Coral / Nova / Shimmer / Alloy / Onyx / Sage.
-- 부모 녹음: 연속 녹음 화면, 저장 완료 후 독립 읽기 확인, 직접 재생, 이전 녹음 되돌리기, 실패 시 재저장·파일 보관.
-- 네 가지 놀이와 이름 부르기, 기본 6장·3분 마무리 안내는 유지합니다.
+## 먼저 알아두세요
 
-## 1. 먼저 기존 앱에서 백업
+ZIP에 원본 캐릭터 이미지 파일 20장이 미리 들어 있는 방식은 아닙니다. 배포 후 앱에서 처음 한 번 온라인으로 받아야 합니다. 성공적으로 저장된 이미지는 이후 오프라인으로 사용합니다. 처음에는 준비된 일반 카드 52장만 나옵니다.
 
-기존 앱의 부모 → 오프라인(새 버전은 저장·백업) → 백업 파일 저장을 이용하세요.
-업데이트 때문에 웹사이트 데이터를 지우거나 홈 화면 앱을 삭제하지 마세요.
-앱에서 만든 개인 백업 JSON, 부모 음성, 가족 사진은 GitHub에 올리지 마세요.
+## 1. 기존 목소리와 사진 백업
+
+기존 앱에서 부모 → 저장·백업 → 백업 파일 저장을 눌러주세요. 이전 버전에서는 탭 이름이 오프라인일 수 있습니다. 업데이트를 위해 Safari 데이터를 삭제하거나 홈 화면 앱을 지우지 마세요. 앱의 저장소 이름과 기존 녹음 키는 그대로 유지했습니다.
 
 ## 2. GitHub → Vercel 업데이트
 
-ZIP 압축을 풀고 저장소 최상위의 파일을 교체합니다.
-`index.html`, `sw.js`, `manifest.webmanifest`, `assets/`, `api/`, `speech-content.json`, `vercel.json` 등이 저장소 최상위에 있어야 합니다.
-ZIP 자체를 올리거나 index.html만 바꾸면 안 됩니다.
+ZIP을 풀고 안에 있는 모든 파일과 폴더를 기존 저장소 최상위에 올려주세요. index.html만 교체하면 안 됩니다. api/character.js, character-sources.json, vercel.json, sw.js, assets도 함께 올리세요. 기존 Other / Build Command 비움 / Output Directory . 설정을 유지합니다. 이 ZIP은 수정본이며, 이미 사용자님 계정에 배포된 것은 아닙니다.
 
-Vercel 설정:
-- Framework Preset: Other
-- Root Directory: index.html이 있는 저장소 최상위
-- Build Command: 비움
-- Output Directory: `.`
-- Install Command: 기본값
-- Node.js: 22.x (package.json에 명시)
-- 앱은 미리 빌드되어 있으므로 Vercel에서 Python 빌드를 실행할 필요가 없습니다.
-- vercel.json에 기본 배포 설정 및 /api/speech 함수 설정이 들어 있습니다.
+## 3. 새 버전 확인
 
-기존 운영 주소를 유지하고 Vercel 재배포가 완료된 뒤 온라인에서 앱을 여세요.
-새 서비스워커가 준비되면 앱을 완전히 닫았다 다시 열어 첫 화면의 v1.2.0을 확인하세요.
-이전 코드와 같은 IndexedDB `word-garden`, `media` 저장소를 사용합니다.
-당근·옥수수·고구마의 카드 ID는 바꾸지 않았습니다. 이전 ‘사람’ 카드 자료도 삭제하지 않고 백업합니다.
-다른 Vercel 프로젝트/새 도메인/다른 브라우저/아이폰과 아이패드의 저장소는 별개일 수 있습니다.
+계속 같은 운영 주소를 사용하세요. 온라인에서 부모 → 저장·백업 → 새 버전 확인을 누르고 앱을 완전히 닫았다 다시 열어 v1.3.0을 확인하세요.
 
-## 3. 부모 목소리 녹음
+## 4. 원본 20장 받기
 
-부모 버튼을 1.2초 길게 누르기 → 부모 녹음.
-주제와 녹음할 항목을 고르고:
-**녹음 시작 → 말하기 → 멈추고 저장 → 저장·재확인 완료 → 저장한 소리**
+부모 버튼 1.2초 길게 누르기 → 캐릭터 → 원본 20장 받기. 저장소에 쓴 뒤 다시 읽어 확인한 항목만 완료로 표시합니다. 전부 받으면 20 / 20입니다. 중간에 실패하면 다시 눌러 빠진 원본만 받으세요. 기존 사진과 녹음은 덮어쓰지 않습니다.
 
-- 녹음은 최대 12초. 너무 짧거나 빈 녹음은 기존 파일을 덮어쓰지 않습니다.
-- 저장 트랜잭션 완료를 기다린 뒤 저장소를 별도로 다시 읽고 값을 비교합니다.
-- 저장 완료에는 날짜·시간과 길이를 표시합니다. 재생 버튼은 직접 눌러 확인합니다.
-- 새 녹음이 성공하면 이전 녹음 한 개를 되돌릴 수 있습니다.
-- 실패하면 기존 저장을 즉시 삭제하지 않고 새 Blob을 임시 보관합니다. ‘다시 저장’ 또는 ‘녹음 파일 보관’을 사용하세요.
-- 임시 녹음은 메모리에만 있으므로 페이지를 닫으면 잃을 수 있습니다. 저장 오류가 나면 앱을 닫기 전에 파일로 보관하세요.
-- 화면 전환·녹음 중복 시작·저장 중 닫기를 차단합니다. 기기 강제 종료나 운영체제에 의한 종료까지 막지는 못합니다.
-- 녹음 중 다른 앱으로 이동하거나 화면을 잠그지 말고 저장 완료까지 기다리세요.
+## 5. 이미지 설정은 따로
 
-적용 범위는 항목마다 다릅니다.
-‘강아지’ = 낱말 보기 / 해당 짧은 문장 = 두 낱말 / 아이별 질문 = 듣고 찾기.
-‘은설아, 같이 놀자.’ 등 이름 녹음은 아이 선택 및 놀이 시작 인사에 적용됩니다.
-이름을 녹음했다고 모든 낱말이 부모 목소리로 바뀌는 기능이나 음성 복제 기능은 아닙니다.
-부모 녹음 또는 기존에 가져온 낱말 음성이 있으면 항상 그 파일이 먼저 재생됩니다.
+동물·과일·야채·탈것·음식은 기본 그림으로 통일합니다. 기존 고양이 사진은 지우지 않고 보관하되, 버전 변경 후 첫 설정은 그림 우선으로 설정합니다. 캐릭터는 부모가 넣은 이미지 → 저장된 원본 순서로 표시합니다. 일반 카드의 사진 설정을 변경할 필요가 없습니다.
 
-## 4. 합성음성
+## 6. 내 이미지로 바꾸기
 
-### 별도 API 설정 없이
-부모 → 음성 선택 → 이 기기의 한국어 음성.
-브라우저가 공개하는 로컬 한국어 목소리만 보여줍니다. 목록의 종류와 수는 기기마다 다릅니다.
-‘다정하게·밝게·차분하게·또박또박·이야기하듯’은 같은 목소리의 속도와 높낮이 프리셋입니다.
-서로 다른 다섯 명의 목소리인 것처럼 표시하지 않습니다.
+부모 → 캐릭터 → 해당 캐릭터의 내 그림도 넣기 / 녹음 → 내 사진 등록. JPG/PNG를 선택하면 바로 적용됩니다. 등록 이미지를 삭제하면 저장된 원본으로 돌아갑니다. 기존 20명의 이미지 교체를 지원하며, 새 캐릭터 이름의 자유 추가는 아직 지원하지 않습니다.
 
-### 서로 다른 AI 목소리 6종
-AI 생성 파일은 ZIP에 미리 들어 있지 않습니다. 실제 생성을 하려면 아래 설정이 필요합니다.
-이 모드는 선택 사항이며 설정하지 않아도 부모 녹음과 기기 음성으로 사용할 수 있습니다.
+## 7. 소리와 오프라인 확인
 
-Vercel 프로젝트 Settings → Environment Variables에:
-1. `OPENAI_API_KEY`: 사용할 OpenAI 프로젝트의 API 키.
-2. `WORD_GARDEN_PARENT_TOKEN`: 본인이 만든 32자 이상의 무작위 비밀 문자열.
+받은 캐릭터 그림은 목소리 파일이 아닙니다. 음성은 기존처럼 부모 녹음 → 준비된 AI 음성 → 기기 음성 순서입니다. 이미지 받기에는 API 키가 필요 없지만 AI 음성 생성은 기존처럼 별도 설정과 비용이 필요합니다. 비행기 모드에서 앱을 닫았다 다시 열어 그림과 녹음을 각각 확인하세요. 아이폰과 아이패드는 각각 저장하거나 백업으로 옮겨야 합니다.
 
-Mac에서 비밀 문자열 예시를 만들려면 터미널에서 `openssl rand -hex 24`를 실행하세요.
-두 값을 저장한 뒤 Vercel에서 Redeploy합니다.
-API 키는 브라우저 앱·GitHub·이 채팅에 넣지 마세요. 부모 생성 암호는 서버에 설정한 TOKEN 값입니다.
+## 실패했을 때
 
-앱 → 부모 → 음성 선택 → AI 목소리 고르기 → AI 음성 만들기 설정 펼치기 → 생성 암호 입력.
-먼저 ‘샘플 1개 만들기’로 발음과 분위기를 확인한 다음 원하는 주제만 준비하세요.
-한국어를 지원하지만 목소리는 영어에 최적화되어 있어 한국어 발음 차이가 있을 수 있습니다.
+api 폴더 배포 확인이면 api/character.js가 함께 배포됐는지 확인하세요. 원본 받기 또는 저장 실패는 원본 서버 응답, 네트워크, 기기 저장소 문제일 수 있습니다. 실패 상태를 완료로 표시하지 않습니다. 받기가 계속 실패하면 같은 카드에 직접 이미지를 넣을 수 있습니다.
 
-- OpenAI `gpt-4o-mini-tts`로 MP3를 생성합니다. 실제 사람이 녹음한 소리가 아닌 AI 합성음성입니다.
-- ‘생성’ 확인을 누를 때에만 서버에 요청합니다. API 사용료가 발생합니다.
-- 부모 음성이나 사진은 전송하지 않습니다. 생성할 낱말·문장에는 아이 이름이 포함될 수 있으며 이 텍스트가 OpenAI로 전송됩니다.
-- 샘플은 1개, 주제 전체는 해당 주제 카드의 낱말·문장·아이별 질문과 공통 인사·안내를 포함합니다.
-- 이미 저장된 항목은 다시 생성하지 않습니다. 도중에 멈추거나 오류가 나면 다음에 부족한 파일만 이어서 준비합니다.
-- 화면을 닫지 않고 준비 완료를 기다리세요. 중간에 앱을 종료하면 진행 중이던 요청은 과금되었어도 기기에 저장되지 않았을 수 있습니다.
-- AI는 `ai:목소리:항목`에 별도 저장합니다. 부모 녹음 키를 덮어쓰지 않습니다.
-- 아이 놀이 중에는 생성 API를 호출하지 않습니다. 저장된 파일만 재생하고, 부족한 항목은 기기 음성으로 읽습니다.
-- 각 목소리·각 기기는 별도로 준비해야 합니다. 백업/복원으로 음성팩도 옮길 수 있습니다.
-- 생성 암호는 부모 화면을 닫으면 지우고, 로컬 설정이나 백업에는 넣지 않습니다.
-- 서버는 6종 목소리와 고정된 306개 문장만 허용합니다. 임의 텍스트 생성 대행 프록시가 아닙니다.
-- 90회/분 제한은 함수 인스턴스 단위의 보조 제한이지 전역 과금 한도가 아닙니다. OpenAI 프로젝트 사용 한도·예산 알림과 필요시 Vercel 접근 보호를 설정하세요.
+## 확인한 범위와 아직 남은 확인
 
-## 5. 오프라인 최종 확인
+화면·녹음·저장 실패 처리·백업·캐시·API 검사를 실행했습니다. 저장소와 원격 응답은 모의 환경을 포함합니다. 실제 Vercel에서의 원본 다운로드, 아이폰·아이패드의 마이크와 오프라인 재실행은 아직 확인하지 못했습니다. 그림을 받은 후의 테스트 화면은 실제 캐릭터 원본이 아닌 검사용 도형으로 확인했습니다.
 
-같은 운영 주소를 아이폰/아이패드 Safari에서 열고 공유 → 홈 화면에 추가.
-홈 화면의 새 아이콘으로 온라인에서 한 번 실행하고 ‘화면 저장됨’을 확인합니다.
-부모 → 저장·백업에서 앱·그림 60장, 저장소 및 음성 상태를 확인하세요.
-비행기 모드 → 앱을 닫고 다시 실행 → 그림과 부모 녹음, 선택한 AI팩/기기 음성을 각각 시험하세요.
+## 확인한 캐릭터
 
-‘화면 저장됨’은 음성까지 전부 준비되었다는 뜻이 아닙니다.
-목소리 파일을 만들지 않은 항목은 해당 기기의 한국어 음성이 필요합니다.
-카드 전환은 네트워크를 기다리지 않습니다. 첫 오디오 초기화·Bluetooth·기기 상태에 따른 지연이나 0ms를 보장하지는 않습니다.
-브라우저의 데이터 삭제, 저장 공간 관리, 장기 미사용 등에 의한 데이터 삭제를 완전히 막을 수 없습니다.
-사진·목소리 백업 파일을 별도로 보관하세요. 자동 클라우드 동기화는 없습니다.
+**뽀로로 9명**: 뽀로로, 크롱, 루피, 에디, 포비, 패티, 해리, 로디, 통통이
 
-## 개인정보·접근 범위
+**아기상어 11명**: 아기상어 올리, 아빠 상어, 엄마 상어, 할아버지 상어, 할머니 상어, 윌리엄, 치치, 레이, 쌩쌩이, 몰라몰라, 레오
 
-부모 사진·녹음은 이 브라우저의 저장소에만 보관하고, 앱에서 서버로 업로드하지 않습니다.
-다만 기본 소스에는 은설·은채 이름이 들어 있습니다. 배포된 공개 화면과 소스를 통해 이 이름이 보일 수 있습니다.
-GitHub 저장소의 Private 설정이 배포 사이트 접근까지 자동으로 막아주지는 않습니다.
-부모 버튼의 길게 누르기는 아이의 오조작 방지용이며 로그인이나 접근 인증이 아닙니다.
-생성 암호는 유료 AI 생성만 보호합니다. 앱 전체를 비공개로 만들려면 호스팅 접근 보호를 별도로 검토하세요.
+뽀로로파크 요청 페이지는 열리지 않아 아이코닉스 공식 자료로 대신 확인했습니다. 아기상어는 사용자가 보내준 With HS 게시물에서 이름과 이미지를 확인했습니다. 블로그 글에 표시된 이미지 출처는 KBS입니다. 앱은 설명 글자 부분을 제외하고 캐릭터 영역을 잘라 표시합니다. 모습을 새로 생성하지 않습니다.
+네이버 링크는 본문을 확인할 수 없어 미반영입니다. 해당 글의 캐릭터를 추측해 넣지 않았습니다.
+이미지의 별도 이용허락을 확보한 것은 아닙니다. 출처를 표기했다고 공개 배포 또는 상업적 사용에 대한 허락을 의미하지 않습니다.
 
-## 개발 소스
+## Technical layout
 
-app.js: 화면 및 게임 / audio.js: 재생 우선순위 / recording.js: 녹음 상태·확인
-storage.js: 저장·복원 / voices.js: 음성 설정과 AI 준비
-content.json: 카드 / assets/cards: 그림 / api/speech.js: 서버 전용 생성
-build.py: 단일 index.html·sw.js·speech-content.json 생성 / make_art.py: 기본 그림 재생성
+- Runtime: static `index.html` + generated `sw.js`; two Node Vercel Functions in `api/`.
+- Source: `app.js`, `audio.js`, `storage.js`, `recording.js`, `voices.js`, `characters.js`, `styles.css`, `content.json`, `template.html`.
+- `python3 build.py` regenerates `index.html`, `speech-content.json` (366 fixed phrases) and `sw.js` (58 unique core files).
+- `character-sources.json`: 20 fixed public image URLs, attribution, expected source crop rectangles and series labels.
+- `/api/character?id=pororo` relays only allowlisted images. It does not accept arbitrary URLs, text, credentials or user media. It enforces HTTPS, known image identity, redirect validation, response byte/type checks and timeouts.
+- For Tistory, signed links are refreshed from the supplied public mobile article. A signature is never removed or bypassed. Source removal or layout changes can still cause failures.
+- Source images are normalized locally onto a 640 x 640 white canvas. Shark character areas are cropped from the article screenshots; no generative image service is used.
+- Prepared artwork is stored under `character:<id>`, separate from custom `photo:<id>` and audio. Rendering and gameplay do not fetch remote images after preparation.
+- The IndexedDB database name/version remains `word-garden` / 1. Existing media key IDs, including the original eight character IDs, are unchanged. One-time `picturePolicy:2` migration sets ordinary cards to the uniform art without deleting saved photos.
+- Ready-card count initially 52; max 72. Only characters with prepared images or parent-added images participate.
+- Character series filters: all, pororo (9), babyshark (11).
+- Backup schema stays 2 and accepts schema 1. New character artwork is included in backup/restore; tokens are never included.
 
-소스를 수정한 뒤 `python3 build.py`로 다시 빌드하세요.
-새 버전을 배포할 때 content.json의 version과 app.js의 SW_VERSION도 일치시켜 올리세요.
-브라우저 데이터베이스 이름이나 녹음 키는 함부로 변경하지 마세요.
+## Optional speech (unchanged from v1.2)
 
-## 검증 범위
+Image preparation needs NO OpenAI key or parent token. Existing optional AI speech still requires the following SERVER environment variables in Vercel:
 
-브라우저 UI 14항목, 서비스워커/캐시 모의 테스트 5항목, 서버/API 모의 테스트 4항목이 통과했습니다.
-MediaRecorder는 브라우저에서 생성한 시험 신호를 실제로 인코딩했습니다.
-이 환경에서는 주소 탐색이 제한되어 IndexedDB 전송·기기 음성·서버 응답은 모의 환경으로 검사했습니다.
-실제 iPhone/iPad 마이크, 실제 IndexedDB 보존, 설치된 PWA의 비행기 모드 재실행, 라이브 OpenAI 생성·음질은 미검증입니다.
-TESTING.md 및 tests/에 범위와 재현 코드가 있습니다.
+```
+OPENAI_API_KEY=<your-project-key>
+WORD_GARDEN_PARENT_TOKEN=<at-least-32-random-characters>
+```
 
-이 앱은 발달 평가나 치료 도구가 아니며 지능·언어 발달 향상을 보장하지 않습니다.
+Never commit those secrets. Only the parent token (not the API key) is entered in the parent's speech generation UI. Paid provider speech is explicitly generated on request, not in gameplay. The ZIP does not contain synthesized speech files. An unprepared AI voice falls back to local device speech; the UI shows zero saved items as unprepared.
+
+## Tests
+
+```
+python3 tests/test_characters_browser.py
+python3 tests/test_general.py
+node tests/test_characters_api.js
+node tests/test_api.js
+node tests/test_sw.js
+```
+
+Python tests require Playwright, Pillow and Chromium. The browser executable path is `/usr/bin/chromium`; adjust it for another environment. Browser navigation was blocked in the build environment, so tests use in-memory documents, simulated IndexedDB transport and simulated network responses. Actual image decode/crop/encode and MediaRecorder encoding ran in Chromium. Do not treat that as proof of physical iOS storage durability or deployed original-image availability. See TESTING.md.
+
+This package is not deployed to any user account. A local Python static server supports UI checks only; it cannot execute Vercel `/api/` endpoints. Deploy the complete folder to test original-image preparation.

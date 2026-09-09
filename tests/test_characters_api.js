@@ -1,0 +1,37 @@
+'use strict';
+const assert=require('node:assert/strict');
+const handler=require('../api/character.js'),sources=require('../character-sources.json');
+const t=handler._test;
+const png=Buffer.concat([Buffer.from([137,80,78,71,13,10,26,10]),Buffer.alloc(100)]);
+function response(){return {statusCode:0,headers:{},data:null,setHeader(k,v){this.headers[k]=v;},status(n){this.statusCode=n;return this;},json(v){this.data=v;return this;},send(v){this.data=v;return this;}}}
+(async()=>{
+ assert.equal(sources.length,20);assert.equal(new Set(sources.map(s=>s.id)).size,20);
+ console.log('PASS 20 unique source-to-character mappings');
+ const source=sources.find(s=>s.id==='babyshark');
+ const publicURL=source.url.replace(/expires=\d+/,'expires=1990780399');
+ assert.equal(t.imageURLFromHTML('<img src="'+publicURL.replace(/&/g,'&amp;')+'">',source),publicURL);
+ assert.equal(t.imageURLFromHTML('<img src="https://evil.example/x.png">',source),null);
+ assert.throws(()=>t.allowURL('https://blog.kakaocdn.net.evil.example/image','image',source));
+ assert.throws(()=>t.allowURL('http://blog.kakaocdn.net/a','image',source));
+ assert.throws(()=>t.allowURL('https://127.0.0.1/a','image',source));
+ assert.throws(()=>t.allowURL('https://blog.kakaocdn.net/dna/other/pic.png','image',source));
+ console.log('PASS fresh signed link extraction and strict host/image identity validation');
+ let calls=[];
+ global.fetch=async(url)=>{calls.push(url);return new Response(png,{status:200,headers:{'Content-Type':'image/png'}})};
+ let res=response();await handler({method:'GET',query:{id:'pororo'}},res);assert.equal(res.statusCode,200);assert.equal(res.headers['Content-Type'],'image/png');assert(Buffer.isBuffer(res.data));assert.equal(calls.length,1);
+ console.log('PASS official image response and cache headers (mock network)');
+ res=response();await handler({method:'GET',query:{id:'http://evil.invalid/'}},res);assert.equal(res.statusCode,400);assert.equal(calls.length,1);
+ res=response();await handler({method:'POST',query:{id:'pororo'}},res);assert.equal(res.statusCode,405);
+ console.log('PASS unknown IDs, arbitrary URLs, and non-GET requests rejected');
+ global.fetch=async()=>new Response('<html>Not an image</html>',{status:200,headers:{'Content-Type':'text/html'}});
+ res=response();await handler({method:'GET',query:{id:'pororo'}},res);assert.equal(res.statusCode,502);assert.equal(res.headers['Cache-Control'],'no-store');
+ global.fetch=async()=>new Response('bad data',{status:200,headers:{'Content-Type':'image/png'}});
+ res=response();await handler({method:'GET',query:{id:'pororo'}},res);assert.equal(res.statusCode,502);
+ global.fetch=async()=>new Response(null,{status:302,headers:{'Location':'https://127.0.0.1/private'}});
+ res=response();await handler({method:'GET',query:{id:'pororo'}},res);assert.equal(res.statusCode,502);
+ console.log('PASS non-image responses, invalid magic bytes, and unsafe redirects rejected');
+ global.fetch=async(url)=>url.includes('tistory.com')?new Response('<img src="'+publicURL.replace(/&/g,'&amp;')+'">',{status:200,headers:{'Content-Type':'text/html'}}):new Response(png,{status:200,headers:{'Content-Type':'image/png'}});
+ res=response();await handler({method:'GET',query:{id:'babyshark'}},res);assert.equal(res.statusCode,200);
+ console.log('PASS Tistory page refresh followed by validated original image request (mock network)');
+ console.log('LIMIT: External source downloads through deployed Vercel not exercised.');
+})().catch(e=>{console.error(e);process.exit(1)});

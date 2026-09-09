@@ -34,7 +34,7 @@ function renderVoices(){
  <p class="soft-note">위 5가지는 서로 다른 화자가 아니라 같은 목소리의 속도·높낮이 설정입니다. AI 음성팩에는 이 설정이 적용되지 않습니다.</p>
  <div class="btn-row"><button class="secondary" id="preview-device">기기 음성 들어보기</button><button class="secondary" id="refresh-voices">목소리 목록 새로고침</button></div></section>
  <section class="setting-block"><h3>AI 음성팩 · 서로 다른 목소리 6종</h3>
- <div class="voice-grid">${DATA.aiVoices.map(voice=>`<button data-ai-voice="${voice.id}" class="voice-option ${voice.id===v?"selected":""}" aria-pressed="${voice.id===v}"><strong>${voice.label}</strong><small>${[...media.keys()].filter(k=>k.startsWith("ai:"+voice.id+":")).length}개 저장</small></button>`).join("")}</div>
+ <div class="voice-grid">${DATA.aiVoices.map(voice=>`<button data-ai-voice="${voice.id}" class="voice-option ${voice.id===v?"selected":""}" aria-pressed="${voice.id===v}"><strong>${voice.label}</strong><small>${[...media.keys()].filter(k=>k.startsWith("ai:"+voice.id+":")).length||"미준비 · 0"}개 저장</small></button>`).join("")}</div>
  <p>처음에는 음성 파일이 들어 있지 않습니다. 아래에서 준비한 파일만 오프라인으로 재생합니다. 준비하지 않은 항목은 기기 음성으로 대신 읽습니다.</p>
  <label class="field"><span>준비할 주제</span><select id="ai-category">${CATS.map(c=>`<option value="${c.id}" ${aiCategory===c.id?"selected":""}>${c.label}</option>`).join("")}</select></label>
  <div class="pack-status" id="ai-pack-status">${DATA.aiVoices.find(x=>x.id===v).label} · 이 주제 ${prepared}/${entries.length}개 준비됨</div>
