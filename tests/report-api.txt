@@ -1,4 +1,0 @@
-PASS authenticated fixed phrase creates audio through mocked provider
-PASS method, authentication, origin, allowlist and size checks prevent provider calls
-PASS missing configuration disables AI; provider secrets are not exposed
-PASS 306 allowed Korean phrases; no arbitrary speech proxy

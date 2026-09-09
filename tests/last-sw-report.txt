@@ -1,6 +1,0 @@
-PASS: cache installs all five packaged core resources
-PASS: activation only removes this app's older cache
-PASS: simulated offline navigation and icon loads come from cache
-PASS: service worker does not intercept cross-origin requests
-PASS: service worker respects deployment subdirectory
-NOTE: CacheStorage/worker simulation only; not an installed browser PWA test.
