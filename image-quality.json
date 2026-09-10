@@ -1,0 +1,4409 @@
+{
+  "version": "1.7.0",
+  "generalCount": 220,
+  "vectorCount": 220,
+  "bundledCharacters": 24,
+  "upscaledRasterCount": 0,
+  "cards": [
+    {
+      "id": "dog",
+      "label": "강아지",
+      "category": "animals",
+      "file": "assets/vector/dog.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "earlier-vector-original",
+      "sha256": "17154cb8df125a018e5b5e2055c5c6e7fc2c4ef798746d3f4a68629f86d4d654"
+    },
+    {
+      "id": "cat",
+      "label": "고양이",
+      "category": "animals",
+      "file": "assets/vector/cat.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "earlier-vector-original",
+      "sha256": "306e194e43e147ea0afac2eb1358a909c06e876ca3a1cfd29f5a0c092d1cff49"
+    },
+    {
+      "id": "rabbit",
+      "label": "토끼",
+      "category": "animals",
+      "file": "assets/vector/rabbit.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "earlier-vector-original",
+      "sha256": "c49061c6c089fef253cf3942e7083d4d2dbdef2af12331c622cca1395a59baa7"
+    },
+    {
+      "id": "bear",
+      "label": "곰",
+      "category": "animals",
+      "file": "assets/vector/bear.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "earlier-vector-original",
+      "sha256": "f72e61159752e107f7433b7023d52138d2a9be272256e05b0297ea7469c52776"
+    },
+    {
+      "id": "lion",
+      "label": "사자",
+      "category": "animals",
+      "file": "assets/vector/lion.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "earlier-vector-original",
+      "sha256": "f996d4738e8f9887495248298f86329522245db3eb13b6e940f98c8924c04bca"
+    },
+    {
+      "id": "elephant",
+      "label": "코끼리",
+      "category": "animals",
+      "file": "assets/vector/elephant.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "earlier-vector-original",
+      "sha256": "414a085ade41783d82364fd776180d46721fdfea5e74637e35875c5652b3f6fa"
+    },
+    {
+      "id": "giraffe",
+      "label": "기린",
+      "category": "animals",
+      "file": "assets/vector/giraffe.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "earlier-vector-original",
+      "sha256": "1fa780112861a97baacc45921a8805a86a867056d210ca2ecef9716e16749e44"
+    },
+    {
+      "id": "monkey",
+      "label": "원숭이",
+      "category": "animals",
+      "file": "assets/vector/monkey.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "earlier-vector-original",
+      "sha256": "26349e8d3f69ad6db15e92e9652f0b0cdd47b6223acbe5e9672a798c4fbe26d6"
+    },
+    {
+      "id": "duck",
+      "label": "오리",
+      "category": "animals",
+      "file": "assets/vector/duck.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "earlier-vector-original",
+      "sha256": "a6eda23ac41c49276de860de0fa966bfd37f4b6d6eb8e4ff5e577f48a8709d32"
+    },
+    {
+      "id": "pig",
+      "label": "돼지",
+      "category": "animals",
+      "file": "assets/vector/pig.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "earlier-vector-original",
+      "sha256": "b63904bdc560d1ef038da37102fddf96964f9e60b54c8c80a66a1e507be075b4"
+    },
+    {
+      "id": "cow",
+      "label": "소",
+      "category": "animals",
+      "file": "assets/vector/cow.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "earlier-vector-original",
+      "sha256": "cd35a78fcc62a8a52a20c312c27b3db12b90a0c20be0ba020d50e9fd9ec2a55e"
+    },
+    {
+      "id": "horse",
+      "label": "말",
+      "category": "animals",
+      "file": "assets/vector/horse.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "earlier-vector-original",
+      "sha256": "2c0183f094bd5dc59fb48ba09cbfa7e9b792a98374fbdba893926dd122afa7ee"
+    },
+    {
+      "id": "sheep",
+      "label": "양",
+      "category": "animals",
+      "file": "assets/vector/sheep.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "a528864ab23266a09c959e8109f7725ad48ca47c9bc3a9fafeeb0fcdaa765622"
+    },
+    {
+      "id": "tiger",
+      "label": "호랑이",
+      "category": "animals",
+      "file": "assets/vector/tiger.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "db373432cca5e956cf4169ea758e23b2d90ae67093e3fa272e4d1d1ec21271ff"
+    },
+    {
+      "id": "panda",
+      "label": "판다",
+      "category": "animals",
+      "file": "assets/vector/panda.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "752fbe904864c12e3c09e6d2d2040c1932db7751477f1e7079913ca6b40d5d8b"
+    },
+    {
+      "id": "penguin",
+      "label": "펭귄",
+      "category": "animals",
+      "file": "assets/vector/penguin.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "8989d47c0ffd6e244113fbcd13352fd8a7e9a211d7e508b5531370025e7b41ef"
+    },
+    {
+      "id": "fox",
+      "label": "여우",
+      "category": "animals",
+      "file": "assets/vector/fox.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "33fda7301d07ec9e54398b26e59becec99e982b698589f12f25270f479e9df48"
+    },
+    {
+      "id": "hippo",
+      "label": "하마",
+      "category": "animals",
+      "file": "assets/vector/hippo.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "dc069b792d0c96046af1c4a1374a5913cfdc4fe4a5b5889edde555234e869cec"
+    },
+    {
+      "id": "crocodile",
+      "label": "악어",
+      "category": "animals",
+      "file": "assets/vector/crocodile.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "dbd633107e1fbb0f853cbd0c823ed4736573719728e990c441ac69e890e2f5b3"
+    },
+    {
+      "id": "kangaroo",
+      "label": "캥거루",
+      "category": "animals",
+      "file": "assets/vector/kangaroo.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "eeb4533b50570ec0b4507f2c482e6688a138ddbb253c31d69c52ec79120ab538"
+    },
+    {
+      "id": "apple",
+      "label": "사과",
+      "category": "fruit",
+      "file": "assets/vector/apple.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "earlier-vector-original",
+      "sha256": "a550a591122add243d969774e59cd17e595fe73f2097b7f11b140714a8b13703"
+    },
+    {
+      "id": "banana",
+      "label": "바나나",
+      "category": "fruit",
+      "file": "assets/vector/banana.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "earlier-vector-original",
+      "sha256": "642dad496b0485fc9c8473fed1f8e99f3ea222d3d573da7d343d08c27c7b7dc9"
+    },
+    {
+      "id": "strawberry",
+      "label": "딸기",
+      "category": "fruit",
+      "file": "assets/vector/strawberry.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "earlier-vector-original",
+      "sha256": "764a5b0c22fdcd0943ddac914e1a51970b4d42d1cd25bf0c49345ccdc721b678"
+    },
+    {
+      "id": "grape",
+      "label": "포도",
+      "category": "fruit",
+      "file": "assets/vector/grape.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "earlier-vector-original",
+      "sha256": "aa6ce9d72534c1fc7fa714bd0e36ca6256ba7233fa0188cf9f1b98bb17de3da2"
+    },
+    {
+      "id": "watermelon",
+      "label": "수박",
+      "category": "fruit",
+      "file": "assets/vector/watermelon.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "earlier-vector-original",
+      "sha256": "c381b96673813709acf23bf490018ac20c52fd3f374ac12516b28c449ffab941"
+    },
+    {
+      "id": "orange",
+      "label": "오렌지",
+      "category": "fruit",
+      "file": "assets/vector/orange.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "86b8629c46a501c3ea5bc854bec8483602ef532aafa410d3a1db33bf8262babd"
+    },
+    {
+      "id": "mandarin",
+      "label": "귤",
+      "category": "fruit",
+      "file": "assets/vector/mandarin.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "earlier-vector-original",
+      "sha256": "3d6a5e3e890649ee5c653a3cd53a2b6749cb0e6fa7b3578dedbe94d889319ab5"
+    },
+    {
+      "id": "lemon",
+      "label": "레몬",
+      "category": "fruit",
+      "file": "assets/vector/lemon.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "dbcd8636daeea13d991d25f9d37970d255b622e96f6df816d9b4fa8d38bce5df"
+    },
+    {
+      "id": "peach",
+      "label": "복숭아",
+      "category": "fruit",
+      "file": "assets/vector/peach.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "earlier-vector-original",
+      "sha256": "f2c989f4aa97a300c7d17d7c80cca4671243db3f891dd3625f4855f6d865d162"
+    },
+    {
+      "id": "cherry",
+      "label": "체리",
+      "category": "fruit",
+      "file": "assets/vector/cherry.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "062db3e2e7629090b1afde5965a57fdb990e59fa98bf89fc97900a773784ef35"
+    },
+    {
+      "id": "kiwi",
+      "label": "키위",
+      "category": "fruit",
+      "file": "assets/vector/kiwi.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "10b8bd6689a07994ad4cb613ba1e5203f06bd8b73008a5dac40eed181f7095be"
+    },
+    {
+      "id": "pear",
+      "label": "배",
+      "category": "fruit",
+      "file": "assets/vector/pear.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "earlier-vector-original",
+      "sha256": "89706b4851b940bdec556b542fc9c37723bfe340267fada1db00053c2d46e8ec"
+    },
+    {
+      "id": "pineapple",
+      "label": "파인애플",
+      "category": "fruit",
+      "file": "assets/vector/pineapple.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "017e01d3d182094e7f5f875041fbf1fbd701661f5c20183486ba9fe09422c9ce"
+    },
+    {
+      "id": "blueberry",
+      "label": "블루베리",
+      "category": "fruit",
+      "file": "assets/vector/blueberry.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "fe435ce5f61e33328c9922aec99b61d5044099c406c8d69c0133d923252d5631"
+    },
+    {
+      "id": "mango",
+      "label": "망고",
+      "category": "fruit",
+      "file": "assets/vector/mango.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "2b14fb7ac35520ea7783ac8d3d914155de02aab22770529a96bd199ecf636404"
+    },
+    {
+      "id": "melon",
+      "label": "멜론",
+      "category": "fruit",
+      "file": "assets/vector/melon.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "8e7a366ad13c66b9bed5afd3f033a61b7c5f232102634ae3ab670d08b3c8b71a"
+    },
+    {
+      "id": "persimmon",
+      "label": "감",
+      "category": "fruit",
+      "file": "assets/vector/persimmon.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "def96f63e176f109ba84ef48c3f8b80e3b8419ba108bca1586d80f1fc6853a6b"
+    },
+    {
+      "id": "plum",
+      "label": "자두",
+      "category": "fruit",
+      "file": "assets/vector/plum.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "914404ef853856a16f346b5820dde0541a83fe258339dd479934bfe662988454"
+    },
+    {
+      "id": "green-grape",
+      "label": "청포도",
+      "category": "fruit",
+      "file": "assets/vector/green-grape.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "3e8941592e8a559fc0fce83ee06ab185861cd9d0145a6910108fa66e274bc373"
+    },
+    {
+      "id": "pomegranate",
+      "label": "석류",
+      "category": "fruit",
+      "file": "assets/vector/pomegranate.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "10514bb3375588a0ef9dc3e18fd7e0ef560914f9bb993ffdbc466b526ea133e6"
+    },
+    {
+      "id": "carrot",
+      "label": "당근",
+      "category": "vegetables",
+      "file": "assets/vector/carrot.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "earlier-vector-original",
+      "sha256": "384c813c4377e69a6b545d0afb70adffa07b469d858ca7c79d4679215e070a1a"
+    },
+    {
+      "id": "potato",
+      "label": "감자",
+      "category": "vegetables",
+      "file": "assets/vector/potato.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "earlier-vector-original",
+      "sha256": "0352444d3e868fac4a4116ca5e6ed2298ef163b8114a1273991f698d1d1853e5"
+    },
+    {
+      "id": "onion",
+      "label": "양파",
+      "category": "vegetables",
+      "file": "assets/vector/onion.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "f3e729abbe2ac883c8560a959ccbbefdee82be074413458b0b650e660425d474"
+    },
+    {
+      "id": "tomato",
+      "label": "토마토",
+      "category": "vegetables",
+      "file": "assets/vector/tomato.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "earlier-vector-original",
+      "sha256": "02ede7bb7be914a8e2b52bed394d0130a49e1bf7b45b54a1cb1dc35d1d9ecc66"
+    },
+    {
+      "id": "cucumber",
+      "label": "오이",
+      "category": "vegetables",
+      "file": "assets/vector/cucumber.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "332bb8435225d0a1574d11919d67f6741a05a3f8f2fac351d65ad012c27940d5"
+    },
+    {
+      "id": "eggplant",
+      "label": "가지",
+      "category": "vegetables",
+      "file": "assets/vector/eggplant.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "earlier-vector-original",
+      "sha256": "888cf07fc87627e415409d1c9aaf7f252adc5785c5b884c9a8bbef7f47ccf6b5"
+    },
+    {
+      "id": "pumpkin",
+      "label": "호박",
+      "category": "vegetables",
+      "file": "assets/vector/pumpkin.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "earlier-vector-original",
+      "sha256": "2da273a21bfca0c34cd0602e7c868fa9154724082da2924cb9716de4e1325c31"
+    },
+    {
+      "id": "sweetpotato",
+      "label": "고구마",
+      "category": "vegetables",
+      "file": "assets/vector/sweetpotato.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "earlier-vector-original",
+      "sha256": "66de3c0d9aa64a58e5ca3edc5caebe22afa96b019dddcc8c51cd382838bde8e4"
+    },
+    {
+      "id": "broccoli",
+      "label": "브로콜리",
+      "category": "vegetables",
+      "file": "assets/vector/broccoli.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "earlier-vector-original",
+      "sha256": "ec03cb1dcf8f4ef184bfc4acd136d521a3019647ddc9f5be48ecee45c4d7e400"
+    },
+    {
+      "id": "cabbage",
+      "label": "양배추",
+      "category": "vegetables",
+      "file": "assets/vector/cabbage.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "1f5ca8ed1e790091aa35d4e18ac55214e2f145c68c4b53b2bdc046efcf7a2735"
+    },
+    {
+      "id": "mushroom",
+      "label": "버섯",
+      "category": "vegetables",
+      "file": "assets/vector/mushroom.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "6374b6b6bf8b32d4ed04c58b2d25568ea6c11934c2932c71748b966d99090791"
+    },
+    {
+      "id": "scallion",
+      "label": "대파",
+      "category": "vegetables",
+      "file": "assets/vector/scallion.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "43f927d21f89df763cbc5eac03d34e19dcb4a2ddde327a93787166ed27250b51"
+    },
+    {
+      "id": "spinach",
+      "label": "시금치",
+      "category": "vegetables",
+      "file": "assets/vector/spinach.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "c3f625241a0217c5313010535fb1e57fa5233d88d4fccfe4b4fb9d2660c90017"
+    },
+    {
+      "id": "lettuce",
+      "label": "상추",
+      "category": "vegetables",
+      "file": "assets/vector/lettuce.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "7a1d5071df12624a6041bfba883bcd9bdf94b831e77a4e6f49ee6d3509f20b60"
+    },
+    {
+      "id": "radish",
+      "label": "무",
+      "category": "vegetables",
+      "file": "assets/vector/radish.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "441ba676e23340c9f1da9157e317121cd4a41151213027fd08b7d777e2d87dfd"
+    },
+    {
+      "id": "napa-cabbage",
+      "label": "배추",
+      "category": "vegetables",
+      "file": "assets/vector/napa-cabbage.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "f35c7392f1c988d03d100918540481fd030e241bc33f5fc49762106d434a0d6d"
+    },
+    {
+      "id": "corn",
+      "label": "옥수수",
+      "category": "vegetables",
+      "file": "assets/vector/corn.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "earlier-vector-original",
+      "sha256": "4c799bb3291732d9e9d693669d2c0e0aab63b811662923a16979b69b6c7be17e"
+    },
+    {
+      "id": "bell-pepper",
+      "label": "피망",
+      "category": "vegetables",
+      "file": "assets/vector/bell-pepper.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "b25a66d5f848381ba3210b6bbe0d2177eae7fcca74288f94cb26d98ef87bd342"
+    },
+    {
+      "id": "pea",
+      "label": "완두콩",
+      "category": "vegetables",
+      "file": "assets/vector/pea.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "9936a04c753adeb51d062f356ed59b9b379d863c085d91854ee9265dc701fd94"
+    },
+    {
+      "id": "garlic",
+      "label": "마늘",
+      "category": "vegetables",
+      "file": "assets/vector/garlic.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "888e536d3cb8cba45380b29865b2c123fcd692c243dcafbbfcbb1fd9f4f31323"
+    },
+    {
+      "id": "car",
+      "label": "자동차",
+      "category": "vehicles",
+      "file": "assets/vector/car.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "earlier-vector-original",
+      "sha256": "a14ca3e4788bcaaa397f2e2dce2f6fc095c44708397d6343ec473ce72b29d29b"
+    },
+    {
+      "id": "bus",
+      "label": "버스",
+      "category": "vehicles",
+      "file": "assets/vector/bus.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "earlier-vector-original",
+      "sha256": "5eaaeb175e653a83fd392ed35e4f2a0a1e27a07e74a5b6e77a9dcdd438f8238a"
+    },
+    {
+      "id": "train",
+      "label": "기차",
+      "category": "vehicles",
+      "file": "assets/vector/train.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "earlier-vector-original",
+      "sha256": "375d2690c79b8a5c2f9c7196f5b221703bdbe74a16778fd328ba0411fce1cf5a"
+    },
+    {
+      "id": "airplane",
+      "label": "비행기",
+      "category": "vehicles",
+      "file": "assets/vector/airplane.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "earlier-vector-original",
+      "sha256": "a9c77d8419a67cf0ab7e87760de865f5a49fcd6031dc31d22c86a84d2b4ef068"
+    },
+    {
+      "id": "boat",
+      "label": "배",
+      "category": "vehicles",
+      "file": "assets/vector/boat.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "earlier-vector-original",
+      "sha256": "5c7978a0fdafd9976dc17930e075b7fc726c0c02087d47cf62f8dbe90aae7f4b"
+    },
+    {
+      "id": "bicycle",
+      "label": "자전거",
+      "category": "vehicles",
+      "file": "assets/vector/bicycle.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "earlier-vector-original",
+      "sha256": "df9c67b9f2b9f5603cb8c9f77a9602c2e3510d33a6b46240d23c2d9102de2005"
+    },
+    {
+      "id": "motorcycle",
+      "label": "오토바이",
+      "category": "vehicles",
+      "file": "assets/vector/motorcycle.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "ee5e2f81691fb8557c2db6e14453b86a2379dbbc8137a46002cd50f41108aa18"
+    },
+    {
+      "id": "firetruck",
+      "label": "소방차",
+      "category": "vehicles",
+      "file": "assets/vector/firetruck.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "earlier-vector-original",
+      "sha256": "d4f3534ce743f153c0ad780c991d2452a6e75d5101309aa8f0b2b136b84d59a3"
+    },
+    {
+      "id": "policecar",
+      "label": "경찰차",
+      "category": "vehicles",
+      "file": "assets/vector/policecar.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "earlier-vector-original",
+      "sha256": "ac29ba9f76501ebc7f96813dcd8f0973026df00da93c29e3a37a532f2beeda53"
+    },
+    {
+      "id": "ambulance",
+      "label": "구급차",
+      "category": "vehicles",
+      "file": "assets/vector/ambulance.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "earlier-vector-original",
+      "sha256": "00c809cddb50e63acafe45bb9457ec38b93ab5c1dd72be8398b7e8600fe48bb1"
+    },
+    {
+      "id": "truck",
+      "label": "트럭",
+      "category": "vehicles",
+      "file": "assets/vector/truck.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "earlier-vector-original",
+      "sha256": "b84f32a431b2cedef08fbd65940aeb55810630f4dbe047137d009fab8c9a98cf"
+    },
+    {
+      "id": "excavator",
+      "label": "굴착기",
+      "category": "vehicles",
+      "file": "assets/vector/excavator.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "b0123b873222354f002d258d284757b94816004c602cca27285d97ab39c1f5ab"
+    },
+    {
+      "id": "crane",
+      "label": "크레인",
+      "category": "vehicles",
+      "file": "assets/vector/crane.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "b95d92b9ce587e3d7666f93c8f07bb6d94cb876b6b112373932657bde5ed4c8d"
+    },
+    {
+      "id": "tractor",
+      "label": "트랙터",
+      "category": "vehicles",
+      "file": "assets/vector/tractor.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "earlier-vector-original",
+      "sha256": "7a276bbedd97c995e58c3616467fa975a0aeeba60a42d3463d3209897743bdcb"
+    },
+    {
+      "id": "bulldozer",
+      "label": "불도저",
+      "category": "vehicles",
+      "file": "assets/vector/bulldozer.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "90b94857a34b8c408ca69ac6f3b56074957d407f4ef5e281be3fce7fd8c54042"
+    },
+    {
+      "id": "helicopter",
+      "label": "헬리콥터",
+      "category": "vehicles",
+      "file": "assets/vector/helicopter.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "e980a53707f5dabf4449b83eba7b15f119e2254489b4608f0a078d8f1fca5397"
+    },
+    {
+      "id": "rocket",
+      "label": "로켓",
+      "category": "vehicles",
+      "file": "assets/vector/rocket.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "18c3ad5ad8d7b17c3259da403de7942c2089bbe5e23eb182b7c3c9fd86591cf1"
+    },
+    {
+      "id": "taxi",
+      "label": "택시",
+      "category": "vehicles",
+      "file": "assets/vector/taxi.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "earlier-vector-original",
+      "sha256": "e4f4b322d3cc29afa53510ae85321178a5dba9c256180a70251c18c1a4491511"
+    },
+    {
+      "id": "camper",
+      "label": "캠핑카",
+      "category": "vehicles",
+      "file": "assets/vector/camper.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "2c5eb053d54f1e66f62eea17567bd96d8bdec03e231e67a88fa0de11af9c963f"
+    },
+    {
+      "id": "subway",
+      "label": "지하철",
+      "category": "vehicles",
+      "file": "assets/vector/subway.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "775ef76eb17dc5683ef8ebe15f45dbaf133b27a570eb3e5cc9511961e7dcc0a0"
+    },
+    {
+      "id": "book",
+      "label": "책",
+      "category": "objects",
+      "file": "assets/vector/book.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "7fb34333f52ff4635902cad609b8e9536165bd74c3f55c308cd4c475eb263318"
+    },
+    {
+      "id": "pencil",
+      "label": "연필",
+      "category": "objects",
+      "file": "assets/vector/pencil.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "24af57cb76d5b1589db6c5c5116ffc9ef256d2775066f8d0bee50c51cf9d22dd"
+    },
+    {
+      "id": "eraser",
+      "label": "지우개",
+      "category": "objects",
+      "file": "assets/vector/eraser.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "7d6ac2a96e150b9b4c8eb3826b86476da7ca4ada1d4393de184f70ac932e92ee"
+    },
+    {
+      "id": "scissors",
+      "label": "가위",
+      "category": "objects",
+      "file": "assets/vector/scissors.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "cace31e0bf7478283bbd888d00134a912ea7345dfcc82842dfd37fd36596790b"
+    },
+    {
+      "id": "glue",
+      "label": "풀",
+      "category": "objects",
+      "file": "assets/vector/glue.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "d66a9a50adf6962a895255e66b5f8da79564a8426b5ef09c37f014979e418f54"
+    },
+    {
+      "id": "notebook",
+      "label": "공책",
+      "category": "objects",
+      "file": "assets/vector/notebook.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "ff04997409effa5353e4fa29999cd6007c75860049d91aade0c952de7f609842"
+    },
+    {
+      "id": "ruler",
+      "label": "자",
+      "category": "objects",
+      "file": "assets/vector/ruler.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "c86b6ba6bcdce8f254d1bd6fc9c82436cb21d71de1f402fd79736c104436d38b"
+    },
+    {
+      "id": "color-pencil",
+      "label": "색연필",
+      "category": "objects",
+      "file": "assets/vector/color-pencil.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "d4b3c9f08a020eab97ec765bc157b04a1eb87e18b72a991c7d39fb106459e128"
+    },
+    {
+      "id": "crayon",
+      "label": "크레파스",
+      "category": "objects",
+      "file": "assets/vector/crayon.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "70dca0e71f67395ba3e97dd62022413e02657da65bfe5f181ffda6fc7ad8a7f7"
+    },
+    {
+      "id": "bag",
+      "label": "가방",
+      "category": "objects",
+      "file": "assets/vector/bag.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "fbb5c8040788ecd19f76239cd356c6b00993f65d514095e9720040ca974f53a3"
+    },
+    {
+      "id": "chair",
+      "label": "의자",
+      "category": "objects",
+      "file": "assets/vector/chair.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "03d82738429cc5ecac7102691c5546f899d30d98685e1cc0bfc65717b915158a"
+    },
+    {
+      "id": "desk",
+      "label": "책상",
+      "category": "objects",
+      "file": "assets/vector/desk.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "a866922d30ad34a7045b064ea99c00bec07d110d38589ff676558d9410c88883"
+    },
+    {
+      "id": "bed",
+      "label": "침대",
+      "category": "objects",
+      "file": "assets/vector/bed.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "afa785cec6cb5afb6ec2e9cb9e2ebed2c8d8ecc84a89b7bcdda33497bab39ba8"
+    },
+    {
+      "id": "clock",
+      "label": "시계",
+      "category": "objects",
+      "file": "assets/vector/clock.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "915c9cc4687775c8edf90993f4c4312beb5f929ef9d55d6404e3b1c06d755ed9"
+    },
+    {
+      "id": "glasses",
+      "label": "안경",
+      "category": "objects",
+      "file": "assets/vector/glasses.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "b0b83def6ab5f621e996cdb54aceabad40ab8494c4e9ce7c21262e0ed17271e4"
+    },
+    {
+      "id": "umbrella",
+      "label": "우산",
+      "category": "objects",
+      "file": "assets/vector/umbrella.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "08ac28c20eedd91990c40d9be2be72ab569fa57c90dc651d9a404a854fc86adb"
+    },
+    {
+      "id": "ball",
+      "label": "공",
+      "category": "objects",
+      "file": "assets/vector/ball.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "96ba1475065233ef990d3d963e7d3a13f6774f647671528af6b9bf67fff5b99a"
+    },
+    {
+      "id": "cup",
+      "label": "컵",
+      "category": "objects",
+      "file": "assets/vector/cup.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "3ea641ec4b531eeae2c1936e690de6cc724dc1ff41631aa845e86cfa87943d98"
+    },
+    {
+      "id": "plate",
+      "label": "접시",
+      "category": "objects",
+      "file": "assets/vector/plate.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "5219a01d8f20aa34a3b6faceb0d56bb5735f1f2a35d040c58d1e04b62988f62e"
+    },
+    {
+      "id": "towel",
+      "label": "수건",
+      "category": "objects",
+      "file": "assets/vector/towel.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "a6465138e494772463191e780b4d201e614979a3033ef842bb0e1637c1a8e181"
+    },
+    {
+      "id": "t-shirt",
+      "label": "티셔츠",
+      "category": "clothes",
+      "file": "assets/vector/t-shirt.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "816cb2032934532d657a6de98bea84ce8149f1c72fd518594aab6a7f414348b1"
+    },
+    {
+      "id": "pants",
+      "label": "바지",
+      "category": "clothes",
+      "file": "assets/vector/pants.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "cc9f703b806ca27d1e3befd1b4306bcc3d994a09aa9b91f24965720d21c9a3f6"
+    },
+    {
+      "id": "skirt",
+      "label": "치마",
+      "category": "clothes",
+      "file": "assets/vector/skirt.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "4c45eb6541d3a0f0775d0f13b38ec676c1981220af4741bdf5ab20ceda2939c5"
+    },
+    {
+      "id": "dress",
+      "label": "원피스",
+      "category": "clothes",
+      "file": "assets/vector/dress.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "6d99847444493bbaf774302ab57d10d0c4769555fc4ef29a6b63d51c4abb0bc7"
+    },
+    {
+      "id": "pajamas",
+      "label": "잠옷",
+      "category": "clothes",
+      "file": "assets/vector/pajamas.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "760cc65840e40c5495e9fb245ebbf16458a3e5efe78569727b9c337e6da2e186"
+    },
+    {
+      "id": "jacket",
+      "label": "재킷",
+      "category": "clothes",
+      "file": "assets/vector/jacket.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "682e5c5dfd47ec2a2d73009eb4094c8f817c05abe798edbc30bc11946a08ed1c"
+    },
+    {
+      "id": "shoes",
+      "label": "신발",
+      "category": "clothes",
+      "file": "assets/vector/shoes.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "a2e55be02a4b56da540f53c62b943f0e10564031c07d3d2ae6756bf87f0166c7"
+    },
+    {
+      "id": "sneakers",
+      "label": "운동화",
+      "category": "clothes",
+      "file": "assets/vector/sneakers.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "69b26b69f7fa7db01e8d8229a5f631dbaa62a9be642534b4244a4743e244d038"
+    },
+    {
+      "id": "gloves",
+      "label": "장갑",
+      "category": "clothes",
+      "file": "assets/vector/gloves.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "5c91f29031ab6b9a25d824e8dcea93dc0448758a01f0240b7c8ed39a87a5767f"
+    },
+    {
+      "id": "scarf",
+      "label": "목도리",
+      "category": "clothes",
+      "file": "assets/vector/scarf.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "2534f0c10e72f6917ab96cf48e546e63485ce24e2c1903c02d75daea6b904437"
+    },
+    {
+      "id": "hat",
+      "label": "모자",
+      "category": "clothes",
+      "file": "assets/vector/hat.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "252cedc49637386e69190ed245935bb6530910477c0ee4704f5c0047c2b5d081"
+    },
+    {
+      "id": "socks",
+      "label": "양말",
+      "category": "clothes",
+      "file": "assets/vector/socks.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "8f464055854b77bf13175809e1ede621b9fad8c9acfdb2eef92120cfd0d719f0"
+    },
+    {
+      "id": "underwear",
+      "label": "속옷",
+      "category": "clothes",
+      "file": "assets/vector/underwear.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "5e48d0e73860081bc376f78e1d867bf94d5bc2b32e295448b949de529f8b365c"
+    },
+    {
+      "id": "swimsuit",
+      "label": "수영복",
+      "category": "clothes",
+      "file": "assets/vector/swimsuit.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "fb637b76cde5a2096e16edc76c0c84e6e349bfe2992f2df54a11541e70b10305"
+    },
+    {
+      "id": "raincoat",
+      "label": "비옷",
+      "category": "clothes",
+      "file": "assets/vector/raincoat.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "ad2da3fa4dc3609c87086b9c24733ac1eadeeccd7d25aab8edac55aee1f23b8e"
+    },
+    {
+      "id": "helmet",
+      "label": "헬멧",
+      "category": "clothes",
+      "file": "assets/vector/helmet.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "34d1ecd0e766eb20383ea754c1bb71743c9b6cf3a8fa276d7880b4a65f1279e4"
+    },
+    {
+      "id": "uniform",
+      "label": "교복",
+      "category": "clothes",
+      "file": "assets/vector/uniform.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "2513d1ff7a85091a564dfc6264cfc31d76ff85d1b649e42599480a713d82667f"
+    },
+    {
+      "id": "sportswear",
+      "label": "운동복",
+      "category": "clothes",
+      "file": "assets/vector/sportswear.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "442d8aa998aa3fc05e0b936451d22fa030b169029c58ef52253c8d101b5e4b69"
+    },
+    {
+      "id": "sweater",
+      "label": "스웨터",
+      "category": "clothes",
+      "file": "assets/vector/sweater.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "a668312caefe853da74ec8952450f18445aacbedcc9d34f5bd8ff1f1500dc419"
+    },
+    {
+      "id": "coat",
+      "label": "코트",
+      "category": "clothes",
+      "file": "assets/vector/coat.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "e22181fb3328f07fd36be4b6a4a06f7a9b84d0eea3c01019626c8c07232ac784"
+    },
+    {
+      "id": "rice",
+      "label": "밥",
+      "category": "food",
+      "file": "assets/vector/rice.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "earlier-vector-original",
+      "sha256": "df01d68dfc52a41a3af9f31ba3244d34f919f77ed48e66998f01280541a08628"
+    },
+    {
+      "id": "bread",
+      "label": "빵",
+      "category": "food",
+      "file": "assets/vector/bread.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "earlier-vector-original",
+      "sha256": "eb88c58fb5c91d94bcd4271842bb4846902ddf6de94db077b7645274c92d6585"
+    },
+    {
+      "id": "milk",
+      "label": "우유",
+      "category": "food",
+      "file": "assets/vector/milk.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "earlier-vector-original",
+      "sha256": "ca7e6be38fe1c18956e8db498648fb24f825c6d73df9c51baa5fbf05a17d188e"
+    },
+    {
+      "id": "water",
+      "label": "물",
+      "category": "food",
+      "file": "assets/vector/water.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "earlier-vector-original",
+      "sha256": "1bba56200e0283682cef54105366bec263ee128ccf88a5c43bf207b8a3751c21"
+    },
+    {
+      "id": "egg",
+      "label": "달걀",
+      "category": "food",
+      "file": "assets/vector/egg.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "earlier-vector-original",
+      "sha256": "e91074a1a3731c57e1c01091df9cbd6858507d7466a58600fd1bbe28c0b04f3b"
+    },
+    {
+      "id": "noodles",
+      "label": "국수",
+      "category": "food",
+      "file": "assets/vector/noodles.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "earlier-vector-original",
+      "sha256": "28298e2190f85994ac99d24b31cc977406419e3e20fabd650a566910e2d85983"
+    },
+    {
+      "id": "cheese",
+      "label": "치즈",
+      "category": "food",
+      "file": "assets/vector/cheese.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "earlier-vector-original",
+      "sha256": "53f3bbd004945e6c6ce8da73f0665fa88ab0c30d0c425904e67b8fc69bd9b685"
+    },
+    {
+      "id": "soup",
+      "label": "국",
+      "category": "food",
+      "file": "assets/vector/soup.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "earlier-vector-original",
+      "sha256": "20ff859cbad3e5cadba15db50d79e85aa1a483f3d6ef6275e7d26c4e13d1dc94"
+    },
+    {
+      "id": "ricecake",
+      "label": "떡",
+      "category": "food",
+      "file": "assets/vector/ricecake.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "earlier-vector-original",
+      "sha256": "efad27789ade0763502ed1e79c3bce8f98aa7a26a3cc30cbfea76c5ebdd452c3"
+    },
+    {
+      "id": "dumpling",
+      "label": "만두",
+      "category": "food",
+      "file": "assets/vector/dumpling.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "earlier-vector-original",
+      "sha256": "cfd0202bf40e20dc86c7d0b60c2f51cd28cd6c8149c70d46e59a7ab6c83b19c6"
+    },
+    {
+      "id": "bulgogi",
+      "label": "불고기",
+      "category": "food",
+      "file": "assets/vector/bulgogi.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "008071389f7dbe66caa5bfc75b7cf7d44541c27373024b2913280f831faccc9c"
+    },
+    {
+      "id": "bibimbap",
+      "label": "비빔밥",
+      "category": "food",
+      "file": "assets/vector/bibimbap.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "4cf1d25e703b7d988b69a8b0f1552ab2fc0c715ddd57b03da8c22b533955b0eb"
+    },
+    {
+      "id": "pizza",
+      "label": "피자",
+      "category": "food",
+      "file": "assets/vector/pizza.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "85cf9ebcdf8d4d3e5b2d517b41f5b35a9e410a8b7dfd1760543b783fd49e7474"
+    },
+    {
+      "id": "chicken",
+      "label": "치킨",
+      "category": "food",
+      "file": "assets/vector/chicken.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "88896fa4eca1442208405b0cc2cc24030289444804b6f47b73d006014082ab5a"
+    },
+    {
+      "id": "hamburger",
+      "label": "햄버거",
+      "category": "food",
+      "file": "assets/vector/hamburger.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "db0cf64522141b8b2264b5f9aab3a80a0d6156791723dac740c22b2a54a2dabd"
+    },
+    {
+      "id": "sandwich",
+      "label": "샌드위치",
+      "category": "food",
+      "file": "assets/vector/sandwich.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "cd875f38aed483cfa3e1548a90c7fc1b6f39fa72181fa7a04c8419727a022bba"
+    },
+    {
+      "id": "spaghetti",
+      "label": "스파게티",
+      "category": "food",
+      "file": "assets/vector/spaghetti.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "7699b02b57d1a446efadfe9d9f01ade817c2e1f5ec3db73f3fb7cf6556897038"
+    },
+    {
+      "id": "gimbap",
+      "label": "김밥",
+      "category": "food",
+      "file": "assets/vector/gimbap.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "e5dfb109e6804f0d961a8e0cef8c6413cecf402b02184245c69d2f3ec12db6ff"
+    },
+    {
+      "id": "yogurt",
+      "label": "요거트",
+      "category": "food",
+      "file": "assets/vector/yogurt.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "cd3e1fe317bd2d32bdd9606633e9d1db5e87a9801eb70b3093a5f2f7e8973db3"
+    },
+    {
+      "id": "icecream",
+      "label": "아이스크림",
+      "category": "food",
+      "file": "assets/vector/icecream.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "9f60b61a8806a104beae97de4b8fa59e76ef1eb6a15d0625d6e942f244b51530"
+    },
+    {
+      "id": "butterfly",
+      "label": "나비",
+      "category": "insects",
+      "file": "assets/vector/butterfly.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "0fa917405680c9757cf897f1a8fc50bd7f4001ff50755d86ad033726e721056e"
+    },
+    {
+      "id": "dragonfly",
+      "label": "잠자리",
+      "category": "insects",
+      "file": "assets/vector/dragonfly.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "97024f3e2114ee784835c71f6a75c42b35a943b9245032ab8b7b90525225703c"
+    },
+    {
+      "id": "ladybug",
+      "label": "무당벌레",
+      "category": "insects",
+      "file": "assets/vector/ladybug.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "8a77872f91031a010003f56519843ee3481be18c0442c78e3a759a759d706996"
+    },
+    {
+      "id": "ant",
+      "label": "개미",
+      "category": "insects",
+      "file": "assets/vector/ant.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "264c4740c5d19b86a89dcf40208349855f8f8b263089ce5381e2a8255a116873"
+    },
+    {
+      "id": "bee",
+      "label": "벌",
+      "category": "insects",
+      "file": "assets/vector/bee.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "b47102a2f1f8a68d1acbf543356fcebf44d989567e17cc68e296d081659fed09"
+    },
+    {
+      "id": "cicada",
+      "label": "매미",
+      "category": "insects",
+      "file": "assets/vector/cicada.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "8cc9004289958890c8950df131d59ed93283aeac02ee0c3f1b86a20163c1cd94"
+    },
+    {
+      "id": "stag-beetle",
+      "label": "사슴벌레",
+      "category": "insects",
+      "file": "assets/vector/stag-beetle.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "f049a405886ac552ace18bc1588f91d03138d67a8e85c846bc7a7ebab078f5ad"
+    },
+    {
+      "id": "rhino-beetle",
+      "label": "장수풍뎅이",
+      "category": "insects",
+      "file": "assets/vector/rhino-beetle.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "5b541d57605440d92fcfe78c9e26c698ba8c08ee1b148084df08ed077150407b"
+    },
+    {
+      "id": "fly",
+      "label": "파리",
+      "category": "insects",
+      "file": "assets/vector/fly.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "28ed101840b97e2854e09fc937c53f0b7ebbbe8ee63944cf0e252bad893f0b23"
+    },
+    {
+      "id": "mosquito",
+      "label": "모기",
+      "category": "insects",
+      "file": "assets/vector/mosquito.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "f0ffd3ad18e85d301c6318d732535fd95d8428ef678705dcd95f6aae9d62aaae"
+    },
+    {
+      "id": "spider",
+      "label": "거미",
+      "category": "insects",
+      "file": "assets/vector/spider.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "d12026b8df99a3bb5330802aa57bed843442cb8e569cb91c9187c1429718afda"
+    },
+    {
+      "id": "scorpion",
+      "label": "전갈",
+      "category": "insects",
+      "file": "assets/vector/scorpion.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "b8c8b679da5054404a1918ff22ef418f912305fdc339e60f36ae3a8817ed3297"
+    },
+    {
+      "id": "centipede",
+      "label": "지네",
+      "category": "insects",
+      "file": "assets/vector/centipede.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "42dc69271d9bf03c36955353d387c95ea688b38955db4c32ab142aeb1d76d21e"
+    },
+    {
+      "id": "snail",
+      "label": "달팽이",
+      "category": "insects",
+      "file": "assets/vector/snail.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "3067e273184f5ef54179a94b749edbb214d28a448ac8b3c1619b5600658dedf5"
+    },
+    {
+      "id": "earthworm",
+      "label": "지렁이",
+      "category": "insects",
+      "file": "assets/vector/earthworm.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "d26415ffda22d9a263bead7130c924558e47ac743c15dde911925ef27a3f9344"
+    },
+    {
+      "id": "grasshopper",
+      "label": "메뚜기",
+      "category": "insects",
+      "file": "assets/vector/grasshopper.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "6983c7c127cfcea5878b80de741c32aaac07100078ada583cefbdeaa679729c7"
+    },
+    {
+      "id": "mantis",
+      "label": "사마귀",
+      "category": "insects",
+      "file": "assets/vector/mantis.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "5ee3200021f9a11d79f1cb4f1079087954ee4098f17b08fbabdecf6ca200f4fe"
+    },
+    {
+      "id": "firefly",
+      "label": "반딧불이",
+      "category": "insects",
+      "file": "assets/vector/firefly.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "0e7f4f00b1de12e6a2676948fd547f2deb8d0c0df727de201c365d97347e3fc4"
+    },
+    {
+      "id": "dung-beetle",
+      "label": "풍뎅이",
+      "category": "insects",
+      "file": "assets/vector/dung-beetle.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "b92be756492daf2023137fec76744f840899ce184e201e467c64edd9e8c7df8e"
+    },
+    {
+      "id": "water-beetle",
+      "label": "물방개",
+      "category": "insects",
+      "file": "assets/vector/water-beetle.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "13898c08e405f02b491124486993f823e20d1e2d7cb67aa32c039a5321787e35"
+    },
+    {
+      "id": "head",
+      "label": "머리",
+      "category": "body",
+      "file": "assets/vector/head.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "e29d2925238c994dc0e9abd34597ae6d5157bc937e56caaa07b8ebb3b26e0bd1"
+    },
+    {
+      "id": "eye",
+      "label": "눈",
+      "category": "body",
+      "file": "assets/vector/eye.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "eb8096d18c91ea0ef03183978c6db088b505eb080785a06e765e25eeb2232d99"
+    },
+    {
+      "id": "nose",
+      "label": "코",
+      "category": "body",
+      "file": "assets/vector/nose.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "d278f468df8a31a7f0ad4c0b19fb3e77c9899490953d0adfd0cda9425cd6cb69"
+    },
+    {
+      "id": "mouth",
+      "label": "입",
+      "category": "body",
+      "file": "assets/vector/mouth.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "d47b34ccdeee4d9ae4d65b670e333e6907b88d90c19028a2441ef948019a4978"
+    },
+    {
+      "id": "ear",
+      "label": "귀",
+      "category": "body",
+      "file": "assets/vector/ear.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "c56c777427fb303f88532d8fbc81dbf7b28795065336fb8934b539bdfb65144e"
+    },
+    {
+      "id": "hand",
+      "label": "손",
+      "category": "body",
+      "file": "assets/vector/hand.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "99b9843898580d07b831fa74646f12d2ad711280745a5fc6177eb81dba922326"
+    },
+    {
+      "id": "foot",
+      "label": "발",
+      "category": "body",
+      "file": "assets/vector/foot.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "1b19fc193d2782fe4a8a9e757bec8f08f7e015de1d84e114aa2a3a6447a13db9"
+    },
+    {
+      "id": "arm",
+      "label": "팔",
+      "category": "body",
+      "file": "assets/vector/arm.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "1c0b4e0bcb1bc680d538e4a4c2ae2cbd680f79102b3139d23cb997c4095feb84"
+    },
+    {
+      "id": "leg",
+      "label": "다리",
+      "category": "body",
+      "file": "assets/vector/leg.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "055dd2d75aba5665572c5e538c118ad39f726815efb204a77c7dc716fb26fbcc"
+    },
+    {
+      "id": "belly",
+      "label": "배",
+      "category": "body",
+      "file": "assets/vector/belly.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "27aad1d11bf61da744008112c27ebf7dcfd033021ea24287c62c0bdfbf144381"
+    },
+    {
+      "id": "back",
+      "label": "등",
+      "category": "body",
+      "file": "assets/vector/back.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "525e972c94f0e037797ecdc85d1db4f3ad2ea3ed71ff26daf203d85a324cbacd"
+    },
+    {
+      "id": "chest",
+      "label": "가슴",
+      "category": "body",
+      "file": "assets/vector/chest.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "e21df08677d09fd7e79fb83f05658783eb563feb977e00dd3580126e66604aec"
+    },
+    {
+      "id": "finger",
+      "label": "손가락",
+      "category": "body",
+      "file": "assets/vector/finger.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "4cba08e81de65d718488e4d822061ba40428bda4c2296e1bc44c71451fc6dfcd"
+    },
+    {
+      "id": "toe",
+      "label": "발가락",
+      "category": "body",
+      "file": "assets/vector/toe.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "2fdc11824879b04e73b86d2784870c4d853f2ad8483bb5a3007b3a3e1a29be05"
+    },
+    {
+      "id": "knee",
+      "label": "무릎",
+      "category": "body",
+      "file": "assets/vector/knee.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "1684f421357b64d511ea3d94378394689367b7a7f82bf8a96754fd65eae7a526"
+    },
+    {
+      "id": "elbow",
+      "label": "팔꿈치",
+      "category": "body",
+      "file": "assets/vector/elbow.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "acd8eff6084b52d6b01e47c944a8fc6c619903af2fc7f9bff13196482cc7198e"
+    },
+    {
+      "id": "shoulder",
+      "label": "어깨",
+      "category": "body",
+      "file": "assets/vector/shoulder.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "afa1c0879916fcb515fe19ac779e65cabf5c590d5bced362f58f1b142815a50d"
+    },
+    {
+      "id": "neck",
+      "label": "목",
+      "category": "body",
+      "file": "assets/vector/neck.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "c4c765e4ec80c282c77612143e04cfe08d8577f6e756048a7c2942b9b1f06ed9"
+    },
+    {
+      "id": "waist",
+      "label": "허리",
+      "category": "body",
+      "file": "assets/vector/waist.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "17385d8ea49724f665a63599e16921e7e67e026cac193bb19339684e137fecbf"
+    },
+    {
+      "id": "bottom",
+      "label": "엉덩이",
+      "category": "body",
+      "file": "assets/vector/bottom.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "bf719cc3740f6102771985a409af2ab486af407dc16445cf724ed5e94f1164f3"
+    },
+    {
+      "id": "baby",
+      "label": "아기",
+      "category": "people",
+      "file": "assets/vector/baby.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "d6206956c139c234242446c4d8a2eaafb7a7953a254412121b002b0148235d3a"
+    },
+    {
+      "id": "child",
+      "label": "어린이",
+      "category": "people",
+      "file": "assets/vector/child.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "14b1a9a716f31766b41749fda68a7da3c3f95de716844317215af99cecc668e2"
+    },
+    {
+      "id": "student",
+      "label": "학생",
+      "category": "people",
+      "file": "assets/vector/student.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "ffed260249eb45791b865f3978b1ebfa8b1adbe96c5f389ff16db91b45898c70"
+    },
+    {
+      "id": "teacher",
+      "label": "선생님",
+      "category": "people",
+      "file": "assets/vector/teacher.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "4fe2f5b58efee2a5ecb7089543da9982be997bd64b7a51a47144f8c13fd75efa"
+    },
+    {
+      "id": "doctor",
+      "label": "의사",
+      "category": "people",
+      "file": "assets/vector/doctor.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "f638877d50d06062a872d399c2ee58e509fa80f20707998a24637cdff072dd2d"
+    },
+    {
+      "id": "nurse",
+      "label": "간호사",
+      "category": "people",
+      "file": "assets/vector/nurse.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "fd0f0f83979e3f97366b868dc1da45255db00a12d5d2bc92bbf199648cad7146"
+    },
+    {
+      "id": "police",
+      "label": "경찰관",
+      "category": "people",
+      "file": "assets/vector/police.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "5f51fcc9915955f4363d58f6613cfff76f8787ee821a8ff872fb5564905bb079"
+    },
+    {
+      "id": "firefighter",
+      "label": "소방관",
+      "category": "people",
+      "file": "assets/vector/firefighter.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "e69c3cd7ce2c0bcd6034b547fa84c48634d049937a36f3970d8c2225b440f21a"
+    },
+    {
+      "id": "chef",
+      "label": "요리사",
+      "category": "people",
+      "file": "assets/vector/chef.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "2e79e8f3bbda6221e8ffb544ae404b7bf5b2c0c303857aff8acdd7af66143cea"
+    },
+    {
+      "id": "athlete",
+      "label": "운동선수",
+      "category": "people",
+      "file": "assets/vector/athlete.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "2ddb186888a970c8440866c8cc0b4e9fc0ff59d8ce9f1b351815fe0c40b5bdfc"
+    },
+    {
+      "id": "singer",
+      "label": "가수",
+      "category": "people",
+      "file": "assets/vector/singer.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "a589d309ae25efc50d0f53a9f2ae93858addca2bd282423b5aa7a09c35bd0c19"
+    },
+    {
+      "id": "painter",
+      "label": "화가",
+      "category": "people",
+      "file": "assets/vector/painter.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "31be77231ea8a48413185de9848021bfbad7018e3ad92285f2d5aa0db103dd2f"
+    },
+    {
+      "id": "scientist",
+      "label": "과학자",
+      "category": "people",
+      "file": "assets/vector/scientist.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "38da6f2f51b7dc6b8186d774fae15b0f6038e92fe4f2cb10ee90080a0389295c"
+    },
+    {
+      "id": "farmer",
+      "label": "농부",
+      "category": "people",
+      "file": "assets/vector/farmer.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "142bc75cc63f81b45cf158cf8489134afe39b9073b0c22938cbc089fd86c6a48"
+    },
+    {
+      "id": "astronaut",
+      "label": "우주인",
+      "category": "people",
+      "file": "assets/vector/astronaut.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "9d4c573a09a17265db4511e514b940711b18d9a5d4418632f64f32b63feb6ffa"
+    },
+    {
+      "id": "grandpa",
+      "label": "할아버지",
+      "category": "people",
+      "file": "assets/vector/grandpa.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "6bf36a67471bebfaadf0e580bad575bf44f3241469a0da93244e1f325d25bd76"
+    },
+    {
+      "id": "grandma",
+      "label": "할머니",
+      "category": "people",
+      "file": "assets/vector/grandma.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "935529166cbfaf333031dba27a8bf1dc1b49914a82f63a46d7cddac3a50bda8b"
+    },
+    {
+      "id": "dad",
+      "label": "아빠",
+      "category": "people",
+      "file": "assets/vector/dad.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "981a5115d4e859bfbd432c32b1a97cfbcc3f78790873ad8380bc9847b0e31bac"
+    },
+    {
+      "id": "mom",
+      "label": "엄마",
+      "category": "people",
+      "file": "assets/vector/mom.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "ffeb56f404c00b02cc43881f20998bc817b73ccb20be90607caff3f455ea2c34"
+    },
+    {
+      "id": "friend",
+      "label": "친구",
+      "category": "people",
+      "file": "assets/vector/friend.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "61c0df6e0469082c0003585b4ceeb412e3555167664ade9f526018c68065a160"
+    },
+    {
+      "id": "sun",
+      "label": "해",
+      "category": "nature",
+      "file": "assets/vector/sun.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "c5e217821c4b3257b196b6ed0988b52654f0d6deeda90fbc37810fd4bd7e76f9"
+    },
+    {
+      "id": "moon",
+      "label": "달",
+      "category": "nature",
+      "file": "assets/vector/moon.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "e4a740a85acd2b74b39b6f0f75d5413266c2a537b925f803855580f6cf87d2b5"
+    },
+    {
+      "id": "star",
+      "label": "별",
+      "category": "nature",
+      "file": "assets/vector/star.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "93569aad3038c5baf2191ca643e64b5f478989a73088bb70c1c55bb39d367fb6"
+    },
+    {
+      "id": "cloud",
+      "label": "구름",
+      "category": "nature",
+      "file": "assets/vector/cloud.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "b264786848889fe59db7a956efc90373a4f970a628efef11a734517014e7044a"
+    },
+    {
+      "id": "rain",
+      "label": "비",
+      "category": "nature",
+      "file": "assets/vector/rain.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "b952f771b01ad2046faadc785b2676978a37075a9f87ea58e3678035cd17090a"
+    },
+    {
+      "id": "snow",
+      "label": "눈",
+      "category": "nature",
+      "file": "assets/vector/snow.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "7c4cf220cdb490a7d013fd6d02a8834a117582b757c5f4b1d6a29c2da986d2c4"
+    },
+    {
+      "id": "rainbow",
+      "label": "무지개",
+      "category": "nature",
+      "file": "assets/vector/rainbow.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "ea87ffd131b8c679ba1890448c7cb779fd2ee0eec03bf0adcded3544fc1c2721"
+    },
+    {
+      "id": "wind",
+      "label": "바람",
+      "category": "nature",
+      "file": "assets/vector/wind.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "5077de356147bf275c53edd933b4cc107f2f4af1dead8030d9dba9d1720b4953"
+    },
+    {
+      "id": "lightning",
+      "label": "번개",
+      "category": "nature",
+      "file": "assets/vector/lightning.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "8c94b3c4d91b505b7589a32759b85470a627e4ea4dc7d6815abbad07f90ce97f"
+    },
+    {
+      "id": "earth",
+      "label": "지구",
+      "category": "nature",
+      "file": "assets/vector/earth.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "0db4a64b7435651c4484e2445bfa82634f0770039852f8f679d27d68bbcfd65b"
+    },
+    {
+      "id": "mountain",
+      "label": "산",
+      "category": "nature",
+      "file": "assets/vector/mountain.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "1683f6b8c4336b4d03b61666e60337fbef91ef4d51525c9ef6da0ee28c133f19"
+    },
+    {
+      "id": "sea",
+      "label": "바다",
+      "category": "nature",
+      "file": "assets/vector/sea.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "970a80ab2591b4cf43d73fdfeb8662a04b26aa37d9e7f8a21e3280c689a46bae"
+    },
+    {
+      "id": "river",
+      "label": "강",
+      "category": "nature",
+      "file": "assets/vector/river.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "e1a3ec667b49fedae132b61cc3b5969b618bcc01d1493de03e43c24f615f2355"
+    },
+    {
+      "id": "lake",
+      "label": "호수",
+      "category": "nature",
+      "file": "assets/vector/lake.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "f08ed56f908c7f8212810db6536cd823822db17e179a9b235ed412667046546c"
+    },
+    {
+      "id": "forest",
+      "label": "숲",
+      "category": "nature",
+      "file": "assets/vector/forest.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "c092331fd850e3e25db7b22df6944a3ea9c322cfe891bb4ba2092c97336bfc7e"
+    },
+    {
+      "id": "flower",
+      "label": "꽃",
+      "category": "nature",
+      "file": "assets/vector/flower.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "e9f8161223884a63bb68f01eba419f31010e65c749d0dfa88bcebeac7a48cf42"
+    },
+    {
+      "id": "tree",
+      "label": "나무",
+      "category": "nature",
+      "file": "assets/vector/tree.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "2beac5c6319ad7397c1aeee3d1ca9727b5d35bc39e498bb1fb39d5fc6fb116b6"
+    },
+    {
+      "id": "grass",
+      "label": "풀",
+      "category": "nature",
+      "file": "assets/vector/grass.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "f60a36d0418ad7e1fff022cd1161ced7e2f47d868f38f5426d8c897b3fc4c21e"
+    },
+    {
+      "id": "stone",
+      "label": "돌",
+      "category": "nature",
+      "file": "assets/vector/stone.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "aa62070591bc5cc09cab6372266dafa3f58075219a8694d37e1f05fcef31b10c"
+    },
+    {
+      "id": "sand",
+      "label": "모래",
+      "category": "nature",
+      "file": "assets/vector/sand.svg",
+      "format": "SVG vector",
+      "intrinsicSize": [
+        1024,
+        1024
+      ],
+      "viewBox": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "embeddedRaster": false,
+      "source": "new-vector-original",
+      "sha256": "1befe0b90480fb694b568227ece09f3480322b4f0f505ada9c0e0b7b1a8da868"
+    }
+  ]
+}
