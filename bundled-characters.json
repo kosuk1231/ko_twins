@@ -3,7 +3,7 @@
     "id": "pororo",
     "label": "뽀로로",
     "series": "pororo",
-    "asset": "assets/characters/pororo.webp",
+    "asset": "characters/pororo.webp",
     "sourceFile": "4e6acc62-7ddf-4d1b-b76c-c6b2ec67ec15.png",
     "sourceSha256": "dda45c734f914b80f4a680e179f86e09d063f11d34cdb4f9776ff5ade7fe79d9",
     "crop": [
@@ -28,7 +28,7 @@
     "id": "crong",
     "label": "크롱",
     "series": "pororo",
-    "asset": "assets/characters/crong.webp",
+    "asset": "characters/crong.webp",
     "sourceFile": "4e6acc62-7ddf-4d1b-b76c-c6b2ec67ec15.png",
     "sourceSha256": "dda45c734f914b80f4a680e179f86e09d063f11d34cdb4f9776ff5ade7fe79d9",
     "crop": [
@@ -53,7 +53,7 @@
     "id": "petty",
     "label": "패티",
     "series": "pororo",
-    "asset": "assets/characters/petty.webp",
+    "asset": "characters/petty.webp",
     "sourceFile": "4e6acc62-7ddf-4d1b-b76c-c6b2ec67ec15.png",
     "sourceSha256": "dda45c734f914b80f4a680e179f86e09d063f11d34cdb4f9776ff5ade7fe79d9",
     "crop": [
@@ -78,7 +78,7 @@
     "id": "loopy",
     "label": "루피",
     "series": "pororo",
-    "asset": "assets/characters/loopy.webp",
+    "asset": "characters/loopy.webp",
     "sourceFile": "4e6acc62-7ddf-4d1b-b76c-c6b2ec67ec15.png",
     "sourceSha256": "dda45c734f914b80f4a680e179f86e09d063f11d34cdb4f9776ff5ade7fe79d9",
     "crop": [
@@ -103,7 +103,7 @@
     "id": "harry",
     "label": "해리",
     "series": "pororo",
-    "asset": "assets/characters/harry.webp",
+    "asset": "characters/harry.webp",
     "sourceFile": "77dd554c-714b-4f0f-b0ac-3ba7015a7924.png",
     "sourceSha256": "da3aa07394eef4fc915beea0807d3d239d7fab3fc4e026e943e3e0e756548f32",
     "crop": [
@@ -128,7 +128,7 @@
     "id": "poby",
     "label": "포비",
     "series": "pororo",
-    "asset": "assets/characters/poby.webp",
+    "asset": "characters/poby.webp",
     "sourceFile": "77dd554c-714b-4f0f-b0ac-3ba7015a7924.png",
     "sourceSha256": "da3aa07394eef4fc915beea0807d3d239d7fab3fc4e026e943e3e0e756548f32",
     "crop": [
@@ -153,7 +153,7 @@
     "id": "eddy",
     "label": "에디",
     "series": "pororo",
-    "asset": "assets/characters/eddy.webp",
+    "asset": "characters/eddy.webp",
     "sourceFile": "77dd554c-714b-4f0f-b0ac-3ba7015a7924.png",
     "sourceSha256": "da3aa07394eef4fc915beea0807d3d239d7fab3fc4e026e943e3e0e756548f32",
     "crop": [
@@ -178,7 +178,7 @@
     "id": "rody",
     "label": "로디",
     "series": "pororo",
-    "asset": "assets/characters/rody.webp",
+    "asset": "characters/rody.webp",
     "sourceFile": "77dd554c-714b-4f0f-b0ac-3ba7015a7924.png",
     "sourceSha256": "da3aa07394eef4fc915beea0807d3d239d7fab3fc4e026e943e3e0e756548f32",
     "crop": [
@@ -203,7 +203,7 @@
     "id": "tongtong",
     "label": "통통이",
     "series": "pororo",
-    "asset": "assets/characters/tongtong.webp",
+    "asset": "characters/tongtong.webp",
     "sourceFile": "375c02c0-1e68-4ad1-8126-bed85f9b013e.png",
     "sourceSha256": "a313362c0d9074c227cae10de5b5aaad7cd937104ff4f840af239672276084b1",
     "crop": [
@@ -228,7 +228,7 @@
     "id": "pipi-popo",
     "label": "삐삐와 뽀뽀",
     "series": "pororo",
-    "asset": "assets/characters/pipi-popo.webp",
+    "asset": "characters/pipi-popo.webp",
     "sourceFile": "375c02c0-1e68-4ad1-8126-bed85f9b013e.png",
     "sourceSha256": "a313362c0d9074c227cae10de5b5aaad7cd937104ff4f840af239672276084b1",
     "crop": [
@@ -253,7 +253,7 @@
     "id": "babyshark",
     "label": "아기상어 올리",
     "series": "babyshark",
-    "asset": "assets/characters/babyshark.webp",
+    "asset": "characters/babyshark.webp",
     "sourceFile": "e382b1ea-987d-48c0-844e-761a27dc5bd4.png",
     "sourceSha256": "01d9cea0da50d69284f4949e96102240cc13ac64eb6baf4597a76bc264d3d1ed",
     "crop": [
@@ -278,7 +278,7 @@
     "id": "daddyshark",
     "label": "아빠 상어",
     "series": "babyshark",
-    "asset": "assets/characters/daddyshark.webp",
+    "asset": "characters/daddyshark.webp",
     "sourceFile": "8c36ddcd-fb01-4796-810f-2ce75de76c05.png",
     "sourceSha256": "4d8e82d3fea8cbd3a8ecf69190ed07e0f61448be38b466bf59893fee6deb12d6",
     "crop": [
@@ -303,7 +303,7 @@
     "id": "mommyshark",
     "label": "엄마 상어",
     "series": "babyshark",
-    "asset": "assets/characters/mommyshark.webp",
+    "asset": "characters/mommyshark.webp",
     "sourceFile": "50482640-7c40-4a39-82fe-a2d22506414d.png",
     "sourceSha256": "c927d0adfbdf2e9556d67da1f83a6180d04097d5201506d60a3d76a6dacba926",
     "crop": [
@@ -328,7 +328,7 @@
     "id": "grandpashark",
     "label": "할아버지 상어",
     "series": "babyshark",
-    "asset": "assets/characters/grandpashark.webp",
+    "asset": "characters/grandpashark.webp",
     "sourceFile": "3fe44458-8bf2-4e29-b9c5-13f5d40aa9a3.png",
     "sourceSha256": "29ad603d660414bc00786d2daec00259433bbcd50b584888713127dd76184d65",
     "crop": [
@@ -353,7 +353,7 @@
     "id": "grandmashark",
     "label": "할머니 상어",
     "series": "babyshark",
-    "asset": "assets/characters/grandmashark.webp",
+    "asset": "characters/grandmashark.webp",
     "sourceFile": "a054ad2b-5c9c-46f0-a55d-bc5a8a9cde25.png",
     "sourceSha256": "1a21f813817e0363f7fe4c2af7758976449db030d6e8787d3ae00b8794342c99",
     "crop": [
@@ -378,7 +378,7 @@
     "id": "william",
     "label": "윌리엄",
     "series": "babyshark",
-    "asset": "assets/characters/william.webp",
+    "asset": "characters/william.webp",
     "sourceFile": "71872f10-d2de-42a5-8210-2f1e17a6f872.png",
     "sourceSha256": "a06c7b5a41cc576a87271454a69b26a51a09c0826a57c7e76b01b8b80efc7df9",
     "crop": [
@@ -403,7 +403,7 @@
     "id": "tayo",
     "label": "타요",
     "series": "tayo",
-    "asset": "assets/characters/tayo.webp",
+    "asset": "characters/tayo.webp",
     "sourceFile": "85c115fa-fcc5-4117-800a-308f6a0fcb03.png",
     "sourceSha256": "75749a9f584a1fa28060b6aada066e70b4ba32d72e9e3afe608abbca5e3d4747",
     "crop": [
@@ -428,7 +428,7 @@
     "id": "rogi",
     "label": "로기",
     "series": "tayo",
-    "asset": "assets/characters/rogi.webp",
+    "asset": "characters/rogi.webp",
     "sourceFile": "85c115fa-fcc5-4117-800a-308f6a0fcb03.png",
     "sourceSha256": "75749a9f584a1fa28060b6aada066e70b4ba32d72e9e3afe608abbca5e3d4747",
     "crop": [
@@ -453,7 +453,7 @@
     "id": "lani",
     "label": "라니",
     "series": "tayo",
-    "asset": "assets/characters/lani.webp",
+    "asset": "characters/lani.webp",
     "sourceFile": "5ac7580f-b206-4ebc-93e5-80300da15cc9.png",
     "sourceSha256": "ee73a52f87d91280392d593a6e87a030c377a9c147c6fcdcfcb28dba92b52753",
     "crop": [
@@ -478,7 +478,7 @@
     "id": "gani",
     "label": "가니",
     "series": "tayo",
-    "asset": "assets/characters/gani.webp",
+    "asset": "characters/gani.webp",
     "sourceFile": "5ac7580f-b206-4ebc-93e5-80300da15cc9.png",
     "sourceSha256": "ee73a52f87d91280392d593a6e87a030c377a9c147c6fcdcfcb28dba92b52753",
     "crop": [
@@ -503,7 +503,7 @@
     "id": "citu",
     "label": "씨투",
     "series": "tayo",
-    "asset": "assets/characters/citu.webp",
+    "asset": "characters/citu.webp",
     "sourceFile": "d7fecd49-563c-4049-ada0-0b73c845b251.png",
     "sourceSha256": "98f8d0238418c3cd8cd0c9541d30afeaaf9e78618d4bea6904b05c5dc5f46b95",
     "crop": [
@@ -528,7 +528,7 @@
     "id": "peanut",
     "label": "피넛",
     "series": "tayo",
-    "asset": "assets/characters/peanut.webp",
+    "asset": "characters/peanut.webp",
     "sourceFile": "ce0429f6-73ea-4e07-8d0f-250adac34d45.png",
     "sourceSha256": "74108c26a20118f268abe965b921085c9b1a75804b58693a2bab67b504b74836",
     "crop": [
@@ -553,7 +553,7 @@
     "id": "heart",
     "label": "하트",
     "series": "tayo",
-    "asset": "assets/characters/heart.webp",
+    "asset": "characters/heart.webp",
     "sourceFile": "c54d3645-cdfc-4ed1-9b65-437a7043e861.png",
     "sourceSha256": "5fa74d3b5c7bac2d518ee28d927219ab83eb5b0944e02e4f91b1f1b6d33b9982",
     "crop": [
@@ -578,7 +578,7 @@
     "id": "hana",
     "label": "하나",
     "series": "tayo",
-    "asset": "assets/characters/hana.webp",
+    "asset": "characters/hana.webp",
     "sourceFile": "c54d3645-cdfc-4ed1-9b65-437a7043e861.png",
     "sourceSha256": "5fa74d3b5c7bac2d518ee28d927219ab83eb5b0944e02e4f91b1f1b6d33b9982",
     "crop": [

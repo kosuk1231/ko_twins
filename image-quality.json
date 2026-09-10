@@ -1,5 +1,5 @@
 {
-  "version": "1.7.0",
+  "version": "1.7.1",
   "generalCount": 220,
   "vectorCount": 220,
   "bundledCharacters": 24,
@@ -9,7 +9,7 @@
       "id": "dog",
       "label": "강아지",
       "category": "animals",
-      "file": "assets/vector/dog.svg",
+      "file": "vector/dog.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -29,7 +29,7 @@
       "id": "cat",
       "label": "고양이",
       "category": "animals",
-      "file": "assets/vector/cat.svg",
+      "file": "vector/cat.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -49,7 +49,7 @@
       "id": "rabbit",
       "label": "토끼",
       "category": "animals",
-      "file": "assets/vector/rabbit.svg",
+      "file": "vector/rabbit.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -69,7 +69,7 @@
       "id": "bear",
       "label": "곰",
       "category": "animals",
-      "file": "assets/vector/bear.svg",
+      "file": "vector/bear.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -89,7 +89,7 @@
       "id": "lion",
       "label": "사자",
       "category": "animals",
-      "file": "assets/vector/lion.svg",
+      "file": "vector/lion.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -109,7 +109,7 @@
       "id": "elephant",
       "label": "코끼리",
       "category": "animals",
-      "file": "assets/vector/elephant.svg",
+      "file": "vector/elephant.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -129,7 +129,7 @@
       "id": "giraffe",
       "label": "기린",
       "category": "animals",
-      "file": "assets/vector/giraffe.svg",
+      "file": "vector/giraffe.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -149,7 +149,7 @@
       "id": "monkey",
       "label": "원숭이",
       "category": "animals",
-      "file": "assets/vector/monkey.svg",
+      "file": "vector/monkey.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -169,7 +169,7 @@
       "id": "duck",
       "label": "오리",
       "category": "animals",
-      "file": "assets/vector/duck.svg",
+      "file": "vector/duck.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -189,7 +189,7 @@
       "id": "pig",
       "label": "돼지",
       "category": "animals",
-      "file": "assets/vector/pig.svg",
+      "file": "vector/pig.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -209,7 +209,7 @@
       "id": "cow",
       "label": "소",
       "category": "animals",
-      "file": "assets/vector/cow.svg",
+      "file": "vector/cow.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -229,7 +229,7 @@
       "id": "horse",
       "label": "말",
       "category": "animals",
-      "file": "assets/vector/horse.svg",
+      "file": "vector/horse.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -249,7 +249,7 @@
       "id": "sheep",
       "label": "양",
       "category": "animals",
-      "file": "assets/vector/sheep.svg",
+      "file": "vector/sheep.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -269,7 +269,7 @@
       "id": "tiger",
       "label": "호랑이",
       "category": "animals",
-      "file": "assets/vector/tiger.svg",
+      "file": "vector/tiger.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -289,7 +289,7 @@
       "id": "panda",
       "label": "판다",
       "category": "animals",
-      "file": "assets/vector/panda.svg",
+      "file": "vector/panda.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -309,7 +309,7 @@
       "id": "penguin",
       "label": "펭귄",
       "category": "animals",
-      "file": "assets/vector/penguin.svg",
+      "file": "vector/penguin.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -329,7 +329,7 @@
       "id": "fox",
       "label": "여우",
       "category": "animals",
-      "file": "assets/vector/fox.svg",
+      "file": "vector/fox.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -349,7 +349,7 @@
       "id": "hippo",
       "label": "하마",
       "category": "animals",
-      "file": "assets/vector/hippo.svg",
+      "file": "vector/hippo.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -369,7 +369,7 @@
       "id": "crocodile",
       "label": "악어",
       "category": "animals",
-      "file": "assets/vector/crocodile.svg",
+      "file": "vector/crocodile.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -389,7 +389,7 @@
       "id": "kangaroo",
       "label": "캥거루",
       "category": "animals",
-      "file": "assets/vector/kangaroo.svg",
+      "file": "vector/kangaroo.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -409,7 +409,7 @@
       "id": "apple",
       "label": "사과",
       "category": "fruit",
-      "file": "assets/vector/apple.svg",
+      "file": "vector/apple.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -429,7 +429,7 @@
       "id": "banana",
       "label": "바나나",
       "category": "fruit",
-      "file": "assets/vector/banana.svg",
+      "file": "vector/banana.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -449,7 +449,7 @@
       "id": "strawberry",
       "label": "딸기",
       "category": "fruit",
-      "file": "assets/vector/strawberry.svg",
+      "file": "vector/strawberry.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -469,7 +469,7 @@
       "id": "grape",
       "label": "포도",
       "category": "fruit",
-      "file": "assets/vector/grape.svg",
+      "file": "vector/grape.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -489,7 +489,7 @@
       "id": "watermelon",
       "label": "수박",
       "category": "fruit",
-      "file": "assets/vector/watermelon.svg",
+      "file": "vector/watermelon.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -509,7 +509,7 @@
       "id": "orange",
       "label": "오렌지",
       "category": "fruit",
-      "file": "assets/vector/orange.svg",
+      "file": "vector/orange.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -529,7 +529,7 @@
       "id": "mandarin",
       "label": "귤",
       "category": "fruit",
-      "file": "assets/vector/mandarin.svg",
+      "file": "vector/mandarin.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -549,7 +549,7 @@
       "id": "lemon",
       "label": "레몬",
       "category": "fruit",
-      "file": "assets/vector/lemon.svg",
+      "file": "vector/lemon.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -569,7 +569,7 @@
       "id": "peach",
       "label": "복숭아",
       "category": "fruit",
-      "file": "assets/vector/peach.svg",
+      "file": "vector/peach.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -589,7 +589,7 @@
       "id": "cherry",
       "label": "체리",
       "category": "fruit",
-      "file": "assets/vector/cherry.svg",
+      "file": "vector/cherry.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -609,7 +609,7 @@
       "id": "kiwi",
       "label": "키위",
       "category": "fruit",
-      "file": "assets/vector/kiwi.svg",
+      "file": "vector/kiwi.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -629,7 +629,7 @@
       "id": "pear",
       "label": "배",
       "category": "fruit",
-      "file": "assets/vector/pear.svg",
+      "file": "vector/pear.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -649,7 +649,7 @@
       "id": "pineapple",
       "label": "파인애플",
       "category": "fruit",
-      "file": "assets/vector/pineapple.svg",
+      "file": "vector/pineapple.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -669,7 +669,7 @@
       "id": "blueberry",
       "label": "블루베리",
       "category": "fruit",
-      "file": "assets/vector/blueberry.svg",
+      "file": "vector/blueberry.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -689,7 +689,7 @@
       "id": "mango",
       "label": "망고",
       "category": "fruit",
-      "file": "assets/vector/mango.svg",
+      "file": "vector/mango.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -709,7 +709,7 @@
       "id": "melon",
       "label": "멜론",
       "category": "fruit",
-      "file": "assets/vector/melon.svg",
+      "file": "vector/melon.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -729,7 +729,7 @@
       "id": "persimmon",
       "label": "감",
       "category": "fruit",
-      "file": "assets/vector/persimmon.svg",
+      "file": "vector/persimmon.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -749,7 +749,7 @@
       "id": "plum",
       "label": "자두",
       "category": "fruit",
-      "file": "assets/vector/plum.svg",
+      "file": "vector/plum.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -769,7 +769,7 @@
       "id": "green-grape",
       "label": "청포도",
       "category": "fruit",
-      "file": "assets/vector/green-grape.svg",
+      "file": "vector/green-grape.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -789,7 +789,7 @@
       "id": "pomegranate",
       "label": "석류",
       "category": "fruit",
-      "file": "assets/vector/pomegranate.svg",
+      "file": "vector/pomegranate.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -809,7 +809,7 @@
       "id": "carrot",
       "label": "당근",
       "category": "vegetables",
-      "file": "assets/vector/carrot.svg",
+      "file": "vector/carrot.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -829,7 +829,7 @@
       "id": "potato",
       "label": "감자",
       "category": "vegetables",
-      "file": "assets/vector/potato.svg",
+      "file": "vector/potato.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -849,7 +849,7 @@
       "id": "onion",
       "label": "양파",
       "category": "vegetables",
-      "file": "assets/vector/onion.svg",
+      "file": "vector/onion.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -869,7 +869,7 @@
       "id": "tomato",
       "label": "토마토",
       "category": "vegetables",
-      "file": "assets/vector/tomato.svg",
+      "file": "vector/tomato.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -889,7 +889,7 @@
       "id": "cucumber",
       "label": "오이",
       "category": "vegetables",
-      "file": "assets/vector/cucumber.svg",
+      "file": "vector/cucumber.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -909,7 +909,7 @@
       "id": "eggplant",
       "label": "가지",
       "category": "vegetables",
-      "file": "assets/vector/eggplant.svg",
+      "file": "vector/eggplant.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -929,7 +929,7 @@
       "id": "pumpkin",
       "label": "호박",
       "category": "vegetables",
-      "file": "assets/vector/pumpkin.svg",
+      "file": "vector/pumpkin.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -949,7 +949,7 @@
       "id": "sweetpotato",
       "label": "고구마",
       "category": "vegetables",
-      "file": "assets/vector/sweetpotato.svg",
+      "file": "vector/sweetpotato.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -969,7 +969,7 @@
       "id": "broccoli",
       "label": "브로콜리",
       "category": "vegetables",
-      "file": "assets/vector/broccoli.svg",
+      "file": "vector/broccoli.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -989,7 +989,7 @@
       "id": "cabbage",
       "label": "양배추",
       "category": "vegetables",
-      "file": "assets/vector/cabbage.svg",
+      "file": "vector/cabbage.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -1009,7 +1009,7 @@
       "id": "mushroom",
       "label": "버섯",
       "category": "vegetables",
-      "file": "assets/vector/mushroom.svg",
+      "file": "vector/mushroom.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -1029,7 +1029,7 @@
       "id": "scallion",
       "label": "대파",
       "category": "vegetables",
-      "file": "assets/vector/scallion.svg",
+      "file": "vector/scallion.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -1049,7 +1049,7 @@
       "id": "spinach",
       "label": "시금치",
       "category": "vegetables",
-      "file": "assets/vector/spinach.svg",
+      "file": "vector/spinach.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -1069,7 +1069,7 @@
       "id": "lettuce",
       "label": "상추",
       "category": "vegetables",
-      "file": "assets/vector/lettuce.svg",
+      "file": "vector/lettuce.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -1089,7 +1089,7 @@
       "id": "radish",
       "label": "무",
       "category": "vegetables",
-      "file": "assets/vector/radish.svg",
+      "file": "vector/radish.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -1109,7 +1109,7 @@
       "id": "napa-cabbage",
       "label": "배추",
       "category": "vegetables",
-      "file": "assets/vector/napa-cabbage.svg",
+      "file": "vector/napa-cabbage.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -1129,7 +1129,7 @@
       "id": "corn",
       "label": "옥수수",
       "category": "vegetables",
-      "file": "assets/vector/corn.svg",
+      "file": "vector/corn.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -1149,7 +1149,7 @@
       "id": "bell-pepper",
       "label": "피망",
       "category": "vegetables",
-      "file": "assets/vector/bell-pepper.svg",
+      "file": "vector/bell-pepper.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -1169,7 +1169,7 @@
       "id": "pea",
       "label": "완두콩",
       "category": "vegetables",
-      "file": "assets/vector/pea.svg",
+      "file": "vector/pea.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -1189,7 +1189,7 @@
       "id": "garlic",
       "label": "마늘",
       "category": "vegetables",
-      "file": "assets/vector/garlic.svg",
+      "file": "vector/garlic.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -1209,7 +1209,7 @@
       "id": "car",
       "label": "자동차",
       "category": "vehicles",
-      "file": "assets/vector/car.svg",
+      "file": "vector/car.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -1229,7 +1229,7 @@
       "id": "bus",
       "label": "버스",
       "category": "vehicles",
-      "file": "assets/vector/bus.svg",
+      "file": "vector/bus.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -1249,7 +1249,7 @@
       "id": "train",
       "label": "기차",
       "category": "vehicles",
-      "file": "assets/vector/train.svg",
+      "file": "vector/train.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -1269,7 +1269,7 @@
       "id": "airplane",
       "label": "비행기",
       "category": "vehicles",
-      "file": "assets/vector/airplane.svg",
+      "file": "vector/airplane.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -1289,7 +1289,7 @@
       "id": "boat",
       "label": "배",
       "category": "vehicles",
-      "file": "assets/vector/boat.svg",
+      "file": "vector/boat.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -1309,7 +1309,7 @@
       "id": "bicycle",
       "label": "자전거",
       "category": "vehicles",
-      "file": "assets/vector/bicycle.svg",
+      "file": "vector/bicycle.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -1329,7 +1329,7 @@
       "id": "motorcycle",
       "label": "오토바이",
       "category": "vehicles",
-      "file": "assets/vector/motorcycle.svg",
+      "file": "vector/motorcycle.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -1349,7 +1349,7 @@
       "id": "firetruck",
       "label": "소방차",
       "category": "vehicles",
-      "file": "assets/vector/firetruck.svg",
+      "file": "vector/firetruck.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -1369,7 +1369,7 @@
       "id": "policecar",
       "label": "경찰차",
       "category": "vehicles",
-      "file": "assets/vector/policecar.svg",
+      "file": "vector/policecar.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -1389,7 +1389,7 @@
       "id": "ambulance",
       "label": "구급차",
       "category": "vehicles",
-      "file": "assets/vector/ambulance.svg",
+      "file": "vector/ambulance.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -1409,7 +1409,7 @@
       "id": "truck",
       "label": "트럭",
       "category": "vehicles",
-      "file": "assets/vector/truck.svg",
+      "file": "vector/truck.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -1429,7 +1429,7 @@
       "id": "excavator",
       "label": "굴착기",
       "category": "vehicles",
-      "file": "assets/vector/excavator.svg",
+      "file": "vector/excavator.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -1449,7 +1449,7 @@
       "id": "crane",
       "label": "크레인",
       "category": "vehicles",
-      "file": "assets/vector/crane.svg",
+      "file": "vector/crane.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -1469,7 +1469,7 @@
       "id": "tractor",
       "label": "트랙터",
       "category": "vehicles",
-      "file": "assets/vector/tractor.svg",
+      "file": "vector/tractor.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -1489,7 +1489,7 @@
       "id": "bulldozer",
       "label": "불도저",
       "category": "vehicles",
-      "file": "assets/vector/bulldozer.svg",
+      "file": "vector/bulldozer.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -1509,7 +1509,7 @@
       "id": "helicopter",
       "label": "헬리콥터",
       "category": "vehicles",
-      "file": "assets/vector/helicopter.svg",
+      "file": "vector/helicopter.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -1529,7 +1529,7 @@
       "id": "rocket",
       "label": "로켓",
       "category": "vehicles",
-      "file": "assets/vector/rocket.svg",
+      "file": "vector/rocket.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -1549,7 +1549,7 @@
       "id": "taxi",
       "label": "택시",
       "category": "vehicles",
-      "file": "assets/vector/taxi.svg",
+      "file": "vector/taxi.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -1569,7 +1569,7 @@
       "id": "camper",
       "label": "캠핑카",
       "category": "vehicles",
-      "file": "assets/vector/camper.svg",
+      "file": "vector/camper.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -1589,7 +1589,7 @@
       "id": "subway",
       "label": "지하철",
       "category": "vehicles",
-      "file": "assets/vector/subway.svg",
+      "file": "vector/subway.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -1609,7 +1609,7 @@
       "id": "book",
       "label": "책",
       "category": "objects",
-      "file": "assets/vector/book.svg",
+      "file": "vector/book.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -1629,7 +1629,7 @@
       "id": "pencil",
       "label": "연필",
       "category": "objects",
-      "file": "assets/vector/pencil.svg",
+      "file": "vector/pencil.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -1649,7 +1649,7 @@
       "id": "eraser",
       "label": "지우개",
       "category": "objects",
-      "file": "assets/vector/eraser.svg",
+      "file": "vector/eraser.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -1669,7 +1669,7 @@
       "id": "scissors",
       "label": "가위",
       "category": "objects",
-      "file": "assets/vector/scissors.svg",
+      "file": "vector/scissors.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -1689,7 +1689,7 @@
       "id": "glue",
       "label": "풀",
       "category": "objects",
-      "file": "assets/vector/glue.svg",
+      "file": "vector/glue.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -1709,7 +1709,7 @@
       "id": "notebook",
       "label": "공책",
       "category": "objects",
-      "file": "assets/vector/notebook.svg",
+      "file": "vector/notebook.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -1729,7 +1729,7 @@
       "id": "ruler",
       "label": "자",
       "category": "objects",
-      "file": "assets/vector/ruler.svg",
+      "file": "vector/ruler.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -1749,7 +1749,7 @@
       "id": "color-pencil",
       "label": "색연필",
       "category": "objects",
-      "file": "assets/vector/color-pencil.svg",
+      "file": "vector/color-pencil.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -1769,7 +1769,7 @@
       "id": "crayon",
       "label": "크레파스",
       "category": "objects",
-      "file": "assets/vector/crayon.svg",
+      "file": "vector/crayon.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -1789,7 +1789,7 @@
       "id": "bag",
       "label": "가방",
       "category": "objects",
-      "file": "assets/vector/bag.svg",
+      "file": "vector/bag.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -1809,7 +1809,7 @@
       "id": "chair",
       "label": "의자",
       "category": "objects",
-      "file": "assets/vector/chair.svg",
+      "file": "vector/chair.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -1829,7 +1829,7 @@
       "id": "desk",
       "label": "책상",
       "category": "objects",
-      "file": "assets/vector/desk.svg",
+      "file": "vector/desk.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -1849,7 +1849,7 @@
       "id": "bed",
       "label": "침대",
       "category": "objects",
-      "file": "assets/vector/bed.svg",
+      "file": "vector/bed.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -1869,7 +1869,7 @@
       "id": "clock",
       "label": "시계",
       "category": "objects",
-      "file": "assets/vector/clock.svg",
+      "file": "vector/clock.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -1889,7 +1889,7 @@
       "id": "glasses",
       "label": "안경",
       "category": "objects",
-      "file": "assets/vector/glasses.svg",
+      "file": "vector/glasses.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -1909,7 +1909,7 @@
       "id": "umbrella",
       "label": "우산",
       "category": "objects",
-      "file": "assets/vector/umbrella.svg",
+      "file": "vector/umbrella.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -1929,7 +1929,7 @@
       "id": "ball",
       "label": "공",
       "category": "objects",
-      "file": "assets/vector/ball.svg",
+      "file": "vector/ball.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -1949,7 +1949,7 @@
       "id": "cup",
       "label": "컵",
       "category": "objects",
-      "file": "assets/vector/cup.svg",
+      "file": "vector/cup.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -1969,7 +1969,7 @@
       "id": "plate",
       "label": "접시",
       "category": "objects",
-      "file": "assets/vector/plate.svg",
+      "file": "vector/plate.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -1989,7 +1989,7 @@
       "id": "towel",
       "label": "수건",
       "category": "objects",
-      "file": "assets/vector/towel.svg",
+      "file": "vector/towel.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -2009,7 +2009,7 @@
       "id": "t-shirt",
       "label": "티셔츠",
       "category": "clothes",
-      "file": "assets/vector/t-shirt.svg",
+      "file": "vector/t-shirt.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -2029,7 +2029,7 @@
       "id": "pants",
       "label": "바지",
       "category": "clothes",
-      "file": "assets/vector/pants.svg",
+      "file": "vector/pants.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -2049,7 +2049,7 @@
       "id": "skirt",
       "label": "치마",
       "category": "clothes",
-      "file": "assets/vector/skirt.svg",
+      "file": "vector/skirt.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -2069,7 +2069,7 @@
       "id": "dress",
       "label": "원피스",
       "category": "clothes",
-      "file": "assets/vector/dress.svg",
+      "file": "vector/dress.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -2089,7 +2089,7 @@
       "id": "pajamas",
       "label": "잠옷",
       "category": "clothes",
-      "file": "assets/vector/pajamas.svg",
+      "file": "vector/pajamas.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -2109,7 +2109,7 @@
       "id": "jacket",
       "label": "재킷",
       "category": "clothes",
-      "file": "assets/vector/jacket.svg",
+      "file": "vector/jacket.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -2129,7 +2129,7 @@
       "id": "shoes",
       "label": "신발",
       "category": "clothes",
-      "file": "assets/vector/shoes.svg",
+      "file": "vector/shoes.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -2149,7 +2149,7 @@
       "id": "sneakers",
       "label": "운동화",
       "category": "clothes",
-      "file": "assets/vector/sneakers.svg",
+      "file": "vector/sneakers.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -2169,7 +2169,7 @@
       "id": "gloves",
       "label": "장갑",
       "category": "clothes",
-      "file": "assets/vector/gloves.svg",
+      "file": "vector/gloves.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -2189,7 +2189,7 @@
       "id": "scarf",
       "label": "목도리",
       "category": "clothes",
-      "file": "assets/vector/scarf.svg",
+      "file": "vector/scarf.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -2209,7 +2209,7 @@
       "id": "hat",
       "label": "모자",
       "category": "clothes",
-      "file": "assets/vector/hat.svg",
+      "file": "vector/hat.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -2229,7 +2229,7 @@
       "id": "socks",
       "label": "양말",
       "category": "clothes",
-      "file": "assets/vector/socks.svg",
+      "file": "vector/socks.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -2249,7 +2249,7 @@
       "id": "underwear",
       "label": "속옷",
       "category": "clothes",
-      "file": "assets/vector/underwear.svg",
+      "file": "vector/underwear.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -2269,7 +2269,7 @@
       "id": "swimsuit",
       "label": "수영복",
       "category": "clothes",
-      "file": "assets/vector/swimsuit.svg",
+      "file": "vector/swimsuit.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -2289,7 +2289,7 @@
       "id": "raincoat",
       "label": "비옷",
       "category": "clothes",
-      "file": "assets/vector/raincoat.svg",
+      "file": "vector/raincoat.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -2309,7 +2309,7 @@
       "id": "helmet",
       "label": "헬멧",
       "category": "clothes",
-      "file": "assets/vector/helmet.svg",
+      "file": "vector/helmet.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -2329,7 +2329,7 @@
       "id": "uniform",
       "label": "교복",
       "category": "clothes",
-      "file": "assets/vector/uniform.svg",
+      "file": "vector/uniform.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -2349,7 +2349,7 @@
       "id": "sportswear",
       "label": "운동복",
       "category": "clothes",
-      "file": "assets/vector/sportswear.svg",
+      "file": "vector/sportswear.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -2369,7 +2369,7 @@
       "id": "sweater",
       "label": "스웨터",
       "category": "clothes",
-      "file": "assets/vector/sweater.svg",
+      "file": "vector/sweater.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -2389,7 +2389,7 @@
       "id": "coat",
       "label": "코트",
       "category": "clothes",
-      "file": "assets/vector/coat.svg",
+      "file": "vector/coat.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -2409,7 +2409,7 @@
       "id": "rice",
       "label": "밥",
       "category": "food",
-      "file": "assets/vector/rice.svg",
+      "file": "vector/rice.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -2429,7 +2429,7 @@
       "id": "bread",
       "label": "빵",
       "category": "food",
-      "file": "assets/vector/bread.svg",
+      "file": "vector/bread.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -2449,7 +2449,7 @@
       "id": "milk",
       "label": "우유",
       "category": "food",
-      "file": "assets/vector/milk.svg",
+      "file": "vector/milk.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -2469,7 +2469,7 @@
       "id": "water",
       "label": "물",
       "category": "food",
-      "file": "assets/vector/water.svg",
+      "file": "vector/water.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -2489,7 +2489,7 @@
       "id": "egg",
       "label": "달걀",
       "category": "food",
-      "file": "assets/vector/egg.svg",
+      "file": "vector/egg.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -2509,7 +2509,7 @@
       "id": "noodles",
       "label": "국수",
       "category": "food",
-      "file": "assets/vector/noodles.svg",
+      "file": "vector/noodles.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -2529,7 +2529,7 @@
       "id": "cheese",
       "label": "치즈",
       "category": "food",
-      "file": "assets/vector/cheese.svg",
+      "file": "vector/cheese.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -2549,7 +2549,7 @@
       "id": "soup",
       "label": "국",
       "category": "food",
-      "file": "assets/vector/soup.svg",
+      "file": "vector/soup.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -2569,7 +2569,7 @@
       "id": "ricecake",
       "label": "떡",
       "category": "food",
-      "file": "assets/vector/ricecake.svg",
+      "file": "vector/ricecake.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -2589,7 +2589,7 @@
       "id": "dumpling",
       "label": "만두",
       "category": "food",
-      "file": "assets/vector/dumpling.svg",
+      "file": "vector/dumpling.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -2609,7 +2609,7 @@
       "id": "bulgogi",
       "label": "불고기",
       "category": "food",
-      "file": "assets/vector/bulgogi.svg",
+      "file": "vector/bulgogi.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -2629,7 +2629,7 @@
       "id": "bibimbap",
       "label": "비빔밥",
       "category": "food",
-      "file": "assets/vector/bibimbap.svg",
+      "file": "vector/bibimbap.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -2649,7 +2649,7 @@
       "id": "pizza",
       "label": "피자",
       "category": "food",
-      "file": "assets/vector/pizza.svg",
+      "file": "vector/pizza.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -2669,7 +2669,7 @@
       "id": "chicken",
       "label": "치킨",
       "category": "food",
-      "file": "assets/vector/chicken.svg",
+      "file": "vector/chicken.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -2689,7 +2689,7 @@
       "id": "hamburger",
       "label": "햄버거",
       "category": "food",
-      "file": "assets/vector/hamburger.svg",
+      "file": "vector/hamburger.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -2709,7 +2709,7 @@
       "id": "sandwich",
       "label": "샌드위치",
       "category": "food",
-      "file": "assets/vector/sandwich.svg",
+      "file": "vector/sandwich.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -2729,7 +2729,7 @@
       "id": "spaghetti",
       "label": "스파게티",
       "category": "food",
-      "file": "assets/vector/spaghetti.svg",
+      "file": "vector/spaghetti.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -2749,7 +2749,7 @@
       "id": "gimbap",
       "label": "김밥",
       "category": "food",
-      "file": "assets/vector/gimbap.svg",
+      "file": "vector/gimbap.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -2769,7 +2769,7 @@
       "id": "yogurt",
       "label": "요거트",
       "category": "food",
-      "file": "assets/vector/yogurt.svg",
+      "file": "vector/yogurt.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -2789,7 +2789,7 @@
       "id": "icecream",
       "label": "아이스크림",
       "category": "food",
-      "file": "assets/vector/icecream.svg",
+      "file": "vector/icecream.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -2809,7 +2809,7 @@
       "id": "butterfly",
       "label": "나비",
       "category": "insects",
-      "file": "assets/vector/butterfly.svg",
+      "file": "vector/butterfly.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -2829,7 +2829,7 @@
       "id": "dragonfly",
       "label": "잠자리",
       "category": "insects",
-      "file": "assets/vector/dragonfly.svg",
+      "file": "vector/dragonfly.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -2849,7 +2849,7 @@
       "id": "ladybug",
       "label": "무당벌레",
       "category": "insects",
-      "file": "assets/vector/ladybug.svg",
+      "file": "vector/ladybug.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -2869,7 +2869,7 @@
       "id": "ant",
       "label": "개미",
       "category": "insects",
-      "file": "assets/vector/ant.svg",
+      "file": "vector/ant.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -2889,7 +2889,7 @@
       "id": "bee",
       "label": "벌",
       "category": "insects",
-      "file": "assets/vector/bee.svg",
+      "file": "vector/bee.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -2909,7 +2909,7 @@
       "id": "cicada",
       "label": "매미",
       "category": "insects",
-      "file": "assets/vector/cicada.svg",
+      "file": "vector/cicada.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -2929,7 +2929,7 @@
       "id": "stag-beetle",
       "label": "사슴벌레",
       "category": "insects",
-      "file": "assets/vector/stag-beetle.svg",
+      "file": "vector/stag-beetle.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -2949,7 +2949,7 @@
       "id": "rhino-beetle",
       "label": "장수풍뎅이",
       "category": "insects",
-      "file": "assets/vector/rhino-beetle.svg",
+      "file": "vector/rhino-beetle.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -2969,7 +2969,7 @@
       "id": "fly",
       "label": "파리",
       "category": "insects",
-      "file": "assets/vector/fly.svg",
+      "file": "vector/fly.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -2989,7 +2989,7 @@
       "id": "mosquito",
       "label": "모기",
       "category": "insects",
-      "file": "assets/vector/mosquito.svg",
+      "file": "vector/mosquito.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -3009,7 +3009,7 @@
       "id": "spider",
       "label": "거미",
       "category": "insects",
-      "file": "assets/vector/spider.svg",
+      "file": "vector/spider.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -3029,7 +3029,7 @@
       "id": "scorpion",
       "label": "전갈",
       "category": "insects",
-      "file": "assets/vector/scorpion.svg",
+      "file": "vector/scorpion.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -3049,7 +3049,7 @@
       "id": "centipede",
       "label": "지네",
       "category": "insects",
-      "file": "assets/vector/centipede.svg",
+      "file": "vector/centipede.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -3069,7 +3069,7 @@
       "id": "snail",
       "label": "달팽이",
       "category": "insects",
-      "file": "assets/vector/snail.svg",
+      "file": "vector/snail.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -3089,7 +3089,7 @@
       "id": "earthworm",
       "label": "지렁이",
       "category": "insects",
-      "file": "assets/vector/earthworm.svg",
+      "file": "vector/earthworm.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -3109,7 +3109,7 @@
       "id": "grasshopper",
       "label": "메뚜기",
       "category": "insects",
-      "file": "assets/vector/grasshopper.svg",
+      "file": "vector/grasshopper.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -3129,7 +3129,7 @@
       "id": "mantis",
       "label": "사마귀",
       "category": "insects",
-      "file": "assets/vector/mantis.svg",
+      "file": "vector/mantis.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -3149,7 +3149,7 @@
       "id": "firefly",
       "label": "반딧불이",
       "category": "insects",
-      "file": "assets/vector/firefly.svg",
+      "file": "vector/firefly.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -3169,7 +3169,7 @@
       "id": "dung-beetle",
       "label": "풍뎅이",
       "category": "insects",
-      "file": "assets/vector/dung-beetle.svg",
+      "file": "vector/dung-beetle.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -3189,7 +3189,7 @@
       "id": "water-beetle",
       "label": "물방개",
       "category": "insects",
-      "file": "assets/vector/water-beetle.svg",
+      "file": "vector/water-beetle.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -3209,7 +3209,7 @@
       "id": "head",
       "label": "머리",
       "category": "body",
-      "file": "assets/vector/head.svg",
+      "file": "vector/head.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -3229,7 +3229,7 @@
       "id": "eye",
       "label": "눈",
       "category": "body",
-      "file": "assets/vector/eye.svg",
+      "file": "vector/eye.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -3249,7 +3249,7 @@
       "id": "nose",
       "label": "코",
       "category": "body",
-      "file": "assets/vector/nose.svg",
+      "file": "vector/nose.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -3269,7 +3269,7 @@
       "id": "mouth",
       "label": "입",
       "category": "body",
-      "file": "assets/vector/mouth.svg",
+      "file": "vector/mouth.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -3289,7 +3289,7 @@
       "id": "ear",
       "label": "귀",
       "category": "body",
-      "file": "assets/vector/ear.svg",
+      "file": "vector/ear.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -3309,7 +3309,7 @@
       "id": "hand",
       "label": "손",
       "category": "body",
-      "file": "assets/vector/hand.svg",
+      "file": "vector/hand.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -3329,7 +3329,7 @@
       "id": "foot",
       "label": "발",
       "category": "body",
-      "file": "assets/vector/foot.svg",
+      "file": "vector/foot.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -3349,7 +3349,7 @@
       "id": "arm",
       "label": "팔",
       "category": "body",
-      "file": "assets/vector/arm.svg",
+      "file": "vector/arm.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -3369,7 +3369,7 @@
       "id": "leg",
       "label": "다리",
       "category": "body",
-      "file": "assets/vector/leg.svg",
+      "file": "vector/leg.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -3389,7 +3389,7 @@
       "id": "belly",
       "label": "배",
       "category": "body",
-      "file": "assets/vector/belly.svg",
+      "file": "vector/belly.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -3409,7 +3409,7 @@
       "id": "back",
       "label": "등",
       "category": "body",
-      "file": "assets/vector/back.svg",
+      "file": "vector/back.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -3429,7 +3429,7 @@
       "id": "chest",
       "label": "가슴",
       "category": "body",
-      "file": "assets/vector/chest.svg",
+      "file": "vector/chest.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -3449,7 +3449,7 @@
       "id": "finger",
       "label": "손가락",
       "category": "body",
-      "file": "assets/vector/finger.svg",
+      "file": "vector/finger.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -3469,7 +3469,7 @@
       "id": "toe",
       "label": "발가락",
       "category": "body",
-      "file": "assets/vector/toe.svg",
+      "file": "vector/toe.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -3489,7 +3489,7 @@
       "id": "knee",
       "label": "무릎",
       "category": "body",
-      "file": "assets/vector/knee.svg",
+      "file": "vector/knee.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -3509,7 +3509,7 @@
       "id": "elbow",
       "label": "팔꿈치",
       "category": "body",
-      "file": "assets/vector/elbow.svg",
+      "file": "vector/elbow.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -3529,7 +3529,7 @@
       "id": "shoulder",
       "label": "어깨",
       "category": "body",
-      "file": "assets/vector/shoulder.svg",
+      "file": "vector/shoulder.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -3549,7 +3549,7 @@
       "id": "neck",
       "label": "목",
       "category": "body",
-      "file": "assets/vector/neck.svg",
+      "file": "vector/neck.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -3569,7 +3569,7 @@
       "id": "waist",
       "label": "허리",
       "category": "body",
-      "file": "assets/vector/waist.svg",
+      "file": "vector/waist.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -3589,7 +3589,7 @@
       "id": "bottom",
       "label": "엉덩이",
       "category": "body",
-      "file": "assets/vector/bottom.svg",
+      "file": "vector/bottom.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -3609,7 +3609,7 @@
       "id": "baby",
       "label": "아기",
       "category": "people",
-      "file": "assets/vector/baby.svg",
+      "file": "vector/baby.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -3629,7 +3629,7 @@
       "id": "child",
       "label": "어린이",
       "category": "people",
-      "file": "assets/vector/child.svg",
+      "file": "vector/child.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -3649,7 +3649,7 @@
       "id": "student",
       "label": "학생",
       "category": "people",
-      "file": "assets/vector/student.svg",
+      "file": "vector/student.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -3669,7 +3669,7 @@
       "id": "teacher",
       "label": "선생님",
       "category": "people",
-      "file": "assets/vector/teacher.svg",
+      "file": "vector/teacher.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -3689,7 +3689,7 @@
       "id": "doctor",
       "label": "의사",
       "category": "people",
-      "file": "assets/vector/doctor.svg",
+      "file": "vector/doctor.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -3709,7 +3709,7 @@
       "id": "nurse",
       "label": "간호사",
       "category": "people",
-      "file": "assets/vector/nurse.svg",
+      "file": "vector/nurse.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -3729,7 +3729,7 @@
       "id": "police",
       "label": "경찰관",
       "category": "people",
-      "file": "assets/vector/police.svg",
+      "file": "vector/police.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -3749,7 +3749,7 @@
       "id": "firefighter",
       "label": "소방관",
       "category": "people",
-      "file": "assets/vector/firefighter.svg",
+      "file": "vector/firefighter.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -3769,7 +3769,7 @@
       "id": "chef",
       "label": "요리사",
       "category": "people",
-      "file": "assets/vector/chef.svg",
+      "file": "vector/chef.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -3789,7 +3789,7 @@
       "id": "athlete",
       "label": "운동선수",
       "category": "people",
-      "file": "assets/vector/athlete.svg",
+      "file": "vector/athlete.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -3809,7 +3809,7 @@
       "id": "singer",
       "label": "가수",
       "category": "people",
-      "file": "assets/vector/singer.svg",
+      "file": "vector/singer.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -3829,7 +3829,7 @@
       "id": "painter",
       "label": "화가",
       "category": "people",
-      "file": "assets/vector/painter.svg",
+      "file": "vector/painter.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -3849,7 +3849,7 @@
       "id": "scientist",
       "label": "과학자",
       "category": "people",
-      "file": "assets/vector/scientist.svg",
+      "file": "vector/scientist.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -3869,7 +3869,7 @@
       "id": "farmer",
       "label": "농부",
       "category": "people",
-      "file": "assets/vector/farmer.svg",
+      "file": "vector/farmer.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -3889,7 +3889,7 @@
       "id": "astronaut",
       "label": "우주인",
       "category": "people",
-      "file": "assets/vector/astronaut.svg",
+      "file": "vector/astronaut.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -3909,7 +3909,7 @@
       "id": "grandpa",
       "label": "할아버지",
       "category": "people",
-      "file": "assets/vector/grandpa.svg",
+      "file": "vector/grandpa.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -3929,7 +3929,7 @@
       "id": "grandma",
       "label": "할머니",
       "category": "people",
-      "file": "assets/vector/grandma.svg",
+      "file": "vector/grandma.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -3949,7 +3949,7 @@
       "id": "dad",
       "label": "아빠",
       "category": "people",
-      "file": "assets/vector/dad.svg",
+      "file": "vector/dad.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -3969,7 +3969,7 @@
       "id": "mom",
       "label": "엄마",
       "category": "people",
-      "file": "assets/vector/mom.svg",
+      "file": "vector/mom.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -3989,7 +3989,7 @@
       "id": "friend",
       "label": "친구",
       "category": "people",
-      "file": "assets/vector/friend.svg",
+      "file": "vector/friend.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -4009,7 +4009,7 @@
       "id": "sun",
       "label": "해",
       "category": "nature",
-      "file": "assets/vector/sun.svg",
+      "file": "vector/sun.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -4029,7 +4029,7 @@
       "id": "moon",
       "label": "달",
       "category": "nature",
-      "file": "assets/vector/moon.svg",
+      "file": "vector/moon.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -4049,7 +4049,7 @@
       "id": "star",
       "label": "별",
       "category": "nature",
-      "file": "assets/vector/star.svg",
+      "file": "vector/star.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -4069,7 +4069,7 @@
       "id": "cloud",
       "label": "구름",
       "category": "nature",
-      "file": "assets/vector/cloud.svg",
+      "file": "vector/cloud.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -4089,7 +4089,7 @@
       "id": "rain",
       "label": "비",
       "category": "nature",
-      "file": "assets/vector/rain.svg",
+      "file": "vector/rain.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -4109,7 +4109,7 @@
       "id": "snow",
       "label": "눈",
       "category": "nature",
-      "file": "assets/vector/snow.svg",
+      "file": "vector/snow.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -4129,7 +4129,7 @@
       "id": "rainbow",
       "label": "무지개",
       "category": "nature",
-      "file": "assets/vector/rainbow.svg",
+      "file": "vector/rainbow.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -4149,7 +4149,7 @@
       "id": "wind",
       "label": "바람",
       "category": "nature",
-      "file": "assets/vector/wind.svg",
+      "file": "vector/wind.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -4169,7 +4169,7 @@
       "id": "lightning",
       "label": "번개",
       "category": "nature",
-      "file": "assets/vector/lightning.svg",
+      "file": "vector/lightning.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -4189,7 +4189,7 @@
       "id": "earth",
       "label": "지구",
       "category": "nature",
-      "file": "assets/vector/earth.svg",
+      "file": "vector/earth.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -4209,7 +4209,7 @@
       "id": "mountain",
       "label": "산",
       "category": "nature",
-      "file": "assets/vector/mountain.svg",
+      "file": "vector/mountain.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -4229,7 +4229,7 @@
       "id": "sea",
       "label": "바다",
       "category": "nature",
-      "file": "assets/vector/sea.svg",
+      "file": "vector/sea.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -4249,7 +4249,7 @@
       "id": "river",
       "label": "강",
       "category": "nature",
-      "file": "assets/vector/river.svg",
+      "file": "vector/river.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -4269,7 +4269,7 @@
       "id": "lake",
       "label": "호수",
       "category": "nature",
-      "file": "assets/vector/lake.svg",
+      "file": "vector/lake.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -4289,7 +4289,7 @@
       "id": "forest",
       "label": "숲",
       "category": "nature",
-      "file": "assets/vector/forest.svg",
+      "file": "vector/forest.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -4309,7 +4309,7 @@
       "id": "flower",
       "label": "꽃",
       "category": "nature",
-      "file": "assets/vector/flower.svg",
+      "file": "vector/flower.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -4329,7 +4329,7 @@
       "id": "tree",
       "label": "나무",
       "category": "nature",
-      "file": "assets/vector/tree.svg",
+      "file": "vector/tree.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -4349,7 +4349,7 @@
       "id": "grass",
       "label": "풀",
       "category": "nature",
-      "file": "assets/vector/grass.svg",
+      "file": "vector/grass.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -4369,7 +4369,7 @@
       "id": "stone",
       "label": "돌",
       "category": "nature",
-      "file": "assets/vector/stone.svg",
+      "file": "vector/stone.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,
@@ -4389,7 +4389,7 @@
       "id": "sand",
       "label": "모래",
       "category": "nature",
-      "file": "assets/vector/sand.svg",
+      "file": "vector/sand.svg",
       "format": "SVG vector",
       "intrinsicSize": [
         1024,

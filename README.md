@@ -1,4 +1,4 @@
-# 은설, 은채만의 낱말놀이 v1.7.0
+# 은설, 은채만의 낱말놀이 v1.7.1
 
 ## Full vector image replacement
 All 220 general cards now load distinct SVG vector originals from assets/vector.
@@ -19,7 +19,7 @@ Cloud backup and AI synthesis still require the previously configured server cre
 ## Cache
 The new service worker caches all 220 SVGs and existing character assets atomically.
 A missing upload causes installation to fail rather than replacing the previous working cache.
-The recovery page /recover.html now expects v1.7.0. It does not erase IndexedDB or recordings.
+The recovery page /recover.html now expects v1.7.1. It does not erase IndexedDB or recordings.
 Real iPhone/iPad service worker behavior must be tested after deployment.
 
 ## Audit

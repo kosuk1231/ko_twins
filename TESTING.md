@@ -1,4 +1,4 @@
-# v1.7.0 verification
+# v1.7.1 verification
 
 - 220 unique general-card paths. All 220 are actual SVG vectors without embedded raster images.
 - All 220 SVGs passed XML/color/path checks, rasterization and browser image decoding.

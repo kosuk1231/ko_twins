@@ -1,0 +1,10 @@
+은설, 은채만의 낱말놀이 v1.7.1 복구본
+
+1) 이 ZIP을 새 빈 폴더에 압축 해제합니다.
+2) 압축을 푼 폴더 '안의 모든 파일과 폴더'를 GitHub 저장소 최상위에 업로드합니다.
+3) 특히 vector 폴더 자체가 저장소 최상위 /vector 로 올라가야 합니다.
+4) 기존 characters 폴더는 삭제하지 마세요.
+5) Commit changes 후 Vercel 배포가 Ready가 되면
+   https://ko-twins.vercel.app/recover.html 를 열어
+   '수정본 적용하기'를 누릅니다.
+6) Safari 데이터/홈 화면 앱은 삭제하지 마세요.
