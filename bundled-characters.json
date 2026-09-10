@@ -1,0 +1,602 @@
+[
+  {
+    "id": "pororo",
+    "label": "뽀로로",
+    "series": "pororo",
+    "asset": "assets/characters/pororo.webp",
+    "sourceFile": "4e6acc62-7ddf-4d1b-b76c-c6b2ec67ec15.png",
+    "sourceSha256": "dda45c734f914b80f4a680e179f86e09d063f11d34cdb4f9776ff5ade7fe79d9",
+    "crop": [
+      28,
+      17,
+      194,
+      182
+    ],
+    "croppedPixels": [
+      158,
+      159
+    ],
+    "outputSize": [
+      512,
+      512
+    ],
+    "method": "crop + whitespace trim + Lanczos resize + white square framing",
+    "aiGenerated": false,
+    "note": ""
+  },
+  {
+    "id": "crong",
+    "label": "크롱",
+    "series": "pororo",
+    "asset": "assets/characters/crong.webp",
+    "sourceFile": "4e6acc62-7ddf-4d1b-b76c-c6b2ec67ec15.png",
+    "sourceSha256": "dda45c734f914b80f4a680e179f86e09d063f11d34cdb4f9776ff5ade7fe79d9",
+    "crop": [
+      28,
+      219,
+      194,
+      383
+    ],
+    "croppedPixels": [
+      158,
+      159
+    ],
+    "outputSize": [
+      512,
+      512
+    ],
+    "method": "crop + whitespace trim + Lanczos resize + white square framing",
+    "aiGenerated": false,
+    "note": ""
+  },
+  {
+    "id": "petty",
+    "label": "패티",
+    "series": "pororo",
+    "asset": "assets/characters/petty.webp",
+    "sourceFile": "4e6acc62-7ddf-4d1b-b76c-c6b2ec67ec15.png",
+    "sourceSha256": "dda45c734f914b80f4a680e179f86e09d063f11d34cdb4f9776ff5ade7fe79d9",
+    "crop": [
+      28,
+      419,
+      194,
+      582
+    ],
+    "croppedPixels": [
+      157,
+      158
+    ],
+    "outputSize": [
+      512,
+      512
+    ],
+    "method": "crop + whitespace trim + Lanczos resize + white square framing",
+    "aiGenerated": false,
+    "note": ""
+  },
+  {
+    "id": "loopy",
+    "label": "루피",
+    "series": "pororo",
+    "asset": "assets/characters/loopy.webp",
+    "sourceFile": "4e6acc62-7ddf-4d1b-b76c-c6b2ec67ec15.png",
+    "sourceSha256": "dda45c734f914b80f4a680e179f86e09d063f11d34cdb4f9776ff5ade7fe79d9",
+    "crop": [
+      28,
+      620,
+      194,
+      783
+    ],
+    "croppedPixels": [
+      157,
+      158
+    ],
+    "outputSize": [
+      512,
+      512
+    ],
+    "method": "crop + whitespace trim + Lanczos resize + white square framing",
+    "aiGenerated": false,
+    "note": ""
+  },
+  {
+    "id": "harry",
+    "label": "해리",
+    "series": "pororo",
+    "asset": "assets/characters/harry.webp",
+    "sourceFile": "77dd554c-714b-4f0f-b0ac-3ba7015a7924.png",
+    "sourceSha256": "da3aa07394eef4fc915beea0807d3d239d7fab3fc4e026e943e3e0e756548f32",
+    "crop": [
+      18,
+      12,
+      183,
+      175
+    ],
+    "croppedPixels": [
+      157,
+      158
+    ],
+    "outputSize": [
+      512,
+      512
+    ],
+    "method": "crop + whitespace trim + Lanczos resize + white square framing",
+    "aiGenerated": false,
+    "note": ""
+  },
+  {
+    "id": "poby",
+    "label": "포비",
+    "series": "pororo",
+    "asset": "assets/characters/poby.webp",
+    "sourceFile": "77dd554c-714b-4f0f-b0ac-3ba7015a7924.png",
+    "sourceSha256": "da3aa07394eef4fc915beea0807d3d239d7fab3fc4e026e943e3e0e756548f32",
+    "crop": [
+      18,
+      213,
+      183,
+      376
+    ],
+    "croppedPixels": [
+      157,
+      159
+    ],
+    "outputSize": [
+      512,
+      512
+    ],
+    "method": "crop + whitespace trim + Lanczos resize + white square framing",
+    "aiGenerated": false,
+    "note": ""
+  },
+  {
+    "id": "eddy",
+    "label": "에디",
+    "series": "pororo",
+    "asset": "assets/characters/eddy.webp",
+    "sourceFile": "77dd554c-714b-4f0f-b0ac-3ba7015a7924.png",
+    "sourceSha256": "da3aa07394eef4fc915beea0807d3d239d7fab3fc4e026e943e3e0e756548f32",
+    "crop": [
+      18,
+      413,
+      183,
+      578
+    ],
+    "croppedPixels": [
+      157,
+      159
+    ],
+    "outputSize": [
+      512,
+      512
+    ],
+    "method": "crop + whitespace trim + Lanczos resize + white square framing",
+    "aiGenerated": false,
+    "note": ""
+  },
+  {
+    "id": "rody",
+    "label": "로디",
+    "series": "pororo",
+    "asset": "assets/characters/rody.webp",
+    "sourceFile": "77dd554c-714b-4f0f-b0ac-3ba7015a7924.png",
+    "sourceSha256": "da3aa07394eef4fc915beea0807d3d239d7fab3fc4e026e943e3e0e756548f32",
+    "crop": [
+      18,
+      615,
+      183,
+      779
+    ],
+    "croppedPixels": [
+      158,
+      158
+    ],
+    "outputSize": [
+      512,
+      512
+    ],
+    "method": "crop + whitespace trim + Lanczos resize + white square framing",
+    "aiGenerated": false,
+    "note": ""
+  },
+  {
+    "id": "tongtong",
+    "label": "통통이",
+    "series": "pororo",
+    "asset": "assets/characters/tongtong.webp",
+    "sourceFile": "375c02c0-1e68-4ad1-8126-bed85f9b013e.png",
+    "sourceSha256": "a313362c0d9074c227cae10de5b5aaad7cd937104ff4f840af239672276084b1",
+    "crop": [
+      48,
+      7,
+      213,
+      169
+    ],
+    "croppedPixels": [
+      158,
+      158
+    ],
+    "outputSize": [
+      512,
+      512
+    ],
+    "method": "crop + whitespace trim + Lanczos resize + white square framing",
+    "aiGenerated": false,
+    "note": ""
+  },
+  {
+    "id": "pipi-popo",
+    "label": "삐삐와 뽀뽀",
+    "series": "pororo",
+    "asset": "assets/characters/pipi-popo.webp",
+    "sourceFile": "375c02c0-1e68-4ad1-8126-bed85f9b013e.png",
+    "sourceSha256": "a313362c0d9074c227cae10de5b5aaad7cd937104ff4f840af239672276084b1",
+    "crop": [
+      49,
+      208,
+      211,
+      365
+    ],
+    "croppedPixels": [
+      157,
+      157
+    ],
+    "outputSize": [
+      512,
+      512
+    ],
+    "method": "crop + whitespace trim + Lanczos resize + white square framing",
+    "aiGenerated": false,
+    "note": "두 캐릭터가 함께 나온 원본을 한 카드로 구성했습니다."
+  },
+  {
+    "id": "babyshark",
+    "label": "아기상어 올리",
+    "series": "babyshark",
+    "asset": "assets/characters/babyshark.webp",
+    "sourceFile": "e382b1ea-987d-48c0-844e-761a27dc5bd4.png",
+    "sourceSha256": "01d9cea0da50d69284f4949e96102240cc13ac64eb6baf4597a76bc264d3d1ed",
+    "crop": [
+      35,
+      20,
+      254,
+      276
+    ],
+    "croppedPixels": [
+      180,
+      233
+    ],
+    "outputSize": [
+      512,
+      512
+    ],
+    "method": "crop + whitespace trim + Lanczos resize + white square framing",
+    "aiGenerated": false,
+    "note": ""
+  },
+  {
+    "id": "daddyshark",
+    "label": "아빠 상어",
+    "series": "babyshark",
+    "asset": "assets/characters/daddyshark.webp",
+    "sourceFile": "8c36ddcd-fb01-4796-810f-2ce75de76c05.png",
+    "sourceSha256": "4d8e82d3fea8cbd3a8ecf69190ed07e0f61448be38b466bf59893fee6deb12d6",
+    "crop": [
+      12,
+      17,
+      254,
+      300
+    ],
+    "croppedPixels": [
+      218,
+      261
+    ],
+    "outputSize": [
+      512,
+      512
+    ],
+    "method": "crop + whitespace trim + Lanczos resize + white square framing",
+    "aiGenerated": false,
+    "note": ""
+  },
+  {
+    "id": "mommyshark",
+    "label": "엄마 상어",
+    "series": "babyshark",
+    "asset": "assets/characters/mommyshark.webp",
+    "sourceFile": "50482640-7c40-4a39-82fe-a2d22506414d.png",
+    "sourceSha256": "c927d0adfbdf2e9556d67da1f83a6180d04097d5201506d60a3d76a6dacba926",
+    "crop": [
+      15,
+      12,
+      251,
+      281
+    ],
+    "croppedPixels": [
+      200,
+      249
+    ],
+    "outputSize": [
+      512,
+      512
+    ],
+    "method": "crop + whitespace trim + Lanczos resize + white square framing",
+    "aiGenerated": false,
+    "note": ""
+  },
+  {
+    "id": "grandpashark",
+    "label": "할아버지 상어",
+    "series": "babyshark",
+    "asset": "assets/characters/grandpashark.webp",
+    "sourceFile": "3fe44458-8bf2-4e29-b9c5-13f5d40aa9a3.png",
+    "sourceSha256": "29ad603d660414bc00786d2daec00259433bbcd50b584888713127dd76184d65",
+    "crop": [
+      15,
+      15,
+      253,
+      307
+    ],
+    "croppedPixels": [
+      212,
+      271
+    ],
+    "outputSize": [
+      512,
+      512
+    ],
+    "method": "crop + whitespace trim + Lanczos resize + white square framing",
+    "aiGenerated": false,
+    "note": ""
+  },
+  {
+    "id": "grandmashark",
+    "label": "할머니 상어",
+    "series": "babyshark",
+    "asset": "assets/characters/grandmashark.webp",
+    "sourceFile": "a054ad2b-5c9c-46f0-a55d-bc5a8a9cde25.png",
+    "sourceSha256": "1a21f813817e0363f7fe4c2af7758976449db030d6e8787d3ae00b8794342c99",
+    "crop": [
+      0,
+      34,
+      235,
+      323
+    ],
+    "croppedPixels": [
+      219,
+      280
+    ],
+    "outputSize": [
+      512,
+      512
+    ],
+    "method": "crop + whitespace trim + Lanczos resize + white square framing",
+    "aiGenerated": false,
+    "note": ""
+  },
+  {
+    "id": "william",
+    "label": "윌리엄",
+    "series": "babyshark",
+    "asset": "assets/characters/william.webp",
+    "sourceFile": "71872f10-d2de-42a5-8210-2f1e17a6f872.png",
+    "sourceSha256": "a06c7b5a41cc576a87271454a69b26a51a09c0826a57c7e76b01b8b80efc7df9",
+    "crop": [
+      15,
+      31,
+      244,
+      267
+    ],
+    "croppedPixels": [
+      193,
+      214
+    ],
+    "outputSize": [
+      512,
+      512
+    ],
+    "method": "crop + whitespace trim + Lanczos resize + white square framing",
+    "aiGenerated": false,
+    "note": ""
+  },
+  {
+    "id": "tayo",
+    "label": "타요",
+    "series": "tayo",
+    "asset": "assets/characters/tayo.webp",
+    "sourceFile": "85c115fa-fcc5-4117-800a-308f6a0fcb03.png",
+    "sourceSha256": "75749a9f584a1fa28060b6aada066e70b4ba32d72e9e3afe608abbca5e3d4747",
+    "crop": [
+      25,
+      67,
+      235,
+      247
+    ],
+    "croppedPixels": [
+      155,
+      141
+    ],
+    "outputSize": [
+      512,
+      512
+    ],
+    "method": "crop + whitespace trim + Lanczos resize + white square framing",
+    "aiGenerated": false,
+    "note": ""
+  },
+  {
+    "id": "rogi",
+    "label": "로기",
+    "series": "tayo",
+    "asset": "assets/characters/rogi.webp",
+    "sourceFile": "85c115fa-fcc5-4117-800a-308f6a0fcb03.png",
+    "sourceSha256": "75749a9f584a1fa28060b6aada066e70b4ba32d72e9e3afe608abbca5e3d4747",
+    "crop": [
+      23,
+      444,
+      246,
+      634
+    ],
+    "croppedPixels": [
+      186,
+      170
+    ],
+    "outputSize": [
+      512,
+      512
+    ],
+    "method": "crop + whitespace trim + Lanczos resize + white square framing",
+    "aiGenerated": false,
+    "note": ""
+  },
+  {
+    "id": "lani",
+    "label": "라니",
+    "series": "tayo",
+    "asset": "assets/characters/lani.webp",
+    "sourceFile": "5ac7580f-b206-4ebc-93e5-80300da15cc9.png",
+    "sourceSha256": "ee73a52f87d91280392d593a6e87a030c377a9c147c6fcdcfcb28dba92b52753",
+    "crop": [
+      29,
+      61,
+      236,
+      229
+    ],
+    "croppedPixels": [
+      175,
+      150
+    ],
+    "outputSize": [
+      512,
+      512
+    ],
+    "method": "crop + whitespace trim + Lanczos resize + white square framing",
+    "aiGenerated": false,
+    "note": ""
+  },
+  {
+    "id": "gani",
+    "label": "가니",
+    "series": "tayo",
+    "asset": "assets/characters/gani.webp",
+    "sourceFile": "5ac7580f-b206-4ebc-93e5-80300da15cc9.png",
+    "sourceSha256": "ee73a52f87d91280392d593a6e87a030c377a9c147c6fcdcfcb28dba92b52753",
+    "crop": [
+      36,
+      433,
+      246,
+      602
+    ],
+    "croppedPixels": [
+      148,
+      133
+    ],
+    "outputSize": [
+      512,
+      512
+    ],
+    "method": "crop + whitespace trim + Lanczos resize + white square framing",
+    "aiGenerated": false,
+    "note": ""
+  },
+  {
+    "id": "citu",
+    "label": "씨투",
+    "series": "tayo",
+    "asset": "assets/characters/citu.webp",
+    "sourceFile": "d7fecd49-563c-4049-ada0-0b73c845b251.png",
+    "sourceSha256": "98f8d0238418c3cd8cd0c9541d30afeaaf9e78618d4bea6904b05c5dc5f46b95",
+    "crop": [
+      24,
+      59,
+      249,
+      238
+    ],
+    "croppedPixels": [
+      188,
+      156
+    ],
+    "outputSize": [
+      512,
+      512
+    ],
+    "method": "crop + whitespace trim + Lanczos resize + white square framing",
+    "aiGenerated": false,
+    "note": ""
+  },
+  {
+    "id": "peanut",
+    "label": "피넛",
+    "series": "tayo",
+    "asset": "assets/characters/peanut.webp",
+    "sourceFile": "ce0429f6-73ea-4e07-8d0f-250adac34d45.png",
+    "sourceSha256": "74108c26a20118f268abe965b921085c9b1a75804b58693a2bab67b504b74836",
+    "crop": [
+      101,
+      0,
+      259,
+      134
+    ],
+    "croppedPixels": [
+      147,
+      124
+    ],
+    "outputSize": [
+      512,
+      512
+    ],
+    "method": "crop + whitespace trim + Lanczos resize + white square framing",
+    "aiGenerated": false,
+    "note": ""
+  },
+  {
+    "id": "heart",
+    "label": "하트",
+    "series": "tayo",
+    "asset": "assets/characters/heart.webp",
+    "sourceFile": "c54d3645-cdfc-4ed1-9b65-437a7043e861.png",
+    "sourceSha256": "5fa74d3b5c7bac2d518ee28d927219ab83eb5b0944e02e4f91b1f1b6d33b9982",
+    "crop": [
+      43,
+      75,
+      257,
+      245
+    ],
+    "croppedPixels": [
+      178,
+      139
+    ],
+    "outputSize": [
+      512,
+      512
+    ],
+    "method": "crop + whitespace trim + Lanczos resize + white square framing",
+    "aiGenerated": false,
+    "note": ""
+  },
+  {
+    "id": "hana",
+    "label": "하나",
+    "series": "tayo",
+    "asset": "assets/characters/hana.webp",
+    "sourceFile": "c54d3645-cdfc-4ed1-9b65-437a7043e861.png",
+    "sourceSha256": "5fa74d3b5c7bac2d518ee28d927219ab83eb5b0944e02e4f91b1f1b6d33b9982",
+    "crop": [
+      81,
+      463,
+      237,
+      752
+    ],
+    "croppedPixels": [
+      117,
+      277
+    ],
+    "outputSize": [
+      512,
+      512
+    ],
+    "method": "crop + whitespace trim + Lanczos resize + white square framing",
+    "aiGenerated": false,
+    "note": "제공된 캡처의 발끝 일부가 잘려 있습니다. 누락 부분을 생성하거나 복원하지 않았습니다."
+  }
+]
