@@ -1,5 +1,5 @@
 /* Atomic app cache. Never touches IndexedDB or parent recordings. */
-const CACHE="word-garden-v1.5.0";
+const CACHE="word-garden-v1.5.1";
 const CORE=["./index.html", "./manifest.webmanifest", "./icon-192.png", "./icon-512.png", "./apple-touch-icon.png", "./assets/cards/dog.svg", "./assets/cards/cat.svg", "./assets/cards/rabbit.svg", "./assets/cards/bear.svg", "./assets/cards/lion.svg", "./assets/cards/elephant.svg", "./assets/cards/giraffe.svg", "./assets/cards/monkey.svg", "./assets/cards/duck.svg", "./assets/cards/pig.svg", "./assets/cards/cow.svg", "./assets/cards/horse.svg", "./assets/cards/apple.svg", "./assets/cards/banana.svg", "./assets/cards/strawberry.svg", "./assets/cards/grape.svg", "./assets/cards/watermelon.svg", "./assets/cards/mandarin.svg", "./assets/cards/peach.svg", "./assets/cards/pear.svg", "./assets/cards/sweetpotato.svg", "./assets/cards/carrot.svg", "./assets/cards/corn.svg", "./assets/cards/potato.svg", "./assets/cards/broccoli.svg", "./assets/cards/cucumber.svg", "./assets/cards/tomato.svg", "./assets/cards/pumpkin.svg", "./assets/cards/cabbage.svg", "./assets/cards/eggplant.svg", "./assets/cards/car.svg", "./assets/cards/bus.svg", "./assets/cards/firetruck.svg", "./assets/cards/ambulance.svg", "./assets/cards/policecar.svg", "./assets/cards/taxi.svg", "./assets/cards/truck.svg", "./assets/cards/tractor.svg", "./assets/cards/train.svg", "./assets/cards/airplane.svg", "./assets/cards/boat.svg", "./assets/cards/bicycle.svg", "./assets/cards/rice.svg", "./assets/cards/bread.svg", "./assets/cards/milk.svg", "./assets/cards/water.svg", "./assets/cards/egg.svg", "./assets/cards/noodles.svg", "./assets/cards/cheese.svg", "./assets/cards/soup.svg", "./assets/cards/ricecake.svg", "./assets/cards/dumpling.svg", "./assets/characters/pororo.webp", "./assets/characters/crong.webp", "./assets/characters/loopy.webp", "./assets/characters/eddy.webp", "./assets/characters/poby.webp", "./assets/characters/petty.webp", "./assets/characters/harry.webp", "./assets/characters/rody.webp", "./assets/characters/tongtong.webp", "./assets/characters/pipi-popo.webp", "./assets/characters/babyshark.webp", "./assets/characters/daddyshark.webp", "./assets/characters/mommyshark.webp", "./assets/characters/grandpashark.webp", "./assets/characters/grandmashark.webp", "./assets/characters/william.webp", "./assets/cards/character-needed.svg", "./assets/characters/tayo.webp", "./assets/characters/rogi.webp", "./assets/characters/lani.webp", "./assets/characters/gani.webp", "./assets/characters/citu.webp", "./assets/characters/peanut.webp", "./assets/characters/heart.webp", "./assets/characters/hana.webp"];
 self.addEventListener("install",event=>event.waitUntil((async()=>{
  const cache=await caches.open(CACHE);
@@ -26,4 +26,11 @@ self.addEventListener("fetch",event=>{
   if(cached)return cached;
   return fetch(req);
  })());
+});
+
+// Recovery page can verify the active application cache without reading any private data.
+self.addEventListener("message",event=>{
+ if(event.data?.type==="WORD_GARDEN_VERSION"&&event.ports?.[0]){
+  event.ports[0].postMessage({cache:CACHE,version:"1.5.1"});
+ }
 });
