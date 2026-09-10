@@ -22,3 +22,10 @@
 ## v1.6.0 approved vocabulary sheets
 
 220 general vocabulary cards use 11 approved WebP sheets at assets/sheets. Each sheet is 1280 x 1024 pixels (5 columns x 4 rows; 256 x 256 per card). Text is rendered as HTML, not baked into the images. The supplied catalog and the application use the same art bytes and cell coordinates. The 24 original character image files, their names, and their attributions remain unchanged. Optional earlier characters require a saved or uploaded image and are not counted among the 24 bundled originals.
+
+
+## v1.6.2 new native artwork
+- assets/hd/truck.webp: newly generated illustration; native 1448 x 1086 pixels.
+- Lossless WebP encoding, pixel dimensions preserved, no upscaling.
+- Only truck was replaced. Other general atlas artwork is unchanged.
+- Original character files are preserved; no AI redrawing of characters.
